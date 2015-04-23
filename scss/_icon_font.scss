@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'klifurfont';
+	src:url('fonts/klifurfont.eot?-iq5rrk');
+	src:url('fonts/klifurfont.eot?#iefix-iq5rrk') format('embedded-opentype'),
+		url('fonts/klifurfont.woff?-iq5rrk') format('woff'),
+		url('fonts/klifurfont.ttf?-iq5rrk') format('truetype'),
+		url('fonts/klifurfont.svg?-iq5rrk#klifurfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+%icon { // silent exstrndable class for icomoon symbol font
+  font-family: 'klifurfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Font variables and CSS-escaped unicode strings  */
+$icon-target:       '\74';
+$icon-bars:         '\62';
+$icon-layout:       '\6c';
+$icon-list:         '\4c';
+
+$icon-arrow-left:   '\31';
+$icon-arrow-down:   '\32';
+$icon-arrow-up:     '\33';
+$icon-arrow-right:  '\34';
+
+$icon-arrow-left2:  '\35';
+$icon-arrow-down2:  '\36';
+$icon-arrow-up2:    '\37';
+$icon-arrow-right2: '\38';
+
+$icon-feather:      '\66';
+$icon-user:         '\75';
+$icon-location:     '\6f';
+$icon-heart:        '\48';
+
+$icon-heart2:       '\68';
+$icon-star:         '\53';
+$icon-star2:        '\73';
+$icon-search:       '\65';
+
+$icon-link:         '\69';
+$icon-pictures:     '\70';
+$icon-video:        '\76';
+$icon-play3:        '\50';
+
+$icon-checkmark:    '\43';
+$icon-checkmark2:   '\63';
+$icon-play:         '\56';
+$icon-tag:          '\54';
+$icon-menu:         '\6d';
+$icon-facebook:     '\46';
+$icon-feed:         '\72';
+
+/* Add symbols to site */
+// .breadcrumbs {
+// 	&:after {
+// 		@extend %icon;
+// 		content: $icon-pencil;
+// 	}
+// }

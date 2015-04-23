@@ -1,0 +1,390 @@
+/**
+ * 5.55 Custom Category
+ * ----------------------------------------------------------------------------
+ */
+
+/* Post sections */
+// Used in Crags and Problem posts
+.post-section {
+	width: 49.3%;
+	float: left;
+	clear: left;
+	//margin: 0 0 20px 0;
+	padding-bottom: 30px;
+
+	&:nth-child(even) {
+		float: right;
+		clear: right;
+	}
+	img {
+		max-width: 100%;
+	}
+	iframe {
+		width: 100%;
+	}
+}
+
+.tablesorter {
+	thead {
+		tr th {
+			padding-bottom: 10px;
+		}
+	}
+	td {
+		white-space: nowrap; 
+		max-width: 120px;
+	    overflow: hidden;
+	    text-overflow: ellipsis; 
+	}
+	.check {
+		font-family: 'klifurfont';
+		color: $green;
+	}
+}
+
+
+/* Crag */
+.category-crag {
+	.category-crag {
+		width: 100%;
+	}
+	.tablesorter {
+		tbody tr td{
+			&:nth-child(3), &:nth-child(4), &:nth-child(5){ color: $green-dark; }
+		}
+	 }
+	 .banner-map {
+	 	iframe {
+	 		width: 100%;
+	 	}
+	 }
+}
+
+.banner-image {
+	width: 100%;
+	max-height: 400px;
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+		vertical-align: center;
+	}
+	span {
+		position: absolute;
+		bottom: 10px; right: 20px;
+		color: #fff;
+		font-weight: lighter;
+	}
+}
+
+article.category-crag span.author {
+	display: none;
+}
+
+// Area below the posts
+.results-heading {
+	border-bottom: 3px solid $default;
+	margin: 20px 0 20px;
+	padding-bottom: 2px;
+}
+.results {
+	//padding: 0 20px;
+	width: 100%;
+	//background-color: purple;
+	float: left;
+	clear: both;
+	padding: 20px 0 20px;
+}
+
+
+
+
+/* Problem */
+.category-problem {
+	.category-problem { // category-problem.php - .hentry
+		width: 100%;
+	}
+}
+
+.home .problem-video {
+	width: 100%;
+} 
+
+/*  
+    The Problem Form
+    Add graphics to checkboses in category-problem
+    body:not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+*/
+div.sexy-buttons {
+	width: 370px;
+	float: right;
+}
+
+body:not(#foo) .problem-form {
+	fieldset.metabuttons {
+		border: 0;
+		width: 180px;
+		float: right;
+		padding: 0 0 0; 
+
+		span {
+			float: right;
+			height: 44px; width: 44px;
+			position: relative;
+			color: #fff;
+			margin-right: 10px;
+			border-radius: 4px;
+			background-color: $green;
+			&:hover {
+				background-color: $green-dark;
+			}
+			
+		}
+	}
+	.user-buttons {
+		span {
+			&:nth-child(3) {
+				background-color: $red;
+				&:hover {
+					background-color: $red-dark;
+				}
+			}
+			// &:nth-child(2) {
+			// 	background-color: $orange;
+			// 	&:hover {
+			// 		background-color: $orange-dark;
+			// 	}
+			// }
+			&:nth-child(1) {
+				background-color: $blue;
+				&:hover {
+					background-color: $blue-dark;
+				}
+			}
+		}
+	}
+}
+
+body:not(#foo) .problem-form form input[type='checkbox'] {
+    /* Hide the input, but have it still be clickable */
+    opacity: 0;
+    position: absolute;
+    width: 44px; height: 44px;
+    float: left;
+    z-index: 20;
+}
+
+body:not(#foo) .problem-form form input[type='checkbox'] + label {
+    //width: 44px; height: 44px;
+    cursor: pointer;
+	font-size: 28px;
+	line-height: 0;
+	//background-color: #fff;
+    &:after {
+		@extend %icon;
+		//content: $icon-pencil;
+		position: relative;
+		//background-color: red;
+		z-index: 10;
+
+	}
+}
+// Change from unchecked to checked graphic
+body:not(#foo) .problem-form form input[type='checkbox']:checked + label {
+    color: $default;
+	//background-color: orange;
+}
+
+// Metab uttons - Add the symbols
+body:not(#foo) .problem-form form input[name='img'] + label {
+	&:after {
+		content: $icon-pictures;
+		top: 7px; left: 7px;
+	}
+}
+body:not(#foo) .problem-form form input[name='vid'] + label {
+	&:after {
+		content: $icon-video;
+		top: 8px; left: 8px;
+
+	}
+}
+body:not(#foo) .problem-form form input[name='thumb'] + label {
+	&:after {
+		content: $icon-layout;
+		top: 6px; left: 6px;
+		font-size: 32px;
+	}
+}
+// User buttons - Add the symbols
+body:not(#foo) .problem-form form input[name='fav'] + label {
+	&:after {
+		content: $icon-heart;
+		top: 8px; left: 8px;
+	}
+}
+body:not(#foo) .problem-form form input[name='fin'] + label {
+	&:after {
+		content: $icon-checkmark;
+		top: 7px; left: 8px;
+
+	}
+}
+body:not(#foo) .problem-form form input[name='pro'] + label {
+	&:after {
+		content: $icon-target;
+		top: 6px; left: 7px;
+		font-size: 32px;
+	}
+}
+
+
+// The Problem Table
+.category-problem-table {
+	width: 100%;
+	tbody tr td.meta-icons {
+		font-family: 'klifurfont';
+		font-size: 16px;
+		line-height: 0;
+		color: #444; 
+		//color: $green;
+		span {
+			padding: 0 2px;
+		} 
+		span.type {
+			font-weight: bold;
+		}		
+	}
+	.type {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	}
+}
+
+// problem table user lists
+.btn-icons span {
+	cursor: pointer !important;
+	a {
+		color: #aaa;
+		//display: block;
+		//height: 30px; width: 30px;
+		//padding: 5px 2px;
+		//background-color: yellow;
+		margin: 0;
+		font-size: 16px;
+		line-height: 0;
+		padding: 6px 6px;
+		cursor: pointer !important;
+
+		&:hover {
+			text-decoration: none;
+			cursor: pointer !important;
+			//box-shadow
+		}
+	} 
+}
+.fav {
+	a {
+		&:after {
+			@extend %icon;
+			content: $icon-heart2;
+			color: $red-light;
+		}
+	}
+	a.on {
+		&:after {
+			content: $icon-heart;
+			color: $red;
+		}
+	}
+}
+.fin {
+	a {
+		&:after {
+			@extend %icon;
+			content: $icon-checkmark2;
+			color: $green-light;
+		}
+	}
+	a.on {
+		&:after {
+			content: $icon-checkmark;
+			color: $green-dark;
+		}
+	}
+}
+.pro {
+	a {
+		&:after {
+			@extend %icon;
+			content: $icon-target;
+			color: $blue-light;
+		}
+	}
+	a.on {
+		&:after {
+			@extend %icon;
+			content: $icon-target;
+			color: $blue;
+			background-color: $blue;
+			border-radius: 10px;
+		}
+	}
+}
+
+
+// Problem-thumbnails
+.problem-thumb { // on single-problem.php
+	position: relative;
+	float: left;
+	width: 23.8%;
+	width: calc(25% - 10px);
+	width: -webkit-calc(25% - 10px);
+	margin: 0 10px 30px 0;
+	font-size: 86%;
+	height: 460px;
+	overflow: hidden;
+	
+	img {
+		width: 100%;
+	}
+	.gradient {
+		height: 30px;
+		width: 100%;
+		position: absolute;
+		bottom: 0; left: 0;
+		background-color: orange;
+
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+	}
+
+}
+.th-image-wrapper {
+	position: relative;
+	min-height: 30px;
+}
+.btn-icons-th {
+	//position: absolute;
+	width: 100px;
+	//float: left;
+	position: absolute;
+	top: 4px; left: 0;
+	z-index: 999;
+}
+
+// .category-problem-table {
+// 	tbody {
+// 		tr td:nth-child(1) {
+// 			color: #bbb;
+// 			font-size: 80%;
+// 			padding: 0 3px 0 5px;
+// 			width: 20px;
+// 			//background-color: yellow;
+// 		}
+// 	}
+// } 

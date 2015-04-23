@@ -1,0 +1,514 @@
+/**
+ * 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (max-width: 1440px) { //klifur.is
+	//#page { padding: 0 20px; margin-left: -20px; }
+	// .hentry {
+	// 	padding: 30px 0 30px 20px;	
+	// 	&:nth-child(even) {
+	// 		padding: 30px 20px 30px 0; 
+	// 	}
+	// }
+
+	.navbar { 
+		//padding-right: 20px;
+	}
+	.navbar .home-link {
+		padding-left: 20px;	
+	}
+	.site-header .search-form {
+		padding-right: 20px;
+	}
+	/* Crag */ 
+	// .single article.category-crag {
+	// 	padding: 0 20px;
+	// }
+
+	.single .banner-image {
+		width: 100vw;
+	    left: calc(-50vw + 50%);
+	}
+}
+
+
+// @media (max-width: 1069px) {
+// 	.sidebar img.alignleft,
+// 	.sidebar .wp-caption.alignleft {
+// 		margin-left: 0;
+// 	}
+
+// 	.sidebar img.alignright,
+// 	.sidebar .wp-caption.alignright {
+// 		margin-right: 0;
+// 	}
+
+// 	.error404 .page-header {
+// 		margin-left: auto;
+// 		max-width: 604px;
+// 		width: 100%;
+// 	}
+
+// 	.archive-header,
+// 	.search .page-header,
+// 	.archive .page-header,
+// 	.blog .page-header,
+// 	.error404 .page-content,
+// 	.search .page-content,
+// 	.archive .page-content,
+// 	.attachment .entry-header,
+// 	.attachment .entry-content,
+// 	.post-navigation .nav-links,
+// 	.sidebar .site-info,
+// 	.site-footer .widget-area {
+// 		padding-left: 20px;
+// 		padding-right: 20px;
+// 	}
+
+// 	.error404 .page-title {
+// 		font-size: 24px;
+// 		padding: 180px;
+// 	}
+
+// 	.error404 .page-title:before {
+// 		font-size: 554px;
+// 	}
+
+// 	.attachment .image-navigation {
+// 		max-width: 724px;
+// 	}
+
+// 	.image-navigation .nav-previous,
+// 	.image-navigation .nav-next {
+// 		position: static;
+// 	}
+
+// 	.site-main .widget-area {
+// 		margin-right: 60px;
+// 	}
+// }
+
+/* ONE COLUMN LAYOUT */
+@media (max-width: 999px) {
+	/* Turn off two column layout for posts */
+	.home, .archive, .crag, .problem, .page-id-1190 /*just blog*/, .search-results {
+		.hentry { // klifur.is
+			//float: inherit;
+			//display: inherit;
+			width: 100%;
+			//padding: 20px 20px !important;
+		}
+	}
+
+	.site {
+		padding: 0;
+	}
+	.hentry, .single .problem-thumbs-area {
+		padding: 0 20px; 
+	}
+
+	.format-status .entry-content {
+		padding-top: 40px;
+	}
+
+	.format-status .entry-meta {
+		padding-bottom: 40px;
+	}
+
+	.sidebar .format-status .entry-content,
+	.sidebar .format-status .entry-meta {
+		padding-left: 35px;
+	}
+
+	.sidebar .format-status .entry-content:before,
+	.sidebar .format-status .entry-meta:before {
+		left: 10px;
+	}
+
+	.sidebar .format-status .entry-content p:first-child:before {
+		left: 4px;
+	}
+
+	.sidebar .paging-navigation .nav-links {
+		padding: 0 60px;
+	}
+
+	.site-main .sidebar-container {
+		height: auto;
+		margin: 0 auto;
+		max-width: 604px;
+		position: relative;
+		top: 20px;
+	}
+
+	.site-main .widget-area {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.sidebar .site-footer .widget-area {
+		max-width: 100%;
+		left: 0;
+	}
+
+	/* Crag*/
+	.category-crag .post-section {
+		width: 100% !important;
+		float: left;
+		clear: left;
+
+		table {
+			max-width: 50%;
+		}
+	}
+
+	.content-gallery p a {
+		width: 150px; height: 150px;
+	}
+	
+	/* Problem */
+	.problem-thumb {
+		height: 360px;
+		width: 31.6%;
+		width: calc(33.33% - 10px);
+		width: -webkit-calc(33.33% - 10px);
+	}
+
+	// add space to click on touch screens
+	// .tablesorter {
+	// 	thead {
+	// 		tr th {
+	// 			padding-bottom: 10px;
+	// 		}
+	//  	}
+	// }
+
+
+}
+
+@media (max-width: 782px) {
+	/* Problem */
+	div.sexy-buttons {
+		width: 200px;
+		float: right;
+		fieldset:nth-child(1) {
+			padding-bottom: 8px !important;
+		}
+	}
+	
+	.category-problem {
+		.category-problem {
+			width: 100%;
+			padding-right: 20px;
+		}
+
+		 .post-section {
+			img {
+				max-width: 100%;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+		table {
+			width: 100%;
+		}
+	}
+
+	// hide colums to avoid side scroll - Hide Date
+	.category-problem .tablesorter {
+		thead {
+			tr th {
+				padding-bottom: 10px;
+			}
+			tr th:nth-child(6) {
+				display: none;
+			}
+		}
+		tbody tr td:nth-child(6) {
+			display: none;
+		}
+	 }
+}
+
+/* Collapse oversized image and pulled images after iPad breakpoint. */
+@media (max-width: 740px) {
+	.entry-content img.alignleft,
+	.entry-content .wp-caption.alignleft {
+		margin-left: 0;
+	}
+
+	.entry-content img.alignright,
+	.entry-content .wp-caption.alignright {
+		margin-right: 0;
+	}
+
+	.gallery-caption {
+		display: none;
+	}
+	
+	 /* Crag */
+	// hide colums to avoid side scroll - Hide Date
+	.category-crag .tablesorter {
+		thead {
+			tr th:nth-child(7) {
+				display: none;
+			}
+		}
+		tbody tr td:nth-child(7) {
+			display: none;
+		}
+	 }
+
+	 /* Problem */
+	// hide colums to avoid side scroll - Hide Date
+	.category-problem { 
+		
+		.post-section {
+			width: 100%;
+		}
+		 .problem-image {
+		 	width: 100%;
+		 	float: left;
+		 }
+
+		.tablesorter {
+			thead {
+				tr th:nth-child(6) {
+					display: none;
+				}
+			}
+			tbody tr td:nth-child(6) {
+				display: none;
+			}
+		 }
+		
+	 }
+
+}
+
+
+
+@media (max-width: 640px) {
+	#content .format-status .entry-content,
+	#content .format-status .entry-met {
+		//padding-left: 35px;
+	}
+
+	/* Small menu */
+	.menu-toggle {
+		cursor: pointer;
+		font: bold 16px/1.3 "Source Sans Pro", Helvetica, sans-serif;
+		margin: 0;
+
+		display: block;
+		float: right;
+	}
+
+	.menu-toggle,
+	.menu-toggle:hover,
+	.menu-toggle:focus,
+	.menu-toggle:active {
+		background: none;
+		border: none;
+		color: #fff;
+	}
+
+	.menu-toggle:after {
+		font-size: 32px;
+		padding: 2px 10px 0 0;
+
+		//@extend %icon;
+		font-family: 'klifurfont';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: $icon-menu;
+	}
+
+	.toggled-on .nav-menu,
+	.toggled-on .nav-menu > ul {
+		display: block;
+		margin-left: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.toggled-on li,
+	.toggled-on .children {
+		display: block;
+	}
+
+	.toggled-on .nav-menu li > ul {
+		//background-color: transparent;
+		display: block;
+		float: none;
+		margin-left: 20px;
+		position: relative;
+		left: auto;
+		top: auto;
+	}
+
+	.toggled-on .nav-menu li > ul a {
+		//color: #141412;
+		width: auto;
+	}
+
+	.toggled-on .nav-menu li:hover > a,
+	.toggled-on .nav-menu .children a {
+		//background-color: transparent;
+		//color: #141412;
+	}
+
+	.toggled-on .nav-menu > li a:hover,
+	.toggled-on .nav-menu > ul a:hover {
+		//background-color: #db572f;
+		//color: #fff;
+	}
+
+	.toggled-on .nav-menu > li a:focus,
+	.toggled-on .nav-menu > ul a:focus {
+		// background-color: #220e10;
+		// color: #fff;
+	}
+
+	ul.nav-menu,
+	div.nav-menu > ul {
+		display: none;
+	}
+
+	#content .featured-gallery {
+		padding-left: 24px;
+	}
+
+	.gallery-columns-1 .gallery-item {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.entry-title,
+	//.format-chat .entry-title,
+	.format-image .entry-title,
+	//.format-gallery .entry-title,
+	.format-video .entry-title {
+		//font-size: 22px;
+		font-weight: bold;
+	}
+
+	.format-quote blockquote,
+	.format-status .entry-content {
+		font-size: 18px;
+	}
+
+	.error404 .page-title {
+		padding: 40px 0 0;
+	}
+
+	.error404 .page-title:before {
+		content: normal;
+	}
+
+	/* Custom colors */
+	.nav-menu li.menu-item-739 > a { 
+		background-color: $orange; 
+	}
+	.nav-menu li.menu-item-768 > a { 
+		background-color: $green; 
+	}
+	.nav-menu li.menu-item-752 > a { 
+		background-color: $blue-dark; 
+	}
+	.nav-menu li.menu-item-873 > a { 
+		background-color: $purple; 
+	}
+
+	.comments-area {
+		left: 0;
+	}
+
+	/* Crag */
+	iframe {
+		max-height: 250px;
+	}
+	.banner-map {
+		iframe {
+			display: none;
+		}
+	}
+
+	
+	
+
+
+	/* Problem */
+	// hide colums to avoid side scroll
+	.category-problem .tablesorter {
+		// hide Comments
+		thead {
+			tr th:nth-child(6) {
+				display: none;
+			}
+		}
+		tbody tr td:nth-child(6) {
+			display: none;
+		}
+	 }
+	
+	.problem-thumb {
+		//height: 300px;
+		width: 48%;
+		width: calc(50% - 10px);
+		width: -webkit-calc(50% - 10px);
+	}
+
+	.hentry {
+		min-width: 600px
+	}
+	.site-header {
+		width: 100%;
+		left: 0;
+	}
+	html #wpadminbar {
+		min-width: 600px !important;
+	}
+	.site-footer {
+		width: 100%;
+		left: 0;
+	}
+	.navigation {
+		width: 100%;
+		left: 0;	
+	}
+	
+	/* Gallery */
+	#imagelightbox {
+		
+		//width: 80% !important;
+
+		
+		//top: 10px; left: -10px;
+
+	}
+
+}
+
+

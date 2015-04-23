@@ -1,0 +1,38 @@
+/**
+ * 5.9 Archives
+ * ----------------------------------------------------------------------------
+ */
+
+.archive-header {
+	//border-bottom: 1px solid $default;
+	//padding-top: 10px;
+	height: 36px;
+	background-color: $default;
+	//paddding: 5px
+}
+
+.archive-title,
+.archive-meta {
+	font: 300 24px "Source Sans Pro", Helvetica, sans-serif;
+	//margin: 0 auto;
+	// sfont-weight: bold;
+	color: #fff;
+	max-width: 1040px;
+	padding: 5px 10px;
+	//line-height: 0 !important ;
+	width: 100%;
+	//margin-bottom: 24px;
+}
+
+// .archive-meta {
+// 	font-size: 16px;
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	margin-top: -15px;
+// 	padding: 0 0 11px;
+// }
+
+// .sidebar .archive-meta {
+// 	padding-right: 316px;
+// }
+

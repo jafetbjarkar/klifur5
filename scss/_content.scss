@@ -1,0 +1,48 @@
+/**
+ * 5.0 Content
+ * ----------------------------------------------------------------------------
+ */
+
+.hentry {
+	padding: 20px 0;
+	//background-color: #ffc;
+	margin-top: 20px;
+	transition: margin .2s, padding .2s, width .2s;
+}
+
+.entry-header,
+.entry-content,
+.entry-summary,
+.entry-meta {
+	margin: 0 auto;
+	//max-width: 604px;
+	width: 100%;
+}
+
+.sidebar .entry-header,
+.sidebar .entry-content,
+.sidebar .entry-summary,
+.sidebar .entry-meta {
+	max-width: 1040px;
+	padding: 0 376px 0 60px;
+}
+
+/* Two column layout for posts */
+.home, .archive, .category-problem, .page-id-1190, .search-results {
+	.hentry {
+		float: left;
+		clear: left;
+		//display: inline-block;
+		width: 49.3%;
+		margin-bottom: 30px;
+		
+		&:nth-child(even) {
+			float: right;
+			clear: right;
+			//background-color: green !important;
+		}
+	}
+}
+
+
+

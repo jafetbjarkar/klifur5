@@ -1,0 +1,436 @@
+/**
+ * 5.12 Comments
+ * ----------------------------------------------------------------------------
+ */
+
+.comments-area { // klifur.is
+	clear: both;
+	position: relative;
+	width: 100vw;
+	left: calc(-50vw + 50%);
+	background-color: $default;
+	min-width: 640px;
+	//padding-top: 20px;
+
+	a {
+		color: #fff;
+	}
+	.comment-content {
+		a {
+			color: $link;
+		}
+	}
+	
+	/* reset */
+	ol, ul {
+		padding: 0;
+	}
+}
+
+.comments-page, .respond-page { // klifur.is
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.comment-content { // klifur.is
+	background-color: #fff;
+	border-radius: 6px;
+}
+
+.comments-title,
+.comment-list,
+.comment-reply-title,
+.must-log-in,
+.comment-respond .comment-form,
+.comment-respond iframe {
+	display: block;
+	//margin-left: auto;
+	//margin-right: auto;
+	//max-width: 604px;
+	width: 100%;
+
+	max-width: 1024px;
+}
+
+/* Sidebar */
+// .sidebar .comments-title,
+// .sidebar .comment-list,
+// .sidebar .must-log-in,
+// .sidebar .comment-reply-title,
+// .sidebar .comment-navigation,
+// .sidebar .comment-respond .comment-form {
+// 	max-width: 700px;
+// 	padding-left: 60px;
+// 	padding-right: 376px;
+// }
+
+
+.comments-title {
+	font: 300 italic 32px "Source Sans Pro", Helvetica, sans-serif;
+	color: #fff;
+	padding-top: 20px;
+
+	padding-left: 20px;
+}
+
+// .comment-list,
+// .comment-list .children {
+// 	list-style-type: none;
+// 	padding: 0;
+// }
+
+// .comment-list .children {
+// 	//margin-left: 20px;
+
+// 	.vcard {
+// 		float: right;
+// 	}
+// 	.comment-content {
+// 		float: right;
+// 		margin-left: 40px;
+// 		margin-right: 0;
+// 		width: 400px;
+// 	}
+// }
+
+/* Make the comment list look like speak bubbles */
+ol.comment-list {
+	list-style-type: none;
+	padding: 0 20px;
+	
+	/* common styles */
+	.comment-metadata {
+		width: 60%;
+	}
+	.comment-content {
+		max-width: 76%;
+		min-width: 240px;
+	}
+
+	li.depth-1 {
+		> article.comment-body {
+			footer.comment-meta {
+				.comment-author {
+					float: left;
+				}
+				.comment-metadata {
+					float: left;
+					margin-left: 46px;
+				}
+			}
+			div.comment-content {
+				float: left;
+				padding: 10px 16px 0;
+				margin-left: 40px;
+			}
+		}
+
+		ol.children {
+			list-style-type: none;
+			padding-bottom: 80px;
+			li.depth-2 {
+				
+				article.comment-body {
+					footer.comment-meta {
+						.comment-author {
+							float: right;
+						}
+						.comment-metadata {
+							float: right;
+							margin-right: 46px;
+							text-align: right;
+						}
+					}
+					div.comment-content {
+						float: right;
+						padding: 10px 16px 0;
+						margin-right: 40px;
+					}
+				}
+			}
+		}
+	} // .depth-1
+}
+
+/* Add speak triangles */
+.comments-area { // klifur.is
+	.depth-1 > article .comment-content :before {
+		content: " ";
+        display: block;
+		position: absolute;
+		top: 44px; left: 94px;
+        width: 0px; 
+		height: 0px; 
+		
+		border-top: 12px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-right: 20px solid #fff;
+	}
+	.children {
+		.comment-content :before {
+			content: " ";
+	        display: block;
+			position: absolute;
+			top: 44px; right: 94px;
+	        width: 0px; 
+			height: 0px; 
+			
+			border-top: 12px solid transparent;
+			border-bottom: 0px solid transparent;
+			border-left: 20px solid #fff;
+		}
+	}
+}
+
+.comment-list > li:last-child:after {
+	display: none;
+}
+
+.comment-body {
+	padding: 6px 0;
+	position: relative;
+}
+
+.comment-author {
+	float: left;
+	max-width: 74px;
+}
+
+.comment-author .avatar {
+	display: block;
+	//margin-bottom: 10px;
+
+	margin-top: 19px;
+	border-radius: 4px;
+}
+
+.comment-author .fn {
+	word-wrap: break-word;
+}
+
+.comment-author .fn,
+.comment-author .url,
+.comment-reply-link,
+.comment-reply-login {
+	//color: #bc360a;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.comment-reply-login { // klifur.is
+	display: none;
+}
+
+.comment-reply-link { // klifur.is
+	position: absolute;
+	top: -6px; right: 42px;
+	font-size: inherit;
+	color: #fff;
+}
+
+.says {
+	display: none;
+}
+
+.no-avatars .comment-author {
+	margin: 0 0 5px;
+	max-width: 100%;
+	position: relative;
+}
+
+.no-avatars .comment-metadata,
+.no-avatars .comment-content,
+.no-avatars .comment-list .reply {
+	width: 100%;
+}
+
+.bypostauthor > .comment-body .fn:before {
+	//content: "\f408";
+	//vertical-align: text-top;
+}
+
+.comment-list .edit-link {
+	margin-left: 20px;
+}
+
+.comment-awaiting-moderation,
+.comment-content,
+.comment-list .reply {
+	// float: right;
+	// width: 79%;
+	//width: -webkit-calc(100% - 124px);
+	//width:         calc(100% - 124px);
+	word-wrap: break-word;
+}
+
+.comment-meta,
+.comment-meta a {
+	font-size: 13px;
+	color: #fff;
+}
+
+.ping-meta {
+	color: #a2a2a2;
+	font-size: 13px;
+	line-height: 2;
+}
+
+
+
+.comment-awaiting-moderation {
+	color: #a2a2a2;
+}
+
+.comment-awaiting-moderation:before {
+	content: "\f414";
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+
+.comment-reply-link:before,
+.comment-reply-login:before {
+	@extend %icon;
+	content: $icon-arrow-down;
+	font-size: 20px;
+	position: absolute;
+	top: 4px; left: -22px;
+}
+
+
+
+
+
+/* Comment form */
+.comment-respond {
+	background: rgba(255,255,255,.3);
+	padding: 10px 20px;
+	//border-radius: 5px;
+}
+
+.comment .comment-respond {
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.comment-reply-title {
+	font: 300 italic 32px "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.comment-reply-title small a {
+	//color: #131310;
+	display: inline-block;
+	float: right;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.comment-reply-title small a:hover {
+	//color: #ed331c;
+	text-decoration: none;
+}
+
+.comment-reply-title small a:before {
+	content: "\f406";
+	vertical-align: top;
+}
+
+.sidebar .comment-list .comment-reply-title,
+.sidebar .comment-list .comment-respond .comment-form {
+	padding: 0;
+}
+
+.comment-form .comment-notes {
+	margin-bottom: 15px;
+}
+
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url {
+	margin-bottom: 8px;
+}
+
+.comment-form [for="author"],
+.comment-form [for="email"],
+.comment-form [for="url"],
+.comment-form [for="comment"] {
+	float: left;
+	padding: 5px 0;
+	//width: 120px;
+}
+
+.comment-form .required {
+	color: #ed331c;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+	max-width: 270px;
+	width: 60%;
+}
+
+.comment-form textarea {
+	width: 100%;
+}
+
+.comment-form-comment { // klifur.is
+	label{
+		display: block;
+		width: 50%;
+	}
+	textarea {
+		max-width: 700px;
+		width: 76%;
+		resize: none;
+	}
+} 
+.form-allowed-tags {
+	max-width: 700px;
+	width: 76%;
+	resize: none;
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+	color: #fff;
+	font-size: 12px;
+}
+
+.form-allowed-tags code {
+	font-size: 10px;
+	margin-left: 3px;
+}
+
+.comment-list .pingback,
+.comment-list .trackback {
+	padding-top: 24px;
+}
+
+.comment-navigation {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0 auto;
+	max-width: 604px;
+	padding: 20px 0 30px;
+	width: 100%;
+}
+
+.no-comments {
+	background-color: #f7f5e7;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.sidebar .no-comments {
+	padding-left: 60px;
+	padding-right: 376px;
+}

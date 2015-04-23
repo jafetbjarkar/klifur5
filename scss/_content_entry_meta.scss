@@ -1,0 +1,107 @@
+/**
+ * 5.2 Entry Meta
+ * ----------------------------------------------------------------------------
+ */
+
+.entry-meta {
+	clear: both;
+	font-size: 14px;
+
+	background-color: $default;
+	padding: 5px;
+	color: #fff;
+	border-bottom: 1px solid $default-dark;
+}
+
+.entry-meta a {
+	color: #fff;
+}
+
+.entry-meta a:hover {
+	//color: #bc360a;
+}
+
+.entry-meta > span {
+	margin-right: 20px;
+}
+
+.entry-meta > span:last-child {
+	margin-right: 0;
+}
+
+.entry-meta-comments { // klifur.is
+	width: 100%;
+	padding-right: 10px;
+	float: left;
+	.comments-link {
+		float: right;
+		//padding-top: 10px;
+		a {
+			height: 100%; width: 100%;
+			background-color: $default;
+			display: block;
+			border-radius: 4px;
+			color: #fff;
+			padding: 4px 16px 4px 17px;
+			text-decoration: none;
+			transition: box-shadow 1s, background-color 1s;
+			&:hover {
+				background-color: $default-dark;
+				box-shadow: 1px 1px 3px #666;
+				transition: box-shadow .1s, background-color .1s;
+			}
+		} 
+	}
+}
+
+.featured-post:before {
+	content: $icon-feather;
+	margin-right: 20px;
+	font-size: 30px;
+}
+
+.entry-meta .date a:before {
+	content: "\f303";
+}
+
+.comments-link a:before {
+	//content: "\f300";
+	//margin-right: 2px;
+	position: relative;
+	top: -3px; left: -5px;
+	
+	@extend %icon;
+	content: $icon-feather;
+}
+
+.entry-meta .author a:before {
+	content: "\f304";
+	position: relative;
+	top: -1px;
+}
+
+.categories-links a:first-child:before {
+	content: "\f301";
+}
+
+.tags-links a:first-child:before {
+	content: "\f302";
+	position: relative;
+	top: -1px;
+}
+
+.edit-link a:before {
+	content: "\f411";
+	position: relative;
+	top: -1px;
+}
+
+.single-author .entry-meta .author,
+.sticky.format-standard .entry-meta .date,
+.sticky.format-audio .entry-meta .date,
+.sticky.format-chat .entry-meta .date,
+.sticky.format-image .entry-meta .date,
+.sticky.format-gallery .entry-meta .date {
+	display: none;
+}
+

@@ -1,0 +1,130 @@
+/**
+ * 5.7 Post/Paging Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.navigation .nav-previous {
+	float: left;
+}
+
+.navigation .nav-next {
+	float: right;
+}
+
+.paging-navigation a {
+	color: #fff;
+}
+
+.paging-navigation a:hover {
+	text-decoration: none;
+}
+
+.paging-navigation {
+	//background-color: #e8e5ce;
+	//padding: 40px 0;
+	
+	padding: 40px 0 0 0;
+	position: relative;
+	width: 100vw;
+	left: calc(-50vw + 50%);
+	clear: both;
+}
+
+.paging-navigation .nav-links {
+	margin: 0 auto;
+	//max-width: 604px;
+	width: 100%;
+	//background-color: $default;
+	height: 40px;
+}
+
+.sidebar .paging-navigation .nav-links {
+	//max-width: 1040px;
+	//padding: 0 376px 0 60px;
+}
+
+.paging-navigation .nav-next {
+	width: 50%;
+	background-color: $default;
+	a {
+		padding: 6px 0 0 40px;
+	}
+}
+
+.paging-navigation .nav-previous { // klifur.is
+	width: 50%;
+	text-align: right;
+	background-color: $default;
+	a {
+		padding: 6px 40px 0 0;
+	}
+}
+
+.paging-navigation a {
+	//font-size: 22px;
+	//font-style: italic;
+	font-weight: 200;
+	display: block;
+	height: 40px
+}
+
+.navigation .meta-nav {
+	//background-color: green;
+}
+
+.post-navigation a[rel="next"] {
+	float: right;
+	text-align: right;
+}
+
+/* Add symbols */
+.nav-previous span {
+  &:after {
+    @extend %icon;
+    content: $icon-arrow-left;
+    position: relative;
+    top: 2px; left: 0px;
+  }
+}
+.nav-next span {
+  &:after {
+    @extend %icon;
+    content: $icon-arrow-right;
+	position: relative;
+    top: 2px; left: 0px;
+  }
+}
+
+/* Numberic navigation */
+.numeric-navigation {
+	float: left;
+	//padding: 40px 0 0 0;
+	position: relative;
+	width: 100vw;
+	left: calc(-50vw + 50%);
+	clear: both;
+	
+
+	//background-color: yellow;
+	
+	background-color: $default;
+	ul {
+		padding: 0;
+		margin: 10px auto;
+		//background-color: orange;
+		min-width: 640px;
+		max-width: 1400px;
+		padding-left: 14px;
+		li {
+			color: #fff;
+			display: inline-block;
+			a {
+				//background-color: green;
+				padding: 5px 10px;
+				color: #fff;
+			}
+		}
+	}
+	
+
+}
