@@ -31,6 +31,25 @@
 	background-color: #222;
 }
 
+
+.partner-logo {
+	position: absolute;
+  bottom: 15px;
+  right: 20px;
+  //background-color: purple;
+	text-align: right;
+
+	p {
+		margin: 0 0 -20px 12px;
+		text-align: left;
+	}
+
+  img {
+  	width: 240px;  }
+}
+
+
+// - WIDGETS
 .site-footer .widget-area {
 	margin: 0 auto;
 	//max-width: 1040px;
@@ -100,4 +119,5 @@
 	line-height: 20px;
 	//transition: left cubic-bezier(0.67,0.55,0.14,1.5) .6s;
 }
+
 
