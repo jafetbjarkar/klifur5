@@ -1,2 +1,4 @@
 .codekit-cache
 /DISABLE
+*.scssc
+style.css

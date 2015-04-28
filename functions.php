@@ -84,6 +84,11 @@ function twentythirteen_setup() {
 		'image', 'video'
 	) );
 
+	/**
+	 * Add custom logo placeholder to theme
+	 */
+	add_theme_support( 'custom-header', [] );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
 
@@ -539,5 +544,4 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
-
 

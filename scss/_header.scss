@@ -70,9 +70,12 @@
 	//background-color: sienna;
 	//cursor: pointer;
 
-	img.site-logo {
-		width: 170px;
-	}
+	.site-logo {
+		width: 50%;
+		height: 50%;
+		max-width: 170px;
+		max-height: 48px;
+	} 
 }
 
 .navbar .site-title:hover {
