@@ -10,6 +10,8 @@
  */
 
 get_header(); ?>
+	
+	<!-- category.php -->
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

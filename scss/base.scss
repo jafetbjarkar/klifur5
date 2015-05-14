@@ -50,68 +50,56 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * ----------------------------------------------------------------------------
  */
 
-/* Fonts*/
+// - FONTS
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-// /* Klifur.is colors */
+// - COLORS
+
+
+// - COLORS - KLIFUR.IS
 // $default:         #333;
-// $default-dark:    darken($default, 20%);
-// $default-light:   lighten($default, 10%);
-// $default-lighter: lighten($default, 10%);
 // $blog:            #4a9afc;
-// $blog-dark:       darken($blog, 20%);
-// $blog-light:      lighten($blog, 10%);
 // $routes:          #bdd62b;
-// $routes-dark:     darken($routes, 20%);
-// $routes-light:    lighten($routes, 10%);
 // $video:           #ff5b55;
-// $video-dark:      darken($video, 20%);
-// $video-light:     lighten($video, 10%);
 // $info:            #8f6dd8;
-// $info-dark:       darken($info, 20%);
 // $crag:            #fdb100;
-// $crag-dark:       darken($crag, 20%);
-// $crag-light:      lighten($crag, 10%);
 // $images:          #ff6ea0;
-// $images-dark:     darken($images, 20%);
 // $about:           #41d6ca;
-// $about-dark:      darken($about, 20%);
 
-// /* Link colors */
-// $link:        $crag;
-// $link-hover:  darken($link, 20%);
+// $link:            $crag;
+
+// $fav:             #e9327b;
+// $fin:             #6dc735;
+// $pro:             #f1be1c;
 
 
-/* Ísalp.is colors */
+// - COLORS - ISALP.IS
+// default: #333
+// blue: #0186cc
+// blue-light: #4fbeef
+// pink: #e9327b
+// green: #6dc735
+// yellow: #f1be1c
+
 $default:         #333;
-$default-dark:    darken($default, 11%);
-$default-light:   lighten($default, 10%);
-$default-lighter: lighten($default, 10%);
 $blog:            #6dc735;
-$blog-dark:       darken($blog, 11%);
-$blog-light:      lighten($blog, 10%);
-$routes:          #4fbeef;
-$routes-dark:     darken($routes, 11%);
-$routes-light:    lighten($routes, 10%);
 $video:           #f9c72e;
-$video-dark:      darken($video, 11%);
-$video-light:     lighten($video, 10%);
-$info:            #6dc733;
-$info-dark:       darken($info, 11%);
-$crag:            #0086cc;
-$crag-dark:       darken($crag, 11%);
-$crag-light:      lighten($crag, 10%);
 $images:          #ff744f;
-$images-dark:     darken($images, 11%);
-$about:           #e70a5d;
-$about-dark:      darken($about, 11%);
+$crag:            #0086cc;
+$route:           #4fbeef;
+$info:            #6dc733;
+$about:           #e9327b;
 
-/* Link colors */
-$link:        $routes;
-$link-hover:  darken($link, 20%);
+$link:            $route;
+
+$fav:             #e9327b;
+$fin:             #6dc735;
+$pro:             #f1be1c;
+
+@import 'generate_colors';
 
 
-/* Imports */
+// - IMPORTS
 @import 'icon_font';
 
 @import 'reset';

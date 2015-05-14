@@ -1,0 +1,57 @@
+/**
+ * Generate colors
+ * ----------------------------------------------------------------------------
+ */
+
+$dark: 10%;
+$darker: 20%;
+$light: 10%;
+$lighter: 20%;
+
+$link-hover:      darken($link, $dark);
+
+$fav-dark:        darken($fav, $dark);
+$fin-dark:        darken($fin, $dark);
+$pro-dark:        darken($pro, $dark);
+
+$default-dark:    darken($default, $dark);
+$default-darker:  darken($default, $darker);
+$default-light:   lighten($default, $light);
+$default-lighter: lighten($default, $lighter);
+
+$crag-dark:       darken($crag, $dark);
+$crag-darker:     darken($crag, $darker);
+$crag-light:      lighten($crag, $light);
+$crag-lighter:    lighten($crag, $lighter);
+
+$route-dark:      darken($route, $dark);
+$route-darker:    darken($route, $darker);
+$route-light:     lighten($route, $light);
+$route-lighter:   lighten($route, $lighter);
+
+$blog-dark:       darken($blog, $dark);
+$blog-darker:     darken($blog, $darker);
+$blog-light:      lighten($blog, $light);
+$blog-lighter:    lighten($blog, $lighter);
+
+$video-dark:      darken($video, $dark);
+$video-darker:    darken($video, $darker);
+$video-light:     lighten($video, $light);
+$video-lighter:   lighten($video, $lighter);
+
+$images-dark:     darken($images, $dark);
+$images-darker:   darken($images, $darker);
+$images-light:    lighten($images, $light);
+$images-lighter:  lighten($images, $lighter);
+
+$info-dark:       darken($info, $dark);
+$info-darker:     darken($info, $darker);
+$info-light:      lighten($info, $light);
+$info-lighter:    lighten($info, $lighter);
+
+$about-dark:      darken($about, $dark);
+$about-darker:    darken($about, $darker);
+$about-light:     lighten($about, $light);
+$about-lighter:   lighten($about, $lighter);
+
+

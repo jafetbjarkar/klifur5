@@ -5,8 +5,8 @@
 
 /* Header */
 .problem .site-header {
-	background-color: $routes;
-	border-bottom: 1px solid $routes-dark;
+	background-color: $route;
+	border-bottom: 1px solid $route-dark;
 }
 .crag .site-header {
 	background-color: $crag;
@@ -54,11 +54,11 @@
 .nav-menu li.menu-item-768 a:hover,
 .nav-menu li.menu-item-768:focus > a,
 .nav-menu li.menu-item-768 a:focus {
-	background-color: $routes-dark;
+	background-color: $route-dark;
 }
 .nav-menu .menu-item-768 .sub-menu,
 .nav-menu .menu-item-768 .children {
-	background-color: $routes;
+	background-color: $route;
 }
 // Blog
 .nav-menu li.menu-item-752:hover > a,
@@ -139,12 +139,12 @@
 // Problem 
 .category-problem {
 	.entry-meta {
-		background-color: $routes;
-		border-bottom: 1px solid $routes-dark;
+		background-color: $route;
+		border-bottom: 1px solid $route-dark;
 	}
 	.comments-link a {
-		background-color: $routes;
-		&:hover { background-color: $routes-dark; }
+		background-color: $route;
+		&:hover { background-color: $route-dark; }
 	}
 }
 // Format - Image
@@ -195,8 +195,8 @@
 // - - - - _content_comments.scss - - - - //
 /* Custom page header color */
 .problem .comments-area {
-	background-color: $routes;
-	border-bottom: 1px solid $routes-dark;
+	background-color: $route;
+	border-bottom: 1px solid $route-dark;
 }
 .crag .comments-area {
 	background-color: $crag;
@@ -226,8 +226,8 @@
 /* Post/paging navigation */
 body.crag .paging-navigation a { background-color: $crag; }
 body.crag .paging-navigation a:hover { background-color: $crag-dark; }
-body.problem .paging-navigation a { background-color: $routes; }
-body.problem .paging-navigation a:hover { background-color: $routes-dark; }
+body.problem .paging-navigation a { background-color: $route; }
+body.problem .paging-navigation a:hover { background-color: $route-dark; }
 body.blog .paging-navigation a { background-color: $blog; }
 body.blog .paging-navigation a:hover { background-color: $blog-dark; }
 	body.page-id-1190 .paging-navigation a { background-color: $blog; }
@@ -243,7 +243,7 @@ body.home .paging-navigation a:hover { background-color: $default-dark; }
 
 // numeric-navigation
 body.crag .numeric-navigation { background-color: $crag; }
-body.problem .numeric-navigation { background-color: $routes-dark; }
+body.problem .numeric-navigation { background-color: $route-dark; }
 body.blog .numeric-navigation { background-color: $blog; }
 	body.page-id-1190 .numeric-navigation { background-color: $blog; }
 	body.term-post-format-image .numeric-navigation { background-color: $images; }
@@ -257,5 +257,5 @@ body.home .numeric-navigation { background-color: $default; }
 	border-bottom: 3px solid $crag;	
 }
 .problem .results-heading  {
-	border-bottom: 3px solid $routes;
+	border-bottom: 3px solid $route;
 }

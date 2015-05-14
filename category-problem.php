@@ -11,6 +11,8 @@
 
 get_header(); ?>
 
+<!-- category-problem.php -->
+
 <div id="primary" class="content-area">
 	<div id="content" class="site-content" role="main">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

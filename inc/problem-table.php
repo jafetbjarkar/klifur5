@@ -7,6 +7,8 @@
 */
 ?>
 
+<!-- inc/problem-table.php -->
+
 <?php 
 $wp_query = null;
 $wp_query = new WP_Query($args); ?>

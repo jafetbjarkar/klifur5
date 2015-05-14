@@ -15,6 +15,8 @@
  */
 
 get_header(); ?>
+	
+	<!-- index.php -->
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

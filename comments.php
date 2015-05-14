@@ -17,6 +17,8 @@ if ( post_password_required() )
 	return;
 ?>
 
+<!-- comments.php -->
+
 <div id="comments" class="comments-area">
 	<div class="comments-page"> <!-- div to center content -->
 
