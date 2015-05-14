@@ -10,6 +10,8 @@
  */
 ?>
 
+<!-- single-crag.php -->
+
 <?php // BANNER ?>
 <?php $image = get_field('banner_image'); ?>
 <div class="banner-image">

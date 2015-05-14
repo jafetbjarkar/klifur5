@@ -12,6 +12,8 @@
 
 <?php // add banner image if exists (only in single-crag.php) ?>
 
+<!-- content-crag.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="entry-header">

@@ -10,6 +10,7 @@
  */
 ?>
 
+<!-- single-problem.php -->
 	
 <?php // use inlude instead of get_template_part() because I need to pass variables from the inluded file ?>
 <?php include(locate_template('content-problem.php')); ?>

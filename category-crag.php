@@ -11,6 +11,8 @@
 
 get_header(); ?>
 
+<!-- category-crag.php -->
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 		

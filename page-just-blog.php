@@ -10,6 +10,9 @@
  */
 
 get_header(); ?>
+
+<!-- page-just-blog.php -->
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 				

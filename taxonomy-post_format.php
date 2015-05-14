@@ -15,6 +15,8 @@
 
 get_header(); ?>
 
+<!-- taxonomy-post_format.php -->
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 

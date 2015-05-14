@@ -87,27 +87,27 @@ $default:         #333;
 $default-dark:    darken($default, 11%);
 $default-light:   lighten($default, 10%);
 $default-lighter: lighten($default, 10%);
-$blog:            #6DC735;
+$blog:            #6dc735;
 $blog-dark:       darken($blog, 11%);
 $blog-light:      lighten($blog, 10%);
-$routes:          #4FBEEF;
+$routes:          #4fbeef;
 $routes-dark:     darken($routes, 11%);
 $routes-light:    lighten($routes, 10%);
-$video:           #F9C72E;
+$video:           #f9c72e;
 $video-dark:      darken($video, 11%);
 $video-light:     lighten($video, 10%);
-$info:            #6DC733;
+$info:            #6dc733;
 $info-dark:       darken($info, 11%);
-$crag:            #0086CC;
+$crag:            #0086cc;
 $crag-dark:       darken($crag, 11%);
 $crag-light:      lighten($crag, 10%);
-$images:          #FF744F;
+$images:          #ff744f;
 $images-dark:     darken($images, 11%);
-$about:           #E70A5D;
+$about:           #e70a5d;
 $about-dark:      darken($about, 11%);
 
 /* Link colors */
-$link:        $crag;
+$link:        $routes;
 $link-hover:  darken($link, 20%);
 
 
