@@ -5,28 +5,28 @@
 
 /* Header */
 .problem .site-header {
-	background-color: $green;
-	border-bottom: 1px solid $green-dark;
+	background-color: $routes;
+	border-bottom: 1px solid $routes-dark;
 }
 .crag .site-header {
-	background-color: $orange;
-	border-bottom: 1px solid $orange-dark;
+	background-color: $crag;
+	border-bottom: 1px solid $crag-dark;
 }
 .blog .site-header, .page-id-1190 .site-header {
-	background-color: $blue;
-	border-bottom: 1px solid $blue-dark;
+	background-color: $blog;
+	border-bottom: 1px solid $blog-dark;
 }
 	.term-post-format-image .site-header, .single-format-image .site-header {
-		background-color: $pink;
-		border-bottom: 1px solid $pink-dark;
+		background-color: $images;
+		border-bottom: 1px solid $images-dark;
 	}
 	.term-post-format-video .site-header, .single-format-video .site-header {
-		background-color: $red;
-		border-bottom: 1px solid $red-dark;
+		background-color: $video;
+		border-bottom: 1px solid $video-dark;
 	}
 .page-id-871 .site-header, .useful .site-header { // Useful-Page
-	background-color: $purple;
-	border-bottom: 1px solid $purple-dark;
+	background-color: $info;
+	border-bottom: 1px solid $info-dark;
 }
 
 .home .site-header, .author .site-header {
@@ -43,63 +43,63 @@
 .nav-menu li.menu-item-739 a:hover,
 .nav-menu li.menu-item-739:focus > a,
 .nav-menu li.menu-item-739 a:focus {
-	background-color: $orange-dark;
+	background-color: $crag-dark;
 }
 .nav-menu .menu-item-739 .sub-menu,
 .nav-menu .menu-item-739 .children {
-	background-color: $orange;
+	background-color: $crag;
 }
 // Problems
 .nav-menu li.menu-item-768:hover > a,
 .nav-menu li.menu-item-768 a:hover,
 .nav-menu li.menu-item-768:focus > a,
 .nav-menu li.menu-item-768 a:focus {
-	background-color: $green-dark;
+	background-color: $routes-dark;
 }
 .nav-menu .menu-item-768 .sub-menu,
 .nav-menu .menu-item-768 .children {
-	background-color: $green;
+	background-color: $routes;
 }
 // Blog
 .nav-menu li.menu-item-752:hover > a,
 .nav-menu li.menu-item-752 a:hover,
 .nav-menu li.menu-item-752:focus > a,
 .nav-menu li.menu-item-752 a:focus {
-	background-color: $blue-dark;
+	background-color: $blog-dark;
 }
 .nav-menu .menu-item-752 .sub-menu,
 .nav-menu .menu-item-752 .children {
-	background-color: $blue;
+	background-color: $blog;
 }
 	.nav-menu .menu-item-752 .sub-menu,
 	.nav-menu .menu-item-752 .children {
-		background-color: $blue;
+		background-color: $blog;
 	}
 	// Images
 	.nav-menu li.menu-item-784 > a,
 	.nav-menu li.menu-item-784 a,
 	.nav-menu li.menu-item-784 > a,
 	.nav-menu li.menu-item-784 a {
-		background-color: $pink;
+		background-color: $images;
 	}
 	.nav-menu li.menu-item-784:hover > a,
 	.nav-menu li.menu-item-784 a:hover,
 	.nav-menu li.menu-item-784:focus > a,
 	.nav-menu li.menu-item-784 a:focus {
-		background-color: $pink-dark;
+		background-color: $images-dark;
 	}
 	// Video
 	.nav-menu li.menu-item-783 > a,
 	.nav-menu li.menu-item-783 a,
 	.nav-menu li.menu-item-783 > a,
 	.nav-menu li.menu-item-783 a {
-		background-color: $red;
+		background-color: $video;
 	}
 	.nav-menu li.menu-item-783:hover > a,
 	.nav-menu li.menu-item-783 a:hover,
 	.nav-menu li.menu-item-783:focus > a,
 	.nav-menu li.menu-item-783 a:focus {
-		background-color: $red-dark;
+		background-color: $video-dark;
 	}
 
 // Useful
@@ -107,87 +107,87 @@
 .nav-menu li.menu-item-873 a:hover,
 .nav-menu li.menu-item-873:focus > a,
 .nav-menu li.menu-item-873 a:focus {
-	background-color: $purple-dark;
+	background-color: $info-dark;
 }
 .nav-menu .menu-item-873 .sub-menu,
 .nav-menu .menu-item-873 .children {
-	background-color: $purple;
+	background-color: $info;
 }
 
 
 /* Content entry meta */
 // Blog
 .blog .entry-meta {
-	background-color: $blue;
-	border-bottom: 1px solid $blue-dark;
+	background-color: $blog;
+	border-bottom: 1px solid $blog-dark;
 }
 .blog .comments-link a {
-	background-color: $blue;
-	&:hover { background-color: $blue-dark; }
+	background-color: $blog;
+	&:hover { background-color: $blog-dark; }
 }
 // Crag
 .category-crag {
 	.entry-meta {
-		background-color: $orange;
-		border-bottom: 1px solid $orange-dark;
+		background-color: $crag;
+		border-bottom: 1px solid $crag-dark;
 	}
 	.comments-link a {
-		background-color: $orange;
-		&:hover { background-color: $orange-dark; }
+		background-color: $crag;
+		&:hover { background-color: $crag-dark; }
 	}
 }
 // Problem 
 .category-problem {
 	.entry-meta {
-		background-color: $green;
-		border-bottom: 1px solid $green-dark;
+		background-color: $routes;
+		border-bottom: 1px solid $routes-dark;
 	}
 	.comments-link a {
-		background-color: $green;
-		&:hover { background-color: $green-dark; }
+		background-color: $routes;
+		&:hover { background-color: $routes-dark; }
 	}
 }
 // Format - Image
 .format-image {
 	a {
-		color: $pink;
+		color: $images;
 		&:hover {
-			color: $pink-dark;
+			color: $images-dark;
 		}
 	}
 	.entry-meta {
-		background-color: $pink !important;
-		border-bottom: 1px solid $pink-dark;
+		background-color: $images !important;
+		border-bottom: 1px solid $images-dark;
 		a {
 			color: #fff;
 		}
 	}
 	.comments-link a {
-		background-color: $pink;
-		&:hover { background-color: $pink-dark; color: #fff;} // changed
+		background-color: $images;
+		&:hover { background-color: $images-dark; color: #fff;} // changed
 	}
 }  
 
 // Format - Video
 .format-video {
 	.entry-meta {
-		background-color: $red !important;
-		border-bottom: 1px solid $red-dark;
+		background-color: $video !important;
+		border-bottom: 1px solid $video-dark;
 	}
 	.comments-link a {
-		background-color: $red;
-		&:hover { background-color: $red-dark; }
+		background-color: $video;
+		&:hover { background-color: $video-dark; }
 	}
 }
 // Useful
 .category-useful, .page-id-871  {
 	.entry-meta {
-		background-color: $purple;
-		border-bottom: 1px solid $purple-dark;
+		background-color: $info;
+		border-bottom: 1px solid $info-dark;
 	}
 	.comments-link a {
-		background-color: $purple;
-		&:hover { background-color: $purple-dark; }
+		background-color: $info;
+		&:hover { background-color: $info-dark; }
 	}
 }
 
@@ -195,28 +195,28 @@
 // - - - - _content_comments.scss - - - - //
 /* Custom page header color */
 .problem .comments-area {
-	background-color: $green;
-	border-bottom: 1px solid $green-dark;
+	background-color: $routes;
+	border-bottom: 1px solid $routes-dark;
 }
 .crag .comments-area {
-	background-color: $orange;
-	border-bottom: 1px solid $orange-dark;
+	background-color: $crag;
+	border-bottom: 1px solid $crag-dark;
 }
 .blog .comments-area {
-	background-color: $blue;
-	border-bottom: 1px solid $blue-dark;
+	background-color: $blog;
+	border-bottom: 1px solid $blog-dark;
 }
 	.term-post-format-image .comments-area, .single-format-image .comments-area {
-		background-color: $pink;
-		border-bottom: 1px solid $pink-dark;
+		background-color: $images;
+		border-bottom: 1px solid $images-dark;
 	}
 	.term-post-format-video .comments-area, .single-format-video .comments-area {
-		background-color: $red;
-		border-bottom: 1px solid $red-dark;
+		background-color: $video;
+		border-bottom: 1px solid $video-dark;
 	}
 .page-id-871 .comments-area, .useful .comments-area { // Useful-Page
-	background-color: $purple;
-	border-bottom: 1px solid $purple-dark;
+	background-color: $info;
+	border-bottom: 1px solid $info-dark;
 }
 .comments-area, .home .comments-area {
 	background-color: $default;
@@ -224,38 +224,38 @@
 }
 
 /* Post/paging navigation */
-body.crag .paging-navigation a { background-color: $orange; }
-body.crag .paging-navigation a:hover { background-color: $orange-dark; }
-body.problem .paging-navigation a { background-color: $green; }
-body.problem .paging-navigation a:hover { background-color: $green-dark; }
-body.blog .paging-navigation a { background-color: $blue; }
-body.blog .paging-navigation a:hover { background-color: $blue-dark; }
-	body.page-id-1190 .paging-navigation a { background-color: $blue; }
-	body.page-id-1190 .paging-navigation a:hover { background-color: $blue-dark; }
-	body.term-post-format-image .paging-navigation a { background-color: $pink; }
-	body.term-post-format-image .paging-navigation a:hover { background-color: $pink-dark; }
-	body.term-post-format-video .paging-navigation a { background-color: $red; }
-	body.term-post-format-video .paging-navigation a:hover { background-color: $red-dark; }
-body.useful .paging-navigation a { background-color: $purple; }
-body.useful .paging-navigation a:hover { background-color: $purple-dark; }
+body.crag .paging-navigation a { background-color: $crag; }
+body.crag .paging-navigation a:hover { background-color: $crag-dark; }
+body.problem .paging-navigation a { background-color: $routes; }
+body.problem .paging-navigation a:hover { background-color: $routes-dark; }
+body.blog .paging-navigation a { background-color: $blog; }
+body.blog .paging-navigation a:hover { background-color: $blog-dark; }
+	body.page-id-1190 .paging-navigation a { background-color: $blog; }
+	body.page-id-1190 .paging-navigation a:hover { background-color: $blog-dark; }
+	body.term-post-format-image .paging-navigation a { background-color: $images; }
+	body.term-post-format-image .paging-navigation a:hover { background-color: $images-dark; }
+	body.term-post-format-video .paging-navigation a { background-color: $video; }
+	body.term-post-format-video .paging-navigation a:hover { background-color: $video-dark; }
+body.useful .paging-navigation a { background-color: $info; }
+body.useful .paging-navigation a:hover { background-color: $info-dark; }
 body.home .paging-navigation a { background-color: $default; }
 body.home .paging-navigation a:hover { background-color: $default-dark; }
 
 // numeric-navigation
-body.crag .numeric-navigation { background-color: $orange; }
-body.problem .numeric-navigation { background-color: $green-dark; }
-body.blog .numeric-navigation { background-color: $blue; }
-	body.page-id-1190 .numeric-navigation { background-color: $blue; }
-	body.term-post-format-image .numeric-navigation { background-color: $pink; }
-	body.term-post-format-video .numeric-navigation { background-color: $red; }
-body.useful .numeric-navigation { background-color: $purple; }
+body.crag .numeric-navigation { background-color: $crag; }
+body.problem .numeric-navigation { background-color: $routes-dark; }
+body.blog .numeric-navigation { background-color: $blog; }
+	body.page-id-1190 .numeric-navigation { background-color: $blog; }
+	body.term-post-format-image .numeric-navigation { background-color: $images; }
+	body.term-post-format-video .numeric-navigation { background-color: $video; }
+body.useful .numeric-navigation { background-color: $info; }
 body.home .numeric-navigation { background-color: $default; }
 
 
 /* Problem results */
 .crag .results-heading {
-	border-bottom: 3px solid $orange;	
+	border-bottom: 3px solid $crag;	
 }
 .problem .results-heading  {
-	border-bottom: 3px solid $green;
+	border-bottom: 3px solid $routes;
 }

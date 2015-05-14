@@ -38,7 +38,7 @@
 	}
 	.check {
 		font-family: 'klifurfont';
-		color: $green;
+		color: $routes;
 	}
 }
 
@@ -50,7 +50,7 @@
 	}
 	.tablesorter {
 		tbody tr td{
-			&:nth-child(3), &:nth-child(4), &:nth-child(5){ color: $green-dark; }
+			&:nth-child(3), &:nth-child(4), &:nth-child(5){ color: $routes-dark; }
 		}
 	 }
 	 .banner-map {
@@ -137,9 +137,9 @@ body:not(#foo) .problem-form {
 			color: #fff;
 			margin-right: 10px;
 			border-radius: 4px;
-			background-color: $green;
+			background-color: $routes;
 			&:hover {
-				background-color: $green-dark;
+				background-color: $routes-dark;
 			}
 			
 		}
@@ -147,21 +147,21 @@ body:not(#foo) .problem-form {
 	.user-buttons {
 		span {
 			&:nth-child(3) {
-				background-color: $red;
+				background-color: $video;
 				&:hover {
-					background-color: $red-dark;
+					background-color: $video-dark;
 				}
 			}
 			// &:nth-child(2) {
-			// 	background-color: $orange;
+			// 	background-color: $crag;
 			// 	&:hover {
-			// 		background-color: $orange-dark;
+			// 		background-color: $crag-dark;
 			// 	}
 			// }
 			&:nth-child(1) {
-				background-color: $blue;
+				background-color: $blog;
 				&:hover {
-					background-color: $blue-dark;
+					background-color: $blog-dark;
 				}
 			}
 		}
@@ -250,7 +250,7 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 		font-size: 16px;
 		line-height: 0;
 		color: #444; 
-		//color: $green;
+		//color: $routes;
 		span {
 			padding: 0 2px;
 		} 
@@ -290,13 +290,13 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 		&:after {
 			@extend %icon;
 			content: $icon-heart2;
-			color: $red-light;
+			color: $video-light;
 		}
 	}
 	a.on {
 		&:after {
 			content: $icon-heart;
-			color: $red;
+			color: $video;
 		}
 	}
 }
@@ -305,13 +305,13 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 		&:after {
 			@extend %icon;
 			content: $icon-checkmark2;
-			color: $green-light;
+			color: $routes-light;
 		}
 	}
 	a.on {
 		&:after {
 			content: $icon-checkmark;
-			color: $green-dark;
+			color: $routes-dark;
 		}
 	}
 }
@@ -320,15 +320,15 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 		&:after {
 			@extend %icon;
 			content: $icon-target;
-			color: $blue-light;
+			color: $blog-light;
 		}
 	}
 	a.on {
 		&:after {
 			@extend %icon;
 			content: $icon-target;
-			color: $blue;
-			background-color: $blue;
+			color: $blog;
+			background-color: $blog;
 			border-radius: 10px;
 		}
 	}
