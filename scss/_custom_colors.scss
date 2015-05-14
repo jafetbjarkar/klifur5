@@ -4,115 +4,104 @@
  */
 
 /* Header */
+.about .site-header {
+	background-color: $about;
+	border-bottom: 1px solid $about-dark;
+  .sub-menu {
+    background-color: $about;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $about-dark;
+    }
+  }
+}
 .problem .site-header {
 	background-color: $route;
 	border-bottom: 1px solid $route-dark;
+  .sub-menu {
+    background-color: $route;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $route-dark;
+    }
+  }
 }
 .crag .site-header {
 	background-color: $crag;
 	border-bottom: 1px solid $crag-dark;
+  .sub-menu {
+    background-color: $crag;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $crag-dark;
+    }
+  }
 }
 .blog .site-header, .page-id-1190 .site-header {
 	background-color: $blog;
 	border-bottom: 1px solid $blog-dark;
+  .sub-menu {
+    background-color: $blog;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $blog-dark;
+    }
+  }
 }
 	.term-post-format-image .site-header, .single-format-image .site-header {
 		background-color: $images;
 		border-bottom: 1px solid $images-dark;
+    .sub-menu {
+      background-color: $images;
+    }
+    .nav-menu .menu-item {
+      &:hover > a, a:hover, &:focus > a, a:focus {
+        background-color: $images-dark;
+      }
+    }
 	}
 	.term-post-format-video .site-header, .single-format-video .site-header {
 		background-color: $video;
 		border-bottom: 1px solid $video-dark;
+    .sub-menu {
+      background-color: $video;
+    }
+    .nav-menu .menu-item {
+      &:hover > a, a:hover, &:focus > a, a:focus {
+        background-color: $video-dark;
+      }
+    }
 	}
 .page-id-871 .site-header, .useful .site-header { // Useful-Page
 	background-color: $info;
 	border-bottom: 1px solid $info-dark;
+  .sub-menu {
+    background-color: $info;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $info-dark;
+    }
+  }
 }
 
 .home .site-header, .author .site-header {
 	background-color: $default;
 	border-bottom: 1px solid $default-dark;
+  .sub-menu {
+    background-color: $default;
+  }
+  .nav-menu .menu-item {
+    &:hover > a, a:hover, &:focus > a, a:focus {
+      background-color: $default-dark;
+    }
+  }
 }
 
-
-
-
-/* Header buttons */
-// Crag
-.nav-menu li.menu-item-739:hover > a,
-.nav-menu li.menu-item-739 a:hover,
-.nav-menu li.menu-item-739:focus > a,
-.nav-menu li.menu-item-739 a:focus {
-	background-color: $crag-dark;
-}
-.nav-menu .menu-item-739 .sub-menu,
-.nav-menu .menu-item-739 .children {
-	background-color: $crag;
-}
-// Problems
-.nav-menu li.menu-item-768:hover > a,
-.nav-menu li.menu-item-768 a:hover,
-.nav-menu li.menu-item-768:focus > a,
-.nav-menu li.menu-item-768 a:focus {
-	background-color: $route-dark;
-}
-.nav-menu .menu-item-768 .sub-menu,
-.nav-menu .menu-item-768 .children {
-	background-color: $route;
-}
-// Blog
-.nav-menu li.menu-item-752:hover > a,
-.nav-menu li.menu-item-752 a:hover,
-.nav-menu li.menu-item-752:focus > a,
-.nav-menu li.menu-item-752 a:focus {
-	background-color: $blog-dark;
-}
-.nav-menu .menu-item-752 .sub-menu,
-.nav-menu .menu-item-752 .children {
-	background-color: $blog;
-}
-	.nav-menu .menu-item-752 .sub-menu,
-	.nav-menu .menu-item-752 .children {
-		background-color: $blog;
-	}
-	// Images
-	.nav-menu li.menu-item-784 > a,
-	.nav-menu li.menu-item-784 a,
-	.nav-menu li.menu-item-784 > a,
-	.nav-menu li.menu-item-784 a {
-		background-color: $images;
-	}
-	.nav-menu li.menu-item-784:hover > a,
-	.nav-menu li.menu-item-784 a:hover,
-	.nav-menu li.menu-item-784:focus > a,
-	.nav-menu li.menu-item-784 a:focus {
-		background-color: $images-dark;
-	}
-	// Video
-	.nav-menu li.menu-item-783 > a,
-	.nav-menu li.menu-item-783 a,
-	.nav-menu li.menu-item-783 > a,
-	.nav-menu li.menu-item-783 a {
-		background-color: $video;
-	}
-	.nav-menu li.menu-item-783:hover > a,
-	.nav-menu li.menu-item-783 a:hover,
-	.nav-menu li.menu-item-783:focus > a,
-	.nav-menu li.menu-item-783 a:focus {
-		background-color: $video-dark;
-	}
-
-// Useful
-.nav-menu li.menu-item-873:hover > a,
-.nav-menu li.menu-item-873 a:hover,
-.nav-menu li.menu-item-873:focus > a,
-.nav-menu li.menu-item-873 a:focus {
-	background-color: $info-dark;
-}
-.nav-menu .menu-item-873 .sub-menu,
-.nav-menu .menu-item-873 .children {
-	background-color: $info;
-}
 
 
 /* Content entry meta */
@@ -190,6 +179,17 @@
 		&:hover { background-color: $info-dark; }
 	}
 }
+// About
+.category-about {
+  .entry-meta {
+    background-color: $about;
+    border-bottom: 1px solid $about-dark;
+  }
+  .comments-link a {
+    background-color: $about;
+    &:hover { background-color: $about-dark; }
+  }
+}
 
 
 // - - - - _content_comments.scss - - - - //
@@ -218,10 +218,15 @@
 	background-color: $info;
 	border-bottom: 1px solid $info-dark;
 }
+.about .comments-area {
+  background-color: $about;
+  border-bottom: 1px solid $about-dark;
+}
 .comments-area, .home .comments-area {
 	background-color: $default;
 	border-bottom: 1px solid $default-dark;
 }
+
 
 /* Post/paging navigation */
 body.crag .paging-navigation a { background-color: $crag; }
