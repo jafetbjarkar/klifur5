@@ -8,7 +8,6 @@
 <!-- inc/problem-form.php -->
 
 <?php
-
 //if($url_crag==NULL || $url_crag==false ) $url_crag = "";
 
 /* QUERY CRAGS FOR CRAG DR0P DOWN */
@@ -21,6 +20,8 @@ $args = array(
 	$wp_query = null;
 	$wp_query = new WP_Query($args);
 ?>
+
+
 
 <!-- Generate the selection form -->
 <div class="problem-form">
@@ -37,11 +38,15 @@ $args = array(
 		</select>
 		<?php wp_reset_query(); // End querying the crags  ?>
 		
+		<?php // Could not find a way to display ACF field select choices outside loop ?>
+		<?php include(locate_template('custom/type-of-climbing.php')); ?>
 		<select name="type" id="type">
 			<option value="">Type</option>
-			<option value="boulder" <?php if( $url_type == 'boulder' ) echo 'selected' ?>>Boulder</option>
-			<option value="sport" <?php if( $url_type == 'sport' ) echo 'selected' ?>>Sport</option>
-			<option value="trad" <?php if( $url_type == 'trad' ) echo 'selected' ?>>Trad</option>
+			<?php foreach($type_of_climbing as $key => $value) : ?>
+				<option value="<?php echo $key ?>" <?php if( $url_type == $key ) echo 'selected' ?>>
+					<?php echo $value; ?>
+				</option>
+			<?php endforeach; ?>
 		</select>
 		
 		<div class="sexy-buttons">
