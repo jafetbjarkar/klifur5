@@ -12,12 +12,30 @@
 
 <!-- single-crag.php -->
 
+<?php
+// Get climbing type labels and add to $type
+$fields = get_field('type_of_climbing');
+$field_labels = get_field_object('type_of_climbing')[choices];
+$types = [];
+$types = "";
+foreach($fields as $key) {
+	if(array_key_exists($key, $field_labels)) {
+		$types[$key] = $field_labels[$key];
+	}
+}
+foreach($types as $value){
+	$type = $type . $value . ', ';
+}
+$type = rtrim($type, ', ');
+?>
+
+
 <?php // BANNER ?>
 <?php $image = get_field('banner_image'); ?>
 <div class="banner-image">
 	<?php if( !empty($image) ): ?>
 		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		<span><?php the_title(); ?>: <?php the_field('type_of_climbing'); ?></span>
+		<span><?php the_title(); ?>: <?php echo $type; ?></span>
 	<?php endif; ?>
 </div>
 
