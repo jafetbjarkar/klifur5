@@ -17,7 +17,7 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 		
 		<div class="banner-map">
-			<iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=205265335858135699416.00048240a25d103bca6b8&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=65.007224,-19.248047&amp;spn=3.715753,15.358887&amp;z=6&amp;output=embed"></iframe>
+			<?php echo $map_embed; ?>	
 		</div>
 		
 		<?php // Get all problems for problem count ?>

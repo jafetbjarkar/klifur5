@@ -13,7 +13,7 @@
 $wp_query = null;
 $wp_query = new WP_Query($args); ?>
 
-<h2 class="results-heading"><?php echo $wp_query->found_posts; ?> Problems</h2>
+<h2 class="results-heading"><?php echo $wp_query->found_posts; ?> leiðir</h2>
 
 <?php if( $wp_query->have_posts() ) :  ?>
 
@@ -25,12 +25,12 @@ $wp_query = new WP_Query($args); ?>
  	<table id="myTable" class="tablesorter problem-table category-problem-table" data-user-id="<?php echo get_current_user_id(); ?>">
 	 	<thead>
 	  		<tr>
-	  			<th>Problem</th>
-				<th>Grade</th>
-				<th>Crag</th>
-				<th>Sector</th>
-				<th>Stone</th>
-				<th>Date</th>
+	  			<th>Leið</th>
+				<th>Gráða</th>
+				<th>Staður</th>
+				<th>Svæði</th>
+				<th>Steinn</th>
+				<th>Dagsetning</th>
 	  		</tr>
 	  	</thead>
 	  	<tbody>
