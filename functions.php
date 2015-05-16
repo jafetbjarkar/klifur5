@@ -20,6 +20,15 @@
  */
 
 
+
+// - SET ACTIVE SITE
+global $site;
+//$site = 'klifur';
+$site = 'isalp';
+
+
+
+
 /**
  * Enable AJAX - http://premium.wpmudev.org/blog/how-to-use-ajax-with-php-on-your-wp-site-without-a-plugin/
  *

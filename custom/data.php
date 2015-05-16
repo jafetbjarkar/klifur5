@@ -1,4 +1,5 @@
-<?php include(locate_template('custom/_base.php'));
+<?php
+
 
 // - TYPE OF CLIMBING
 // In Problems: Used to populate climbing type DD
@@ -15,6 +16,14 @@ if($site == 'klifur') {
 } elseif($site == 'isalp') {
   $map_embed = '';
 }
+
+
+// - LOGIN LOGO
+
+
+
+
+
 
 
 ?>

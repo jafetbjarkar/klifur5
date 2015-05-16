@@ -289,3 +289,22 @@ function query_user_lists($where) {
 //add_filter('posts_where','query_user_lists');
 
 
+// - LOGIN LOGO
+function my_login_logo() {
+	global $site;
+
+	if($site == 'klifur') {
+	  $login_logo = '/images/klifur-login-logo.svg';
+	} elseif($site == 'isalp') {
+	  $login_logo = '/images/isalp-login-logo.svg';
+	} ?>
+  <style type="text/css">
+      .login h1 a {
+          background-image: url(<?php echo get_stylesheet_directory_uri() . $login_logo; ?> );
+          background-size: 300px auto;
+          width: 300px;
+      }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
