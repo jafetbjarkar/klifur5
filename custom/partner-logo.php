@@ -1,3 +1,5 @@
+<?php global $site; ?>
+
 <?php if($site=='klifur') : ?>
 <div class="partner-logo">
   <p>Í samstarfi við</p>

@@ -296,7 +296,7 @@ function my_login_logo() {
 	if($site == 'klifur') {
 	  $login_logo = '/images/klifur-login-logo.svg';
 	} elseif($site == 'isalp') {
-	  $login_logo = '/images/isalp-login-logo.svg';
+	  $login_logo = '/images/klifur-login-logo.svg';
 	} ?>
   <style type="text/css">
       .login h1 a {

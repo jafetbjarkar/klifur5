@@ -13,6 +13,8 @@ get_header(); ?>
 
 <!-- category-crag.php -->
 
+<?php include(locate_template('custom/data.php')); ?>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 		

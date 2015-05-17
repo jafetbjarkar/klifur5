@@ -15,6 +15,7 @@
 			</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<?php get_sidebar( 'main' ); ?>
+			
 			<?php include('custom/partner-logo.php'); ?>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
