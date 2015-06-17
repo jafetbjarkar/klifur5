@@ -73,7 +73,31 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // $pro:             #f1be1c;
 
 
-// - COLORS - ISALP.IS
+// // - COLORS - ISALP.IS
+// // default: #333
+// // blue: #0186cc
+// // blue-light: #4fbeef
+// // pink: #e9327b
+// // green: #6dc735
+// // yellow: #f1be1c
+
+// $default:         #333;
+// $blog:            #6dc735;
+// $video:           #f9c72e;
+// $images:          #ff744f;
+// $crag:            #0086cc;
+// $route:           #4fbeef;
+// $info:            #6dc733;
+// $about:           #e9327b;
+
+// $link:            $route;
+
+// $fav:             #e9327b;
+// $fin:             #6dc735;
+// $pro:             #f1be1c;
+
+
+// - COLORS - ISALP.IS 2
 // default: #333
 // blue: #0186cc
 // blue-light: #4fbeef
@@ -81,20 +105,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // green: #6dc735
 // yellow: #f1be1c
 
-$default:         #333;
-$blog:            #6dc735;
-$video:           #f9c72e;
-$images:          #ff744f;
-$crag:            #0086cc;
-$route:           #4fbeef;
-$info:            #6dc733;
-$about:           #e9327b;
+$default:         #000;
+$blog:            #363D98;
+$video:           #363D98;
+$images:          #363D98;
+$crag:            #363D98;
+$route:           #363D98;
+$info:            #000;
+$about:           #363D98;
 
 $link:            $route;
 
-$fav:             #e9327b;
-$fin:             #6dc735;
-$pro:             #f1be1c;
+$fav:             #363D98;
+$fin:             #363D98;
+$pro:             #363D98;
+ 
 
 @import 'generate_colors';
 
