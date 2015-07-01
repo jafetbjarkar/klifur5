@@ -51,7 +51,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 // - FONTS
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(fonts/Proxima_Nova_Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(fonts/Proxima_Nova_Light.otf);
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(fonts/Proxima_Nova_Light_It.otf);
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(fonts/Proxima_Nova_Reg.otf);
+    font-weight: regular;
+}
+
 
 // - COLORS
 
