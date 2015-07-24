@@ -59,7 +59,6 @@
 				<td>
 					<?php the_field('stone'); ?>
 					<?php if( is_single() ) $stone = get_field('stone'); // used in single-problem.php ?>
-					<?php// if( !$stone ) $stone = NULL; ?>
 				</td>
 			</tr>
 			<tr>

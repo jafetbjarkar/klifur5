@@ -39,7 +39,7 @@ $args = array(
 		<?php wp_reset_query(); // End querying the crags  ?>
 		
 		<?php // Could not find a way to display ACF field select choices outside loop ?>
-		<?php include(locate_template('custom/data.php')); ?>
+		<?php include(locate_template('config/data.php')); ?>
 		<select name="type" id="type">
 			<option value="">Type</option>
 			<?php foreach($type_of_climbing as $key => $value) : ?>

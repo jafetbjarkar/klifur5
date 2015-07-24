@@ -21,10 +21,6 @@
 
 
 
-// - SET ACTIVE SITE
-//$site = 'klifur';
-$site = 'isalp';
-
 
 
 

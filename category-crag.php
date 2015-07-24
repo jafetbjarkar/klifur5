@@ -13,7 +13,7 @@ get_header(); ?>
 
 <!-- category-crag.php -->
 
-<?php include(locate_template('custom/data.php')); ?>
+<?php include(locate_template('config/data.php')); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -61,13 +61,13 @@ get_header(); ?>
 				 	<table id="myTable" class="tablesorter">
 				 	<thead>
 				  		<tr>
-				  			<th>Crag</th>
-							<th>Problems</th>
-							<th>Boulder</th>
-							<th>Sport</th>
-							<th>Trad</th>
-							<th>Comments</th>
-							<th>Date</th>
+				  			<th>Klifursvæði</th>
+								<th>Leiðir</th>
+								<th><?php echo $climbing_types[0]; ?></th>
+								<th><?php echo $climbing_types[1]; ?></th>
+								<th><?php echo $climbing_types[2]; ?></th>
+								<th>Athugasemdir</th>
+								<th>Dagsetning</th>
 				  		</tr>
 				  	</thead>
 				  	<tbody>
@@ -87,9 +87,9 @@ get_header(); ?>
 										echo $count;
 									?>
 								</td>
-								<td class="check"> <?php if ( in_array('Boulder', $type) ) echo 'C'; ?> </td>	
-								<td class="check"> <?php if ( in_array('Sport climbing', $type) ) echo 'C'; ?> </td>	
-								<td class="check"> <?php if ( in_array('Traditional climbing', $type) ) echo 'C'; ?> </td>	
+								<td class="check"> <?php if ( in_array($climbing_types[0], $type) ) echo 'C'; ?> </td>	
+								<td class="check"> <?php if ( in_array($climbing_types[1], $type) ) echo 'C'; ?> </td>	
+								<td class="check"> <?php if ( in_array($climbing_types[2], $type) ) echo 'C'; ?> </td>	
 								
 								<td><?php comments_number('0','1','%'); ?></td>
 								<td><?php echo get_the_date(); ?></td>

@@ -16,13 +16,6 @@
 }
 
 @media (max-width: 1440px) { //klifur.is
-	//#page { padding: 0 20px; margin-left: -20px; }
-	// .hentry {
-	// 	padding: 30px 0 30px 20px;	
-	// 	&:nth-child(even) {
-	// 		padding: 30px 20px 30px 0; 
-	// 	}
-	// }
 
 	.navbar { 
 		//padding-right: 20px;
@@ -33,10 +26,6 @@
 	.site-header .search-form {
 		padding-right: 20px;
 	}
-	/* Crag */ 
-	// .single article.category-crag {
-	// 	padding: 0 20px;
-	// }
 
 	.single .banner-image {
 		width: 100vw;
@@ -45,64 +34,12 @@
 }
 
 
-// @media (max-width: 1069px) {
-// 	.sidebar img.alignleft,
-// 	.sidebar .wp-caption.alignleft {
-// 		margin-left: 0;
-// 	}
-
-// 	.sidebar img.alignright,
-// 	.sidebar .wp-caption.alignright {
-// 		margin-right: 0;
-// 	}
-
-// 	.error404 .page-header {
-// 		margin-left: auto;
-// 		max-width: 604px;
-// 		width: 100%;
-// 	}
-
-// 	.archive-header,
-// 	.search .page-header,
-// 	.archive .page-header,
-// 	.blog .page-header,
-// 	.error404 .page-content,
-// 	.search .page-content,
-// 	.archive .page-content,
-// 	.attachment .entry-header,
-// 	.attachment .entry-content,
-// 	.post-navigation .nav-links,
-// 	.sidebar .site-info,
-// 	.site-footer .widget-area {
-// 		padding-left: 20px;
-// 		padding-right: 20px;
-// 	}
-
-// 	.error404 .page-title {
-// 		font-size: 24px;
-// 		padding: 180px;
-// 	}
-
-// 	.error404 .page-title:before {
-// 		font-size: 554px;
-// 	}
-
-// 	.attachment .image-navigation {
-// 		max-width: 724px;
-// 	}
-
-// 	.image-navigation .nav-previous,
-// 	.image-navigation .nav-next {
-// 		position: static;
-// 	}
-
-// 	.site-main .widget-area {
-// 		margin-right: 60px;
-// 	}
-// }
 
 /* ONE COLUMN LAYOUT */
 @media (max-width: 999px) {
+	html {
+		font-size: 110%;
+	}
 	/* Turn off two column layout for posts */
 	.home, .archive, .crag, .problem, .page-id-1190 /*just blog*/, .search-results {
 		.hentry { // klifur.is
@@ -188,19 +125,12 @@
 		width: -webkit-calc(33.33% - 10px);
 	}
 
-	// add space to click on touch screens
-	// .tablesorter {
-	// 	thead {
-	// 		tr th {
-	// 			padding-bottom: 10px;
-	// 		}
-	//  	}
-	// }
-
-
 }
 
 @media (max-width: 782px) {
+	html {
+		font-size: 115%;
+	}
 	/* Problem */
 	div.sexy-buttons {
 		width: 200px;
@@ -303,6 +233,10 @@
 
 
 @media (max-width: 640px) {
+	html {
+		font-size: 125%;
+	}
+
 	#content .format-status .entry-content,
 	#content .format-status .entry-met {
 		//padding-left: 35px;

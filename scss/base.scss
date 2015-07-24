@@ -143,22 +143,13 @@ $fav:             #363D98;
 $fin:             #363D98;
 $pro:             #363D98;
 
-html { font-size: 14px !important; }
-h1 { font-size: 22px; }
-h2 { font-size: 20px; }
-h3 { font-size: 18px; }
-h4 { font-size: 16px; }
-h5 { font-size: 16px; }
-h6 { font-size: 16px; }
 
 
 
  
-
+// - IMPORTS
 @import 'generate_colors';
 
-
-// - IMPORTS
 @import 'icon_font';
 
 @import 'reset';

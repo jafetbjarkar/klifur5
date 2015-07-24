@@ -9,7 +9,7 @@
  * @since Twenty Thirteen 1.0
  */
 
-include(locate_template('custom/data.php'));
+include(locate_template('config/data.php'));
 
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -23,7 +23,7 @@ include(locate_template('custom/data.php'));
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=642px maximum-scale=1">
+	<meta name="viewport" content="width=642 maximum-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
