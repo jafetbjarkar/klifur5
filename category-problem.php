@@ -88,9 +88,11 @@ get_header(); ?>
 			}
 
 
-			if( !$wp_query->have_posts() ) : ?>
-			 	 <p> Engin leið fannst. <a href="http://klifur.is/wp-admin/post-new.php">Veist þú um eina?</a></p>
-			<?php endif; ?>
+			if( !$wp_query->have_posts() ) {
+			 	 echo $add_route_link;
+			}
+
+			?>
 			
 			<!-- <pre>
 				<?php //var_dump($wp_query); ?>

@@ -85,27 +85,31 @@ $type = rtrim($type, ', ');
 	<?php // PROBLEMS TABLE ?>
 	<div class="related-problems">
 		
-		<?php $crag = get_the_id(); ?>
+		<?php 
+		
+			$crag = get_the_id();
 
-		<?php $args = array(
-			//'post_type' => 'post',
-			//'post_status' => 'publish',
-			'posts_per_page' => true,
-			//'caller_get_posts'=> 1,
-			'category_name' => 'problem',
-			// Get meta values
-			'meta_key' => 'crag',
-			'meta_value' => $crag
-		); ?>
+			$args = array(
+				//'post_type' => 'post',
+				//'post_status' => 'publish',
+				'posts_per_page' => true,
+				//'caller_get_posts'=> 1,
+				'category_name' => 'problem',
+				// Get meta values
+				'meta_key' => 'crag',
+				'meta_value' => $crag
+			);
 
-		<?php include(locate_template('inc/problem-table.php'));
+			include(locate_template('inc/problem-table.php'));	
+			include(locate_template('config/data.php'));	
+			
+			if( !$wp_query->have_posts() ) {
+			 	 echo $add_route_link;
+			}
 
-		if( !$wp_query->have_posts() ) : ?>
-		 	<p> Engin leið fannst. <a href="http://klifur.is/wp-admin/post-new.php">Veist þú um eina?"</a></p>
-		<?php endif; ?>
-
-		<?php wp_reset_query(); ?>
-
+			wp_reset_query(); 
+		?>
+		
 	</div> <!-- .relatied-problems -->
 
 </article>
