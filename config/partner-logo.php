@@ -1,4 +1,4 @@
-<?php global $site; ?>
+<?php include('data.php'); ?>
 
 <?php if($site=='klifur') : ?>
 <div class="partner-logo">

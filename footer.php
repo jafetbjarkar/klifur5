@@ -9,13 +9,17 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
+<?php 
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
 
+ ?>
 			<!-- footer.php -->
 
-			</div><!-- #main -->
+		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<?php get_sidebar( 'main' ); ?>
-			
 			<?php include('config/partner-logo.php'); ?>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->

@@ -26,7 +26,7 @@
 			"You are my favourite <3",
 			"Its like... this problem choose me.",
 			"Fuck yeah I love this problem!",
-			"You look good today!",
+			"You look good today!"
 		];
 		var fin_messages = [
 			"Successfully added to your list.",
@@ -37,7 +37,7 @@
 			"The sun is there, the rock is there, you just have to climb.",
 			"WOHOO!",
 			"So rad!",
-			"Great!, I will add this problem to you list.",
+			"Great!, I will add this problem to you list."
 		];
 		var pro_messages = [
 			"Successfully added to your list.",
@@ -47,8 +47,7 @@
 			"Oh dear!",
 			"I feel so excited!",
 			"You are so awesome.",
-			"Like your hair today.",
-
+			"Like your hair today."
 		];
 		
 		if( list_number === "1" ) {
