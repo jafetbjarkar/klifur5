@@ -19,16 +19,20 @@ add_filter( 'body_class', 'category_id_class' );
  */
 show_admin_bar(true);
 
+
 /**
  * Add log in and register buttons to admin panel when user is not logged in
  */
+
+$args = [];
+
 function admin_bar_add_login( $wp_admin_bar ){
 	if( !is_user_logged_in() ) {
 		$loginURL = wp_login_url();
 		$args = array (
-			id => 'log-in-button',
-			title => 'Log in',
-			href => $loginURL,
+			"id" => "log-in-button",
+			"title" => "Log in",
+			"href" => $loginURL,
 		);
 	  	$wp_admin_bar -> add_menu( $args );
 	 }
