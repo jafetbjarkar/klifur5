@@ -9,8 +9,6 @@
  * @since Twenty Thirteen 1.0
  */
 
-include(locate_template('config/data.php'));
-
 ?><!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -21,8 +19,6 @@ include(locate_template('config/data.php'));
 <!--[if !(IE 7) & !(IE 8)]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-
-<?php require('config/partner-logo.php') ?>
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -39,6 +35,8 @@ include(locate_template('config/data.php'));
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php include(locate_template('config/data.php')); ?>
 
 <!-- header.php -->
 
