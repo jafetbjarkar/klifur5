@@ -39,21 +39,23 @@ get_header(); ?>
 
 
 				<?php // Add widgets into posts ?>
-				<?php if( $counter == 1 || $counter == 3 || $counter == 7 ) : ?>
+				<?php if( $counter == 1 || $counter == 2 || $counter == 4 || $counter == 8 ) : ?>
 					<?php 
 						switch ($counter) {
 							case 1:
-								$place = 1;
+								$sidebar_id = 'widget-forum';
 								break;
-							case 3:
-								$place = 2;
+							case 2:
+								$sidebar_id = 'widget-ad1';
 								break;
-							case 7:
-								$place = 3;
+							case 4:
+								$sidebar_id = 'widget-ad2';
+								break;
+							case 8:
+								$sidebar_id = 'widget-ad3';
 								break;
 						}
 					?>
-					<?php $sidebar_id = 'ad'.$place; ?>
 					<?php if ( is_active_sidebar( $sidebar_id  ) ) : ?>
 						<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry" role="complementary">
 							<?php dynamic_sidebar( $sidebar_id ); ?>

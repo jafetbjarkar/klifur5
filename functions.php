@@ -246,10 +246,19 @@ function twentythirteen_widgets_init() {
 	// 	'before_title'  => '<h3 class="widget-title">',
 	// 	'after_title'   => '</h3>',
 	// ) );
-	
+	register_sidebar( array(
+		'name'          => __( 'Forum Widget Area', 'klifur.is' ),
+		'id'            => 'widget-forum',
+		'class'			=> 'hentry',
+		'description'   => __( 'Appears after FIRST post on index.', 'klifur.is' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 	register_sidebar( array(
 		'name'          => __( 'Ad1 Widget Area', 'klifur.is' ),
-		'id'            => 'ad1',
+		'id'            => 'widget-ad1',
 		'class'			=> 'hentry',
 		'description'   => __( 'Appears after FIRST post on index.', 'klifur.is' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -259,7 +268,7 @@ function twentythirteen_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Ad2 Widget Area', 'klifur.is' ),
-		'id'            => 'ad2',
+		'id'            => 'widget-ad2',
 		'description'   => __( 'Appears after THIRD post on index.', 'klifur.is' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -269,7 +278,7 @@ function twentythirteen_widgets_init() {
 	
 	register_sidebar( array(
 		'name'          => __( 'Ad3 Widget Area', 'klifur.is' ),
-		'id'            => 'ad3',
+		'id'            => 'widget-ad3',
 		'description'   => __( 'Appears after SIXTH post on index.', 'klifur.is' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
