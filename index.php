@@ -38,9 +38,8 @@ get_header(); ?>
 				<?php endif; ?>
 
 
-				<?php // Add ad widgets ?>
+				<?php // Add widgets into posts ?>
 				<?php if( $counter == 1 || $counter == 3 || $counter == 7 ) : ?>
-					
 					<?php 
 						switch ($counter) {
 							case 1:
@@ -54,16 +53,14 @@ get_header(); ?>
 								break;
 						}
 					?>
-
-					<?php $sidebar_id = 'sidebar-ad'.$place; ?>
-
+					<?php $sidebar_id = 'ad'.$place; ?>
 					<?php if ( is_active_sidebar( $sidebar_id  ) ) : ?>
 						<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry" role="complementary">
 							<?php dynamic_sidebar( $sidebar_id ); ?>
 						</div><!-- #primary-sidebar -->
 					<?php endif; ?>
-					
 				<?php endif; ?>
+
 				<?php $counter++; ?>
 
 			<?php endwhile; ?>
