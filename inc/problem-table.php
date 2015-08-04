@@ -26,11 +26,11 @@ $wp_query = new WP_Query($args); ?>
 	 	<thead>
 	  		<tr>
 	  			<th>Leið</th>
-				<th>Gráða</th>
-				<th>Staður</th>
-				<th>Svæði</th>
-				<th>Steinn</th>
-				<th>Dagsetning</th>
+					<th>Gráða</th>
+					<th>Staður</th>
+					<th>Svæði</th>
+					<th>Steinn</th>
+					<th>Dagsetning</th>
 	  		</tr>
 	  	</thead>
 	  	<tbody>

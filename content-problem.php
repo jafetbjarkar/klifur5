@@ -49,23 +49,29 @@
 					<?php $crag_id = $the_crag->ID; // used in single-problem.php?> 
 				</td>
 			</tr>
-			<tr>
-				<td>Sector</td>
-				<td><?php the_field('sector'); ?></td>
-				<?php if( is_single() ) $sector = get_field('sector'); // used in single-problem.php ?>
-			</tr>
-			<tr>
-				<td>Stone</td>
-				<td>
-					<?php the_field('stone'); ?>
+			
+			<?php if( get_field('sector') ) : ?>
+				<tr>
+					<td>Sector</td>
+					<td><?php the_field('sector'); ?></td>
+					<?php if( is_single() ) $sector = get_field('sector'); // used in single-problem.php ?>
+				</tr>
+			<?php endif; ?>
+			
+			<?php if( get_field('stone') ) : ?>
+				<tr>
+					<td>Stone</td>
+					<td><?php the_field('stone'); ?></td>
 					<?php if( is_single() ) $stone = get_field('stone'); // used in single-problem.php ?>
-				</td>
-			</tr>
+				</tr>
+			<?php endif; ?>
+
 			<tr>
 				<td>Type</td>
 				<td><?php the_field('type'); ?></td>
 				<?php if( is_single() ) $type = get_field('type'); // used in single-problem.php ?>
 			</tr>
+
 			<?php if( is_single() ) : ?>
 				<tr>
 					<td>First Ascent</td>
