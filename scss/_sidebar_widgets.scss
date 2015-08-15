@@ -16,7 +16,7 @@
 }
 
 .widget .widget-title {
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 132%;
 	margin: 0 0 10px;
 }
 
@@ -104,18 +104,82 @@
 
 
 // klifur.is
-#sidebar-ad1, #sidebar-ad2, #sidebar-ad3 {
-	//width: 49.3%;
-	//padding-top: 20px;
+#widget-forum,
+#widget-ad1,
+#widget-ad2,
+#widget-ad3 {
 	padding: 0;
+
+	.widget {
+		padding: 0;
+	}
 }
-#sidebar-ad1 {
+
+#widget-forum {
+	aside {
+		max-width: 350px;
+		float: left;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		padding: 8px !important;
+		width: 48%;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+	&:after {
+		content: "";
+		clear: both;
+	}
+
+	.widget_text {
+		display: block;
+		float: none;
+		
+	}
+
+	.bbp-author-avatar {
+		display: none;
+	}
+
+	.widget_display_topics,
+	.widget_recent_comments {
+		ul {
+			color: #999;
+			font-size: 90%;
+		}
+
+		.widget-title:before {
+			
+		}
+
+		.bbp-forum-title,
+		.recentcomments a {
+			// display: block;
+			font-size: 120%;
+			line-height: 1.2;
+		}
+
+		.topic-author a {
+			color: #999;
+			font-size: 90%;
+
+		}
+	}
+
+	.widget_recent_comments {
+
+	}
+}
+
+#widget-ad1 {
+	
+}
+#widget-ad2 {
 
 }
-#sidebar-ad2 {
-
-}
-#sidebar-ad3 {
+#widget-ad3 {
 	
 }
 
