@@ -43,7 +43,7 @@
 					$(selector + ':eq(' + i + ')').css( 'margin-top', -diff + 'px' );
 				}
 			}
-	    }	
+	  }	
 	} // function compressit()
 
 
@@ -53,7 +53,7 @@
 		/* COMRESSIT */
 		// use compressit() if browser window is < 999px
 		if( $(window).width() >= 999){
-			setTimeout(compressit, 1000, '.hentry', 30); 
+			//setTimeout(compressit, 1000, '.hentry', 30); 
 			setTimeout(compressit, 1000, 'body.single .post-section', 30);
 			setTimeout(compressit, 1000, 'body.single .problem-section', 30);
 			
