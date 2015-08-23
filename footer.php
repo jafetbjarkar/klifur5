@@ -39,6 +39,8 @@ error_reporting(-1);
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/imagelightbox-min.js"></script>
 	<!-- Tooltipster -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/jquery.tooltipster.min.js"></script>
+	
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/masonry-min.js"></script>
 	<!-- Extra scripts -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/extra-min.js"></script>
 	<script>

@@ -3,62 +3,16 @@
 ( function( $ ) {
 // check if post has more than 6 images - if true: wrap them in content.gallery div
 
-	
-
-	// Function to stack floated elements without empty space (remove empty space between articles and divs)
-	function compressit(sel, marg) {
-		var selector = sel; // css selectors like 'p' or '.comments'
-		var margin = marg;
-		
-	    var noOfElements = $(selector).length;
-	    var left, top, height, above, aboveBottom, diff, back;
-		var offsetObjects = [];
-	    
-		// just do something if there are more than two elements
-	    if( noOfElements >= 2 ){
-	        // add all offset data to array
-	        $(selector).each(function( index ){
-				offsetObjects[index] = $(this).offset();
-				offsetObjects[index].height = $(this).outerHeight();
-			});
-
-			// stack the elements
-			for(var i = 2; i < noOfElements; i++) {
-				left 	= offsetObjects[i].left;
-				top 	= offsetObjects[i].top;
-				height  = offsetObjects[i].height;
-				
-				// find the element above
-				back = i - 2;
-				above = offsetObjects[back];
-				
-				// get bottom border of element above
-				aboveBottom = above.top + above.height;
-				//console.log('aboveBottom: '+ aboveBottom);
-				
-				// move current element up if needed
-				if( top > aboveBottom ) {
-					diff = top - aboveBottom;
-					diff -= margin;
-					$(selector + ':eq(' + i + ')').css( 'margin-top', -diff + 'px' );
-				}
-			}
-	  }	
-	} // function compressit()
-
-
 	/* DOCUMENT READY */
 	$(function(){ // klifur.is
 
-		/* COMRESSIT */
-		// use compressit() if browser window is < 999px
-		if( $(window).width() >= 999){
-			//setTimeout(compressit, 1000, '.hentry', 30); 
-			setTimeout(compressit, 1000, 'body.single .post-section', 30);
-			setTimeout(compressit, 1000, 'body.single .problem-section', 30);
-			
+		$('.site-content-masonry').masonry({
+	    columnWidth: '.grid-sizer',
+	    itemSelector: '.hentry',
+	    percentPosition: true,
+	    "gutter": 20
 
-		}
+	  });
 
 
 		/* IMAGE GALLERY */
@@ -120,25 +74,6 @@
 			this.submit();
 		});
 
-
-		/* REFRESH BROWSER ON WINDOW RESIZE (below 999px)
-		*
-		* Used because compressit() adds negative margin that break layout
-		* when the layout changes to one column after the browser is resized
-		*/
-		var windowWidth = $(window).width();
-
-		$(window).resize(function() {
-		    if( windowWidth > 999 ) {
-		    	if( $(window).width() <= 999 ) {
-		    		location.reload();
-		    		windowWidth = $(window).width();
-		    		return;
-		    	} 
-		    
-	    		windowWidth = $(window).width();
-	    	}
-		});
 
 
 	}); // document.ready()

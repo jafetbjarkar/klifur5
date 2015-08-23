@@ -4,7 +4,6 @@
  */
 
 .widget {
-	//background-color: rgba(247, 245, 231, 0.7);
 	font-size: 14px;
 	-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
@@ -109,7 +108,7 @@
 #widget-ad2,
 #widget-ad3 {
 	padding: 0;
-
+	max-width: 49%;
 	.widget {
 		padding: 0;
 	}
@@ -171,16 +170,6 @@
 	.widget_recent_comments {
 
 	}
-}
-
-#widget-ad1 {
-	
-}
-#widget-ad2 {
-
-}
-#widget-ad3 {
-	
 }
 
 

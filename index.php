@@ -19,61 +19,64 @@ get_header(); ?>
 	<!-- index.php -->
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-		<?php if ( have_posts() ) : ?>
-			
-			<?php $counter = 1; // used to insert ad widgets ?>
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<div id="content" class="site-content-masonry" role="main">
+			<div class="grid-sizer"></div>
+			<?php if ( have_posts() ) : ?>
 				
-				<?php // klifur.is ?>
-				<?php // Single post for 'crags' and 'problem' categories ?>
-				<?php // Get category for current post ?>
-				<?php $category = get_the_category()[0]->slug; ?>
-				<?php if( $category == 'crag' || $category == 'problem') : ?>
-					<?php get_template_part( 'content', $category ); ?>
-				<?php else : // normal posts + format ?>
-					<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php endif; ?>
+				<?php $counter = 1; // used to insert ad widgets ?>
 
-
-				<?php // Add widgets into posts ?>
-				<?php if( $counter == 1 || $counter == 2 || $counter == 4 || $counter == 8 ) : ?>
-					<?php 
-						switch ($counter) {
-							case 1:
-								$sidebar_id = 'widget-forum';
-								break;
-							case 2:
-								$sidebar_id = 'widget-ad1';
-								break;
-							case 4:
-								$sidebar_id = 'widget-ad2';
-								break;
-							case 8:
-								$sidebar_id = 'widget-ad3';
-								break;
-						}
-					?>
-					<?php if ( is_active_sidebar( $sidebar_id  ) ) : ?>
-						<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry" role="complementary">
-							<?php dynamic_sidebar( $sidebar_id ); ?>
-						</div><!-- #primary-sidebar -->
+				<?php /* The loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					
+					<?php // klifur.is ?>
+					<?php // Single post for 'crags' and 'problem' categories ?>
+					<?php // Get category for current post ?>
+					<?php $category = get_the_category()[0]->slug; ?>
+					<?php if( $category == 'crag' || $category == 'problem') : ?>
+						<?php get_template_part( 'content', $category ); ?>
+					<?php else : // normal posts + format ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
 					<?php endif; ?>
-				<?php endif; ?>
 
-				<?php $counter++; ?>
+					
+					<?php // Add widgets into posts ?>
+					<?php if( $counter == 1 || $counter == 2 || $counter == 4 || $counter == 8 ) : ?>
+						<?php 
+							switch ($counter) {
+								case 1:
+									$sidebar_id = 'widget-forum';
+									break;
+								case 2:
+									$sidebar_id = 'widget-ad1';
+									break;
+								case 4:
+									$sidebar_id = 'widget-ad2';
+									break;
+								case 8:
+									$sidebar_id = 'widget-ad3';
+									break;
+							}
+						?>
+						<?php if ( is_active_sidebar( $sidebar_id  ) ) : ?>
+							<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry" role="complementary">
+								<?php dynamic_sidebar( $sidebar_id ); ?>
+							</div><!-- #primary-sidebar -->
+						<?php endif; ?>
+					<?php endif; ?>
 
-			<?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+					<?php $counter++; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+				<?php endwhile; ?>
+
+				
+
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
 
 		</div><!-- #content -->
+		<?php twentythirteen_paging_nav(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
