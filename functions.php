@@ -38,6 +38,7 @@ wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 
  */
 $dirName = dirname(__FILE__);
 $baseName = basename(realpath($dirName));
+require_once ("$dirName/config/data.php"); // to make $site available in functions_klifur.php
 require_once ("$dirName/functions_klifur.php");
 
 
