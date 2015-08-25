@@ -6,6 +6,8 @@
   if($site == 'klifur') {
     // Change the favicon
     $favicon = get_stylesheet_directory_uri() . "/images/favicon-klifur.png?v=1";
+    // Main site logo
+    $site_logo = get_stylesheet_directory_uri() . "/images/klifur-logo.svg";
     // In Problems: Used to populate climbing type DD
     $type_of_climbing = ['boulder' => 'Boulder', 'sport'=> 'Sport', 'trad' => 'Traditional' ];
     // Crag google map
@@ -17,6 +19,7 @@
 
   } elseif($site == 'isalp') {
     $favicon = get_stylesheet_directory_uri() . "/images/favicon-isalp.png?v=2";
+    $site_logo = get_stylesheet_directory_uri() . "/images/isalp-logo.png";
     $type_of_climbing = ['ice' => 'Ísklifur', 'mix' => 'Mix-klifur'];
     $map_embed = '<iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=zGE0gm__fSLs.kd4v-EC61tc4"></iframe>';
     $climbing_types = ['ice', 'mix', 'alpa'];

@@ -50,7 +50,7 @@
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						
-						<img class="site-logo" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+						<img class="site-logo" src="<?php echo $site_logo; ?>" alt="Site logo" />
 					</a>
 					
 					
@@ -65,4 +65,12 @@
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
 
+		<!-- Index banner image -->
+		<div class="banner-image">
+			<a href="<?php the_permalink(); ?>" rel="bookmark">
+				<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+			</a>
+		</div>
+
+		
 		<div id="main" class="site-main">
