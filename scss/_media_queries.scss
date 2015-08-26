@@ -36,17 +36,14 @@
 
 
 /* ONE COLUMN LAYOUT */
-@media (max-width: 999px) {
+@media (max-width: 1060px) {
 	html {
 		font-size: 110%;
 	}
 	/* Turn off two column layout for posts */
 	.home, .archive, .crag, .problem, .page-id-1190 /*just blog*/, .search-results {
-		.hentry { // klifur.is
-			//float: inherit;
-			//display: inherit;
+		.hentry {
 			width: 100%;
-			//padding: 20px 20px !important;
 		}
 	}
 
@@ -95,8 +92,11 @@
 	#widget-ad1,
 	#widget-ad2,
 	#widget-ad3 {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 20px 15px;
+	}
+
+	#widget-forum {
+		width: 100%;
 	}
 
 	.site-main .widget-area {

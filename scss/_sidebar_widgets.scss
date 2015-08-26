@@ -108,7 +108,7 @@
 #widget-ad2,
 #widget-ad3 {
 	padding: 0;
-	max-width: 49%;
+	width: 49%;
 	.widget {
 		padding: 0;
 	}
@@ -120,10 +120,14 @@
 		margin-bottom: 10px;
 		border: 1px solid #ccc;
 		padding: 8px !important;
-		width: 48%;
+		width: 50%;
 
 		&:first-child {
-			margin-right: 20px;
+			margin-right: 14px;
+		}
+
+		&:nth-child(1) {
+			width: calc(50% - 14px);
 		}
 	}
 	&:after {
