@@ -64,13 +64,5 @@
 
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
-
-		<!-- Index banner image -->
-		<div class="banner-image">
-			<a href="<?php the_permalink(); ?>" rel="bookmark">
-				<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-			</a>
-		</div>
-
 		
 		<div id="main" class="site-main">

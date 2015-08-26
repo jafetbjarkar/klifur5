@@ -17,6 +17,13 @@
 get_header(); ?>
 	
 	<!-- index.php -->
+	
+	<!-- Index banner image -->
+	<div class="banner-image">
+		<a href="<?php the_permalink(); ?>" rel="bookmark">
+			<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		</a>
+	</div>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content-masonry" role="main">
