@@ -1,7 +1,3 @@
-//
-// - BBPRESS
-//
-
 /**
  * bbPress specific CSS
  *
@@ -12,75 +8,7 @@
 /* =bbPress Style
 -------------------------------------------------------------- */
 
-
-// - COLORS
-
-
-// - COLORS - KLIFUR.IS
-// $default:         #333;
-// $blog:            #4a9afc;
-// $routes:          #bdd62b;
-// $video:           #ff5b55;
-// $info:            #8f6dd8;
-// $crag:            #fdb100;
-// $images:          #ff6ea0;
-// $about:           #41d6ca;
-
-// $link:            $crag;
-
-// $fav:             #e9327b;
-// $fin:             #6dc735;
-// $pro:             #f1be1c;
-
-
-// // - COLORS - ISALP.IS
-// // default: #333
-// // blue: #0186cc
-// // blue-light: #4fbeef
-// // pink: #e9327b
-// // green: #6dc735
-// // yellow: #f1be1c
-
-// $default:         #333;
-// $blog:            #6dc735;
-// $video:           #f9c72e;
-// $images:          #ff744f;
-// $crag:            #0086cc;
-// $route:           #4fbeef;
-// $info:            #6dc733;
-// $about:           #e9327b;
-
-// $link:            $route;
-
-// $fav:             #e9327b;
-// $fin:             #6dc735;
-// $pro:             #f1be1c;
-
-
-// - COLORS - ISALP.IS 2
-// default: #333
-// blue: #0186cc
-// blue-light: #4fbeef
-// pink: #e9327b
-// green: #6dc735
-// yellow: #f1be1c
-
-$default:         #363D98;
-$blog:            #363D98;
-$video:           #363D98;
-$images:          #363D98;
-$crag:            #363D98;
-$route:           #363D98;
-$info:            #000;
-$about:           #363D98;
-
-$link:            $route;
-
-$fav:             #363D98;
-$fin:             #363D98;
-$pro:             #363D98;
-
-
+@import '../../scss/variables';
 
 #bbpress-forums hr {
   margin: 0 0 24px 0;
@@ -154,7 +82,7 @@ body.reply-edit .reply {
 #bbpress-forums ul.bbp-forums,
 #bbpress-forums ul.bbp-replies,
 #bbpress-forums ul.bbp-search-results {
-  
+
   overflow: hidden;
   border: 1px solid #eee;
   margin-bottom: 20px;
@@ -1391,13 +1319,13 @@ body.my-account #bbpress-forums {
 // extra styles from jafet
 #bbpress-forums {
   padding-top: 5px;
-  
+
 
   .bbp-topic-started-by {
     font-size: 90%;
     line-height: 1;
   }
-  
+
 
   .subscription-toggle,
   .bbp-breadcrumb,
@@ -1414,7 +1342,7 @@ body.my-account #bbpress-forums {
     // color: #999;
     display: none;
   }
-  
+
   .bbp-topic-form {
   margin-top: 100px;
     #new-post {
@@ -1429,4 +1357,3 @@ article.topic {
     display: none;
   }
 }
-
