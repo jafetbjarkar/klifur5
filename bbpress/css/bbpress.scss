@@ -98,7 +98,7 @@ body.reply-edit .reply {
 #bbpress-forums li.bbp-header,
 #bbpress-forums li.bbp-footer {
   background: $default;
-  padding: 8px;
+  padding: 4px 8px;
   text-align: center;
   color: #fff;
 }
@@ -1317,6 +1317,10 @@ body.my-account #bbpress-forums {
 }
 
 // extra styles from jafet
+#bbp-container {
+  margin-top: 20px;
+}
+
 #bbpress-forums {
   padding-top: 5px;
 
@@ -1335,11 +1339,6 @@ body.my-account #bbpress-forums {
   }
 
   .bbp-template-notice.info {
-    // text-align: center;
-    // background-color: transparent;
-    // border: 0;
-    // font-size: 90%;
-    // color: #999;
     display: none;
   }
 

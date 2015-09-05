@@ -2,3 +2,5 @@
 /DISABLE
 *.scssc
 style.css
+
+*.css
