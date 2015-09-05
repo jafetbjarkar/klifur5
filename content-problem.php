@@ -12,8 +12,10 @@
 
 <!-- content-problem.php -->
 
+<?php include(locate_template('config/data.php')); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
 	<?php // HEADER ?>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?> <?php the_field('grade'); ?></a></h1>
@@ -46,10 +48,10 @@
 				<td>
 					<?php $the_crag = get_field('crag'); ?>
 					<a href="<?php echo $the_crag->guid; ?>"><?php echo $the_crag->post_title; ?></a>
-					<?php $crag_id = $the_crag->ID; // used in single-problem.php?> 
+					<?php $crag_id = $the_crag->ID; // used in single-problem.php?>
 				</td>
 			</tr>
-			
+
 			<?php if( get_field('sector') ) : ?>
 				<tr>
 					<td>Sector</td>
@@ -57,7 +59,7 @@
 					<?php if( is_single() ) $sector = get_field('sector'); // used in single-problem.php ?>
 				</tr>
 			<?php endif; ?>
-			
+
 			<?php if( get_field('stone') ) : ?>
 				<tr>
 					<td>Stone</td>
@@ -72,11 +74,11 @@
 				<?php if( is_single() ) $type = get_field('type'); // used in single-problem.php ?>
 			</tr>
 
-			<?php if( is_single() ) : ?>
+			<?php if( is_single() && $site == 'klifur' ) : ?>
 				<tr>
 					<td>First Ascent</td>
 					<td>
-						<?php 
+						<?php
 							$first = get_field('first_ascent'); 
 							echo $first[display_name];
 						?>
@@ -102,7 +104,7 @@
 			<p><?php the_field('video'); ?></p>
 		</div>
 	<?php endif; ?>
-	
+
 
 	<?php //FOOTER ?>
 	<footer class="entry-meta-comments">
