@@ -451,9 +451,9 @@ span.bbp-admin-links {
   color: #ddd;
 }
 span.bbp-admin-links a {
-  color: #bbb;
+  color: #aaa;
   font-weight: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-decoration: none;
 }
 fieldset span.bbp-admin-links {
@@ -1316,7 +1316,8 @@ body.my-account #bbpress-forums {
   }
 }
 
-// extra styles from jafet
+
+// - extra styles from jafet
 #bbp-container {
   margin-top: 20px;
 }
@@ -1331,12 +1332,12 @@ body.my-account #bbpress-forums {
   }
 
 
-  .subscription-toggle,
-  .bbp-breadcrumb,
-  .avatar,
-  .bbp-footer {
-    display: none;
-  }
+  // .subscription-toggle,
+  // .bbp-breadcrumb,
+  // .avatar,
+  // .bbp-footer {
+  //   display: none;
+  // }
 
   .bbp-template-notice.info {
     display: none;
@@ -1347,6 +1348,15 @@ body.my-account #bbpress-forums {
     #new-post {
 
     }
+  }
+}
+
+.bbp-header a {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 }
 

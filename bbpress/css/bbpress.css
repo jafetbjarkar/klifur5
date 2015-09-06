@@ -397,9 +397,8 @@ span.bbp-admin-links {
   color: #ddd; }
 
 span.bbp-admin-links a {
-  color: #bbb;
+  color: #aaa;
   font-weight: normal;
-  text-transform: uppercase;
   text-decoration: none; }
 
 fieldset span.bbp-admin-links {
@@ -1163,15 +1162,16 @@ body.my-account #bbpress-forums {
   #bbpress-forums .bbp-topic-started-by {
     font-size: 90%;
     line-height: 1; }
-  #bbpress-forums .subscription-toggle,
-  #bbpress-forums .bbp-breadcrumb,
-  #bbpress-forums .avatar,
-  #bbpress-forums .bbp-footer {
-    display: none; }
   #bbpress-forums .bbp-template-notice.info {
     display: none; }
   #bbpress-forums .bbp-topic-form {
     margin-top: 100px; }
+
+.bbp-header a {
+  color: #fff; }
+  .bbp-header a:hover {
+    color: #fff;
+    text-decoration: underline; }
 
 article.forum .entry-meta,
 article.topic .entry-meta {
