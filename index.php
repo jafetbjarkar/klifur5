@@ -15,26 +15,24 @@
  */
 
 get_header(); ?>
-	
+
 	<!-- index.php -->
-	
+
 	<!-- Index banner image -->
 	<div class="banner-image">
-		<a href="<?php the_permalink(); ?>" rel="bookmark">
-			<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-		</a>
+		<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 	</div>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content-masonry" role="main">
 			<div class="grid-sizer"></div>
 			<?php if ( have_posts() ) : ?>
-				
+
 				<?php $counter = 1; // used to insert ad widgets ?>
 
 				<?php /* The loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					
+
 					<?php // klifur.is ?>
 					<?php // Single post for 'crags' and 'problem' categories ?>
 					<?php // Get category for current post ?>
@@ -45,10 +43,10 @@ get_header(); ?>
 						<?php get_template_part( 'content', get_post_format() ); ?>
 					<?php endif; ?>
 
-					
+
 					<?php // Add widgets into posts ?>
 					<?php if( $counter == 1 || $counter == 2 || $counter == 4 || $counter == 8 ) : ?>
-						<?php 
+						<?php
 							switch ($counter) {
 								case 1:
 									$sidebar_id = 'widget-forum';
@@ -76,7 +74,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				
+
 
 			<?php else : ?>
 				<?php get_template_part( 'content', 'none' ); ?>
