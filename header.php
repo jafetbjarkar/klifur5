@@ -54,10 +54,10 @@
 					</a>
 					
 					
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'klifur5' ); ?>"><?php _e( 'Skip to content', 'klifur5' ); ?></a>
 					<?php get_search_form(); ?>
 					
-					<button class="menu-toggle"><?php _e( '', 'twentythirteen' ); ?></button>
+					<button class="menu-toggle"><?php _e( '', 'klifur5' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					
 				</nav><!-- #site-navigation -->

@@ -59,7 +59,7 @@ get_header(); ?>
 							<?php // endif; ?>
 					  	<?php endwhile; ?>
 
-					  	<?php twentythirteen_paging_nav(); //virkar ekki?? ?>
+					  	<?php klifur5_paging_nav(); //virkar ekki?? ?>
 						
 
 						<?php wp_reset_query(); ?>

@@ -48,13 +48,13 @@ $type = rtrim($type, ', ');
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			
 			<div class="entry-meta">
-				<?php twentythirteen_entry_meta(); ?>
-				<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php klifur5_entry_meta(); ?>
+				<?php edit_post_link( __( 'Edit', 'klifur5' ), '<span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
 	
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'klifur5' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'klifur5' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div>
 		
 	<?php // DIRECTIONS, MAP ?>

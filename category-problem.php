@@ -102,7 +102,7 @@ get_header(); ?>
 		
 		<?php remove_filter('posts_where','query_user_lists'); ?>
 
-		<?php twentythirteen_paging_nav(); ?>
+		<?php klifur5_paging_nav(); ?>
 		<?php wp_reset_query(); ?>
 
 	</div><!-- #content -->

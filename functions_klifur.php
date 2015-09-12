@@ -96,7 +96,7 @@ add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 /*
  * Add navigation with page numbers. Overrides the default function in functions.php
  */
-function twentythirteen_paging_nav() {
+function klifur5_paging_nav() {
 
 	if( is_singular() )
 		return;
@@ -127,7 +127,7 @@ function twentythirteen_paging_nav() {
 	?>
 
 	<nav class="navigation numeric-navigation" role="navigation">
-	<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+	<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'klifur5' ); ?></h1>
 	<ul>
 
 	<?php

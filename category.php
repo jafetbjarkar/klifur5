@@ -29,7 +29,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 		</div><!-- #content -->
-		<?php twentythirteen_paging_nav(); ?>
+		<?php klifur5_paging_nav(); ?>
 
 	</div><!-- #primary -->
 

@@ -101,7 +101,7 @@ get_header(); ?>
 
 			</article>
 
-			<?php //twentythirteen_paging_nav(); ?>
+			<?php //klifur5_paging_nav(); ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>

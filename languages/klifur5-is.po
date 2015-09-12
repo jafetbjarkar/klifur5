@@ -21,8 +21,8 @@ msgstr "Þemað 2013 fyrir WordPress færir okkur aftur til baka í bloggið, b�
 msgid "Appears in the footer section of the site."
 msgstr "Birtist við síðufót."
 
-msgid "http://wordpress.org/themes/twentythirteen"
-msgstr "http://wordpress.org/themes/twentythirteen"
+msgid "http://wordpress.org/themes/klifur5"
+msgstr "http://wordpress.org/themes/klifur5"
 
 #: image.php:38
 msgid "Link to full-size image"

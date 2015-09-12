@@ -15,17 +15,17 @@ get_header(); ?>
 				<?php $category = get_the_category()[0]->slug; // Get category for current post ?>
 				<?php if( $category == 'crag' ) : ?>
 					<?php get_template_part( 'single', $category ); ?>
-					<?php //twentythirteen_post_nav(); ?>
+					<?php //klifur5_post_nav(); ?>
 					<?php comments_template(); ?>
 
 				<?php elseif( $category == 'problem' ) : ?>
 					<?php get_template_part( 'single', $category ); ?>
-					<?php //twentythirteen_post_nav(); ?>
+					<?php //klifur5_post_nav(); ?>
 					<?php comments_template(); ?>
 
 				<?php else : // normal posts + format ?>
 					<?php get_template_part( 'content', get_post_format() ); ?>
-					<?php //twentythirteen_post_nav(); ?>
+					<?php //klifur5_post_nav(); ?>
 					<?php comments_template(); ?>
 				<?php endif; ?>
 
