@@ -1176,3 +1176,9 @@ body.my-account #bbpress-forums {
 article.forum .entry-meta,
 article.topic .entry-meta {
   display: none; }
+
+.bbp-forum-content {
+  font-size: 90%; }
+
+#subscription-toggle {
+  float: right; }

@@ -1331,14 +1331,6 @@ body.my-account #bbpress-forums {
     line-height: 1;
   }
 
-
-  // .subscription-toggle,
-  // .bbp-breadcrumb,
-  // .avatar,
-  // .bbp-footer {
-  //   display: none;
-  // }
-
   .bbp-template-notice.info {
     display: none;
   }
@@ -1365,4 +1357,12 @@ article.topic {
   .entry-meta {
     display: none;
   }
+}
+
+.bbp-forum-content {
+  font-size: 90%;
+}
+
+#subscription-toggle {
+  float: right;
 }
