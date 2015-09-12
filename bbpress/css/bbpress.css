@@ -1162,7 +1162,8 @@ body.my-account #bbpress-forums {
   #bbpress-forums .bbp-topic-started-by {
     font-size: 90%;
     line-height: 1; }
-  #bbpress-forums .bbp-template-notice.info {
+  #bbpress-forums .bbp-template-notice.info,
+  #bbpress-forums .bbp-topic-started-by .bbp-author-avatar {
     display: none; }
   #bbpress-forums .bbp-topic-form {
     margin-top: 100px; }

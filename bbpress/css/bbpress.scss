@@ -1331,7 +1331,8 @@ body.my-account #bbpress-forums {
     line-height: 1;
   }
 
-  .bbp-template-notice.info {
+  .bbp-template-notice.info,
+  .bbp-topic-started-by .bbp-author-avatar {
     display: none;
   }
 
