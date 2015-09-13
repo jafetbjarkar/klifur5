@@ -41,7 +41,11 @@ $wp_query = new WP_Query($args); ?>
 					<th><?php _e( 'Grade', 'klifur5' ); ?></th>
 					<th><?php _e( 'Area', 'klifur5' ); ?></th>
 					<th><?php _e( 'Sector', 'klifur5' ); ?></th>
-					<th><?php _e( 'Stone', 'klifur5' ); ?></th>
+
+					<?php if($site == 'klifur') : ?>
+						<th><?php _e( 'Stone', 'klifur5' ); ?></th>
+					<?php endif; ?>
+
 					<th><?php _e( 'Date', 'klifur5' ); ?></th>
 	  		</tr>
 	  	</thead>
@@ -55,7 +59,11 @@ $wp_query = new WP_Query($args); ?>
 						<a href="<?php echo $the_crag->guid; ?>"><?php echo $the_crag->post_title; ?></a>
 					</td>
 					<td><?php the_field('sector'); ?></td>
-					<td><?php the_field('stone'); ?></td>
+
+					<?php if($site == 'klifur') : ?>
+						<td><?php the_field('stone'); ?></td>
+					<?php endif ?>
+
 					<td><?php echo get_the_date(); ?></td>
 
 					<!-- Meta icons -->
