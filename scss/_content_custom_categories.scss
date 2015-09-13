@@ -31,10 +31,10 @@
 		}
 	}
 	td {
-		white-space: nowrap; 
+		white-space: nowrap;
 		max-width: 120px;
 	    overflow: hidden;
-	    text-overflow: ellipsis; 
+	    text-overflow: ellipsis;
 	}
 	.check {
 		font-family: 'klifurfont';
@@ -109,9 +109,9 @@ article.category-crag span.author {
 
 .home .problem-video {
 	width: 100%;
-} 
+}
 
-/*  
+/*
     The Problem Form
     Add graphics to checkboses in category-problem
     body:not(#foo) > is a rule filter to block browsers
@@ -121,6 +121,10 @@ article.category-crag span.author {
 div.sexy-buttons {
 	width: 370px;
 	float: right;
+
+	input:hover {
+		cursor: pointer;
+	}
 }
 
 body:not(#foo) .problem-form {
@@ -128,7 +132,7 @@ body:not(#foo) .problem-form {
 		border: 0;
 		width: 180px;
 		float: right;
-		padding: 0 0 0; 
+		padding: 0 0 0;
 
 		span {
 			float: right;
@@ -195,9 +199,10 @@ body:not(#foo) .problem-form form input[type='checkbox'] + label {
 	}
 }
 // Change from unchecked to checked graphic
-body:not(#foo) .problem-form form input[type='checkbox']:checked + label {
-    color: $default;
-	//background-color: orange;
+body:not(#foo) .problem-form form input[type='checkbox']:checked {
+	& + label {
+	    color: #bbb;
+	}
 }
 
 // Metab uttons - Add the symbols
@@ -251,14 +256,14 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 		font-family: 'klifurfont';
 		font-size: 16px;
 		line-height: 0;
-		color: #444; 
+		color: #444;
 		//color: $route;
 		span {
 			padding: 0 2px;
-		} 
+		}
 		span.type {
 			font-weight: bold;
-		}		
+		}
 	}
 	.type {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -285,7 +290,7 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 			cursor: pointer !important;
 			//box-shadow
 		}
-	} 
+	}
 }
 .fav {
 	a {
@@ -348,7 +353,7 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 	font-size: 86%;
 	height: 460px;
 	overflow: hidden;
-	
+
 	img {
 		width: 100%;
 	}
@@ -389,4 +394,4 @@ body:not(#foo) .problem-form form input[name='pro'] + label {
 // 			//background-color: yellow;
 // 		}
 // 	}
-// } 
+// }

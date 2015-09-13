@@ -16,6 +16,7 @@ $pro-dark:        darken($pro, $dark);
 
 $default-dark:    darken($default, $dark);
 $default-darker:  darken($default, $darker);
+$default-megadark:  darken($default, 50%);
 $default-light:   lighten($default, $light);
 $default-lighter: lighten($default, $lighter);
 
@@ -53,5 +54,3 @@ $about-dark:      darken($about, $dark);
 $about-darker:    darken($about, $darker);
 $about-light:     lighten($about, $light);
 $about-lighter:   lighten($about, $lighter);
-
-
