@@ -1159,8 +1159,9 @@ body.my-account #bbpress-forums {
 
 #bbpress-forums {
   padding-top: 5px; }
+  #bbpress-forums .bbp-forum-content,
   #bbpress-forums .bbp-topic-started-by {
-    font-size: 90%;
+    font-size: 84% !important;
     line-height: 1; }
   #bbpress-forums .bbp-template-notice.info,
   #bbpress-forums .bbp-topic-started-by .bbp-author-avatar {
@@ -1177,9 +1178,6 @@ body.my-account #bbpress-forums {
 article.forum .entry-meta,
 article.topic .entry-meta {
   display: none; }
-
-.bbp-forum-content {
-  font-size: 90%; }
 
 #subscription-toggle {
   float: right; }

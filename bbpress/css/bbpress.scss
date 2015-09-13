@@ -1326,8 +1326,9 @@ body.my-account #bbpress-forums {
   padding-top: 5px;
 
 
+  .bbp-forum-content,
   .bbp-topic-started-by {
-    font-size: 90%;
+    font-size: 84% !important;
     line-height: 1;
   }
 
@@ -1358,10 +1359,6 @@ article.topic {
   .entry-meta {
     display: none;
   }
-}
-
-.bbp-forum-content {
-  font-size: 90%;
 }
 
 #subscription-toggle {
