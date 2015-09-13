@@ -1,0 +1,1 @@
+Tungumálaskrárnar fyrir bbPress eru í /plugins/bbPress/languages. Geymi bara hér sem backup

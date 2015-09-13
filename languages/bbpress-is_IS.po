@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bbPress 2.5.8\n"
 "Report-Msgid-Bugs-To: https://bbpress.trac.wordpress.org\n"
-"POT-Creation-Date: 2015-09-13 00:09+0000\n"
+"POT-Creation-Date: 2015-09-13 11:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-09-13 00:19+0000\n"
+"PO-Revision-Date: 2015-09-13 12:52+0000\n"
 "Language-Team: ENGLISH <jjj@bbpress.org>\n"
 "X-Generator: Poedit 1.8.4\n"
 "Last-Translator: \n"
@@ -128,7 +128,7 @@ msgstr ""
 #: includes/forums/template.php:48
 #: templates/default/bbpress/content-statistics.php:22
 msgid "Forums"
-msgstr ""
+msgstr "Umræður"
 
 #: includes/admin/admin.php:257 includes/admin/admin.php:258
 #: includes/admin/admin.php:266 includes/admin/admin.php:267
@@ -139,15 +139,15 @@ msgstr ""
 #: includes/admin/admin.php:302 includes/admin/admin.php:303
 #: includes/admin/admin.php:1010 includes/admin/admin.php:1097
 msgid "Update Forums"
-msgstr ""
+msgstr "Uppfæra spjallþráð"
 
 #: includes/admin/admin.php:510
 msgid "Settings"
-msgstr ""
+msgstr "Stillingar"
 
 #: includes/admin/admin.php:515
 msgid "About"
-msgstr ""
+msgstr "Um"
 
 #: includes/admin/admin.php:530
 msgid "Right Now in Forums"
@@ -195,11 +195,11 @@ msgstr ""
 
 #: includes/admin/admin.php:789
 msgid "Forum Subscriptions"
-msgstr ""
+msgstr "Áskrifendur"
 
 #: includes/admin/admin.php:793
 msgid "Subscribe to Forums"
-msgstr ""
+msgstr "Fara í áskrift"
 
 #: includes/admin/admin.php:794
 msgid "Now your users can subscribe to new topics in specific forums."
@@ -300,11 +300,11 @@ msgstr ""
 
 #: includes/admin/admin.php:962 includes/admin/admin.php:984
 msgid "Update Forum"
-msgstr ""
+msgstr "Uppfæra"
 
 #: includes/admin/admin.php:973 includes/admin/admin.php:1027
 msgid "All done!"
-msgstr ""
+msgstr "Allt klárt"
 
 #: includes/admin/admin.php:974 includes/admin/admin.php:1028
 msgid "Go Back"
@@ -329,7 +329,7 @@ msgstr ""
 
 #: includes/admin/admin.php:1078
 msgid "Next Forums"
-msgstr ""
+msgstr "Næsti spjallþráður"
 
 #: includes/admin/admin.php:1096
 msgid ""
@@ -734,7 +734,7 @@ msgstr ""
 #: includes/extend/buddypress/groups.php:53 includes/forums/template.php:49
 #: templates/default/bbpress/loop-forums.php:19
 msgid "Forum"
-msgstr "Spjallrás"
+msgstr "Spjallþræðir"
 
 #: includes/admin/forums.php:410 includes/admin/settings.php:222
 #: includes/admin/settings.php:243 includes/admin/topics.php:632
@@ -744,7 +744,7 @@ msgstr "Spjallrás"
 #: templates/default/bbpress/content-statistics.php:27
 #: templates/default/bbpress/loop-forums.php:20
 msgid "Topics"
-msgstr "Spjallþræðir"
+msgstr "Umræður"
 
 #: includes/admin/forums.php:411 includes/admin/settings.php:230
 #: includes/admin/settings.php:251 includes/admin/topics.php:634
@@ -758,28 +758,28 @@ msgstr "Spjallþræðir"
 #: templates/default/bbpress/loop-replies.php:70
 #: templates/default/bbpress/loop-topics.php:21
 msgid "Replies"
-msgstr ""
+msgstr "Svör"
 
 #: includes/admin/forums.php:412
 #: templates/default/bbpress/content-single-topic-lead.php:18
 #: templates/default/bbpress/content-single-topic-lead.php:90
 msgid "Creator"
-msgstr ""
+msgstr "Höfundur"
 
 #: includes/admin/forums.php:413 includes/admin/replies.php:573
 #: includes/admin/topics.php:637
 msgid "Created"
-msgstr ""
+msgstr "Búið til"
 
 #: includes/admin/forums.php:414 includes/admin/topics.php:638
 #: templates/default/bbpress/loop-forums.php:22
 #: templates/default/bbpress/loop-topics.php:22
 msgid "Freshness"
-msgstr ""
+msgstr "Nýtt"
 
 #: includes/admin/forums.php:463 includes/forums/template.php:601
 msgid "No Topics"
-msgstr ""
+msgstr "Engar umræður"
 
 #: includes/admin/forums.php:529
 msgid "Forum updated. <a href=\"%s\">View forum</a>"
@@ -844,16 +844,16 @@ msgstr ""
 #: templates/default/bbpress/loop-topics.php:19
 msgid "Topic"
 msgid_plural "Topics"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Umræða"
+msgstr[1] "Umræður"
 
 #: includes/admin/metaboxes.php:84 includes/admin/settings.php:325
 #: includes/replies/template.php:49 includes/replies/template.php:1621
 #: includes/topics/template.php:2921
 msgid "Reply"
 msgid_plural "Replies"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Svar"
+msgstr[1] "Svör"
 
 #: includes/admin/metaboxes.php:103 includes/admin/settings.php:309
 #: includes/topics/template.php:3367
@@ -869,8 +869,8 @@ msgstr ""
 #: includes/admin/metaboxes.php:135
 msgid "User"
 msgid_plural "Users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Notandi"
+msgstr[1] "Notendur"
 
 #: includes/admin/metaboxes.php:154
 msgid "Hidden Topic"
@@ -908,7 +908,7 @@ msgstr ""
 #: includes/admin/metaboxes.php:285 includes/admin/metaboxes.php:286
 #: templates/default/bbpress/form-forum.php:109
 msgid "Visibility:"
-msgstr ""
+msgstr "Sýnileiki:"
 
 #: includes/admin/metaboxes.php:299
 msgid "Parent:"
@@ -925,7 +925,7 @@ msgstr ""
 
 #: includes/admin/metaboxes.php:321
 msgid "Order:"
-msgstr ""
+msgstr "Panta:"
 
 #: includes/admin/metaboxes.php:322
 msgid "Forum Order"
@@ -933,7 +933,7 @@ msgstr ""
 
 #: includes/admin/metaboxes.php:356
 msgid "Topic Type"
-msgstr ""
+msgstr "Tegun umræðu"
 
 #: includes/admin/metaboxes.php:368
 msgid "Select whether to open or close the topic."
@@ -943,50 +943,50 @@ msgstr ""
 #: includes/extend/buddypress/groups.php:1042 includes/topics/template.php:61
 #: templates/default/bbpress/form-topic.php:114
 msgid "Forum:"
-msgstr ""
+msgstr "Umræðuþráður:"
 
 #: includes/admin/metaboxes.php:457 includes/replies/template.php:61
 msgid "Topic:"
-msgstr ""
+msgstr "Umræða"
 
 #: includes/admin/metaboxes.php:463
 msgid "Reply To:"
-msgstr ""
+msgstr "Svar við:"
 
 #: includes/admin/metaboxes.php:464
 msgid "Reply To"
-msgstr ""
+msgstr "Svar við"
 
 #: includes/admin/metaboxes.php:496
 #: templates/default/bbpress/form-topic-tag.php:35
 msgid "Name:"
-msgstr ""
+msgstr "Nafn:"
 
 #: includes/admin/metaboxes.php:497
 #: templates/default/bbpress/form-user-edit.php:14
 #: templates/default/bbpress/form-user-edit.php:19
 msgid "Name"
-msgstr ""
+msgstr "Nafn"
 
 #: includes/admin/metaboxes.php:502
 msgid "Email:"
-msgstr ""
+msgstr "Netfang:"
 
 #: includes/admin/metaboxes.php:503
 #: templates/default/bbpress/form-user-edit.php:103
 #: templates/default/bbpress/form-user-register.php:28
 msgid "Email"
-msgstr ""
+msgstr "Netfang"
 
 #: includes/admin/metaboxes.php:508
 #: templates/default/bbpress/form-anonymous.php:32
 msgid "Website:"
-msgstr ""
+msgstr "Vefsíða:"
 
 #: includes/admin/metaboxes.php:509
 #: templates/default/bbpress/form-user-edit.php:57
 msgid "Website"
-msgstr ""
+msgstr "Vefsíða:"
 
 #: includes/admin/metaboxes.php:516
 msgid "ID:"
@@ -1162,7 +1162,7 @@ msgstr ""
 #: includes/admin/replies.php:347 includes/admin/topics.php:363
 #: templates/default/bbpress/form-anonymous.php:17
 msgid "Author Information"
-msgstr ""
+msgstr "Upplýsingar um höfund"
 
 #: includes/admin/replies.php:461
 msgid "The reply was not found!"
@@ -1190,7 +1190,7 @@ msgstr ""
 
 #: includes/admin/replies.php:569
 msgid "Title"
-msgstr ""
+msgstr "Titill"
 
 #: includes/admin/replies.php:572 includes/admin/topics.php:636
 #: templates/default/bbpress/loop-replies.php:18
@@ -1198,11 +1198,11 @@ msgstr ""
 #: templates/default/bbpress/loop-search.php:18
 #: templates/default/bbpress/loop-search.php:40
 msgid "Author"
-msgstr ""
+msgstr "Höfundur"
 
 #: includes/admin/replies.php:625 includes/admin/replies.php:633
 msgid "No Topic"
-msgstr ""
+msgstr "Engar umræður"
 
 #: includes/admin/replies.php:651 includes/admin/replies.php:666
 #: includes/admin/topics.php:687
@@ -1219,24 +1219,24 @@ msgstr ""
 
 #: includes/admin/replies.php:725 includes/admin/topics.php:776
 msgid "View"
-msgstr ""
+msgstr "Skoða"
 
 #: includes/admin/replies.php:736
 msgid "Mark the reply as not spam"
-msgstr ""
+msgstr "Þetta er ekki ruslpóstur"
 
 #: includes/admin/replies.php:736 includes/admin/topics.php:807
 msgid "Not spam"
-msgstr ""
+msgstr "Ekki ruslpóstur"
 
 #: includes/admin/replies.php:738
 msgid "Mark this reply as spam"
-msgstr ""
+msgstr "Merkja þetta svar sem ruslpóst"
 
 #: includes/admin/replies.php:738 includes/admin/topics.php:809
 #: includes/replies/template.php:2105 includes/topics/template.php:2872
 msgid "Spam"
-msgstr ""
+msgstr "Ruslpóstur"
 
 #: includes/admin/replies.php:747 includes/admin/topics.php:817
 #: includes/replies/template.php:2047 includes/topics/template.php:2628
@@ -1256,12 +1256,12 @@ msgstr ""
 #: includes/admin/replies.php:749 includes/admin/topics.php:819
 #: includes/replies/template.php:2034 includes/topics/template.php:2615
 msgid "Trash"
-msgstr ""
+msgstr "Henda"
 
 #: includes/admin/replies.php:753 includes/admin/topics.php:823
 #: includes/replies/template.php:2053 includes/topics/template.php:2634
 msgid "Delete this item permanently"
-msgstr ""
+msgstr "Henda fyrir full og allt"
 
 #: includes/admin/replies.php:753 includes/admin/topics.php:823
 msgid "Delete Permanently"
@@ -1373,16 +1373,16 @@ msgstr ""
 #: includes/admin/settings.php:142 includes/extend/buddypress/loader.php:218
 #: templates/default/bbpress/user-details.php:48
 msgid "Favorites"
-msgstr ""
+msgstr "Uppáhalds"
 
 #: includes/admin/settings.php:150 includes/extend/buddypress/loader.php:230
 #: templates/default/bbpress/user-details.php:58
 msgid "Subscriptions"
-msgstr ""
+msgstr "Áskriftir"
 
 #: includes/admin/settings.php:158
 msgid "Topic tags"
-msgstr ""
+msgstr "Leitarorð"
 
 #: includes/admin/settings.php:166 includes/admin/settings.php:333
 #: includes/common/template.php:2330 includes/search/template.php:225
@@ -1430,13 +1430,13 @@ msgstr ""
 #: includes/extend/buddypress/loader.php:269
 #: templates/default/bbpress/user-details.php:35
 msgid "Topics Started"
-msgstr ""
+msgstr "Umræðum byrjað"
 
 #: includes/admin/settings.php:362 includes/extend/buddypress/loader.php:207
 #: includes/extend/buddypress/loader.php:277
 #: templates/default/bbpress/user-details.php:41
 msgid "Replies Created"
-msgstr ""
+msgstr "Svör"
 
 #: includes/admin/settings.php:370 includes/extend/buddypress/loader.php:285
 msgid "Favorite Topics"
@@ -1561,7 +1561,7 @@ msgstr ""
 
 #: includes/admin/settings.php:916
 msgid "Topics by Freshness"
-msgstr ""
+msgstr "Nýjustu umræður"
 
 #: includes/admin/settings.php:943
 msgid "Customize your user profile slugs."
@@ -1832,7 +1832,7 @@ msgstr ""
 #: templates/default/bbpress/loop-replies.php:66
 #: templates/default/bbpress/loop-topics.php:21
 msgid "Posts"
-msgstr ""
+msgstr "Svör"
 
 #: includes/admin/settings.php:1689
 msgid "Pages"
@@ -2144,7 +2144,7 @@ msgstr ""
 
 #: includes/admin/tools.php:1221
 msgid "All Topic Tags"
-msgstr ""
+msgstr "Öll leitarorð"
 
 #: includes/admin/tools.php:1222
 msgid "Related Meta Data"
@@ -2203,11 +2203,11 @@ msgstr ""
 
 #: includes/admin/tools.php:1286
 msgid "Failed"
-msgstr ""
+msgstr "Misheppnaðist"
 
 #: includes/admin/tools.php:1287
 msgid "Success!"
-msgstr ""
+msgstr "Aðgerð tókst!"
 
 #: includes/admin/tools.php:1294
 msgid "Deleting Posts&hellip; %s"
@@ -2344,7 +2344,7 @@ msgstr ""
 
 #: includes/admin/topics.php:204
 msgid "Title and Topic Editor"
-msgstr ""
+msgstr "Breyta titli og  umræðu"
 
 #: includes/admin/topics.php:206
 msgid ""
@@ -2470,7 +2470,7 @@ msgstr ""
 
 #: includes/admin/topics.php:635 templates/default/bbpress/loop-topics.php:20
 msgid "Voices"
-msgstr ""
+msgstr "Raddir"
 
 #: includes/admin/topics.php:694 includes/extend/buddypress/groups.php:295
 #: templates/default/bbpress/form-topic.php:117
@@ -2513,7 +2513,7 @@ msgstr ""
 
 #: includes/admin/topics.php:800 includes/topics/template.php:2745
 msgid "Stick"
-msgstr ""
+msgstr "Festa"
 
 #: includes/admin/topics.php:800
 msgid "Stick this topic to front"
@@ -2569,7 +2569,7 @@ msgstr ""
 #: includes/admin/users.php:87 includes/admin/users.php:218
 #: templates/default/bbpress/form-user-roles.php:20
 msgid "Forum Role"
-msgstr ""
+msgstr "Umræðuhlutverk"
 
 #: includes/admin/users.php:96 includes/admin/users.php:100
 #: includes/users/template.php:1290
@@ -2598,7 +2598,7 @@ msgstr ""
 
 #: includes/common/functions.php:114
 msgid "%s ago"
-msgstr ""
+msgstr "%s síðan"
 
 #: includes/common/functions.php:118
 msgid "year"
@@ -2606,7 +2606,7 @@ msgstr ""
 
 #: includes/common/functions.php:118
 msgid "years"
-msgstr ""
+msgstr "ár"
 
 #: includes/common/functions.php:119
 msgid "month"
@@ -2614,7 +2614,7 @@ msgstr ""
 
 #: includes/common/functions.php:119
 msgid "months"
-msgstr ""
+msgstr "mánuðir"
 
 #: includes/common/functions.php:120
 msgid "week"
@@ -2727,7 +2727,7 @@ msgstr ""
 
 #: includes/common/template.php:2208
 msgid "(Edit)"
-msgstr ""
+msgstr "(Breyta)"
 
 #: includes/common/template.php:2212 includes/common/template.php:2326
 #: includes/common/template.php:2591 includes/core/theme-compat.php:739
@@ -2741,7 +2741,7 @@ msgstr ""
 #: includes/topics/template.php:53 includes/topics/template.php:2491
 #: templates/default/bbpress/user-details.php:65
 msgid "Edit"
-msgstr ""
+msgstr "Breyta"
 
 #: includes/common/template.php:2233
 msgid "&lsaquo;"
@@ -2799,7 +2799,7 @@ msgstr ""
 
 #: includes/common/template.php:2617
 msgid "%s Favorites"
-msgstr ""
+msgstr "%s Uppáhalds"
 
 #: includes/common/template.php:2621
 msgid "%s Subscriptions"
@@ -2807,16 +2807,16 @@ msgstr ""
 
 #: includes/common/template.php:2625
 msgid "%s Profile"
-msgstr ""
+msgstr "%s Aðgangur"
 
 #: includes/common/template.php:2633
 msgid "Edit Your Profile"
-msgstr ""
+msgstr "Breyta þínum aðgangi"
 
 #: includes/common/template.php:2638
 #: templates/default/bbpress/user-details.php:65
 msgid "Edit %s's Profile"
-msgstr ""
+msgstr "Breyta aðgangi fyrir %s"
 
 #: includes/common/template.php:2646
 msgid "View: %s"
@@ -2842,33 +2842,33 @@ msgstr ""
 #: templates/default/bbpress/form-user-login.php:17
 #: templates/default/bbpress/form-user-register.php:23
 msgid "Username"
-msgstr ""
+msgstr "Notendanafn"
 
 #: includes/common/widgets.php:97
 #: templates/default/bbpress/form-user-login.php:22
 msgid "Password"
-msgstr ""
+msgstr "Lykilorð"
 
 #: includes/common/widgets.php:103
 msgid "Remember Me"
-msgstr ""
+msgstr "Muna eftir mér"
 
 #: includes/common/widgets.php:122
 #: templates/default/bbpress/form-user-register.php:36
 msgid "Register"
-msgstr ""
+msgstr "Skrá inn"
 
 #: includes/common/widgets.php:128
 #: templates/default/bbpress/form-user-lost-pass.php:14
 msgid "Lost Password"
-msgstr ""
+msgstr "Týnt lykilorð"
 
 #: includes/common/widgets.php:185 includes/common/widgets.php:337
 #: includes/common/widgets.php:465 includes/common/widgets.php:634
 #: includes/common/widgets.php:876 includes/common/widgets.php:1030
 #: includes/common/widgets.php:1234
 msgid "Title:"
-msgstr ""
+msgstr "Titill:"
 
 #: includes/common/widgets.php:190
 msgid "Register URI:"
@@ -3191,7 +3191,7 @@ msgstr ""
 #: includes/extend/buddypress/loader.php:293
 #: templates/default/bbpress/user-subscriptions.php:34
 msgid "Subscribed Topics"
-msgstr ""
+msgstr "Umræður í áskrift"
 
 #: includes/extend/buddypress/notifications.php:48
 msgid "Topic Replies"
@@ -3349,7 +3349,7 @@ msgstr ""
 #: includes/forums/template.php:840 includes/topics/template.php:1846
 #: includes/users/template.php:1058
 msgid "Subscribe"
-msgstr ""
+msgstr "Áskrift"
 
 #: includes/forums/template.php:841 includes/topics/template.php:1847
 #: includes/users/template.php:1059
@@ -3689,7 +3689,7 @@ msgstr ""
 #: includes/replies/template.php:2343
 msgid "Viewing %1$s reply thread"
 msgid_plural "Viewing %1$s reply threads"
-msgstr[0] ""
+msgstr[0] "Viewing %1$s reply thread"
 msgstr[1] ""
 
 #: includes/replies/template.php:2350
@@ -3701,36 +3701,36 @@ msgstr[1] ""
 #: includes/replies/template.php:2354
 msgid "Viewing %2$s replies (of %4$s total)"
 msgid_plural "Viewing %1$s replies - %2$s through %3$s (of %4$s total)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$s svar (af %4$s)"
+msgstr[1] "%1$s svör - %2$s til %3$s (af %4$s)"
 
 #: includes/replies/template.php:2362
 msgid "Viewing %1$s post"
 msgid_plural "Viewing %1$s posts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s umræða"
+msgstr[1] "%1$s umræður"
 
 #: includes/replies/template.php:2366
 msgid "Viewing %2$s post (of %4$s total)"
 msgid_plural "Viewing %1$s posts - %2$s through %3$s (of %4$s total)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$s umræða (af %4$s)"
+msgstr[1] "%1$s umræða - %2$s til %3$s (af %4$s)"
 
 #: includes/search/template.php:229
 msgid "Search Results for '%s'"
-msgstr ""
+msgstr "Leitarniðurstöður fyrir '%s'"
 
 #: includes/search/template.php:401
 msgid "Viewing %1$s result"
 msgid_plural "Viewing %1$s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s niðurstaða"
+msgstr[1] "%1$s niðurstöður"
 
 #: includes/search/template.php:405
 msgid "Viewing %2$s results (of %4$s total)"
 msgid_plural "Viewing %1$s results - %2$s through %3$s (of %4$s total)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2$s niðurstaða (af %4$s)"
+msgstr[1] "%1$s niðurstöður - %2$s til %3$s (af %4$s)"
 
 #: includes/topics/functions.php:150
 msgid ""
@@ -3969,7 +3969,7 @@ msgstr ""
 
 #: includes/topics/template.php:52 templates/default/bbpress/form-topic.php:43
 msgid "Create New Topic"
-msgstr ""
+msgstr "Búa til nýja umræðu"
 
 #: includes/topics/template.php:54
 msgid "Edit Topic"
@@ -4001,7 +4001,7 @@ msgstr ""
 
 #: includes/topics/template.php:1891 includes/users/template.php:894
 msgid "Favorite"
-msgstr ""
+msgstr "Uppáhalds"
 
 #: includes/topics/template.php:1892
 msgid "Unfavorite"
@@ -4025,13 +4025,13 @@ msgstr ""
 #: templates/default/bbpress/form-topic-tag.php:59
 #: templates/default/bbpress/form-topic-tag.php:73
 msgid "Merge"
-msgstr ""
+msgstr "Sameina"
 
 #: includes/topics/template.php:2977
 msgid "Viewing %1$s topic"
 msgid_plural "Viewing %1$s topics"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s umræða listuð"
+msgstr[1] "%1$s umræður listaðar"
 
 #: includes/topics/template.php:2981
 msgid "Viewing topic %2$s (of %4$s total)"
@@ -4068,19 +4068,19 @@ msgstr ""
 #: includes/topics/template.php:3366
 #: templates/default/bbpress/content-statistics.php:37
 msgid "Topic Tags"
-msgstr ""
+msgstr "Leitarorð"
 
 #: includes/topics/template.php:3368
 msgid "Search Tags"
-msgstr ""
+msgstr "Leitarorð"
 
 #: includes/topics/template.php:3369
 msgid "Popular Tags"
-msgstr ""
+msgstr "Vinsæl leitarorð"
 
 #: includes/topics/template.php:3370
 msgid "All Tags"
-msgstr ""
+msgstr "Öll leitarorð"
 
 #: includes/topics/template.php:3371
 msgid "Edit Tag"
@@ -4165,7 +4165,7 @@ msgstr ""
 
 #: includes/users/template.php:517
 msgid "Member"
-msgstr ""
+msgstr "Meðlimur"
 
 #: includes/users/template.php:557
 msgid "Admin"
@@ -4173,7 +4173,7 @@ msgstr ""
 
 #: includes/users/template.php:895
 msgid "Favorited"
-msgstr ""
+msgstr "Í uppáhaldi"
 
 #: includes/users/template.php:1163
 msgid "User updated."
@@ -4286,7 +4286,7 @@ msgstr ""
 #: templates/default/bbpress/form-reply.php:44
 #: templates/default/bbpress/form-topic.php:61
 msgid "Your account has the ability to post unrestricted HTML content."
-msgstr ""
+msgstr "Þinn reikningur hefur réttindi til að skrifa HTML."
 
 #: templates/default/bbpress/form-forum.php:67
 msgid "Forum Name (Maximum Length: %d):"
@@ -4315,7 +4315,7 @@ msgstr ""
 #: templates/default/bbpress/form-topic-split.php:97
 #: templates/default/bbpress/form-topic.php:203
 msgid "Submit"
-msgstr ""
+msgstr "Senda"
 
 #: templates/default/bbpress/form-forum.php:161
 msgid "The forum &#8216;%s&#8217; is closed to new content."
@@ -4389,7 +4389,7 @@ msgstr ""
 
 #: templates/default/bbpress/form-reply.php:75
 msgid "Tags:"
-msgstr ""
+msgstr "Leitarorð:"
 
 #: templates/default/bbpress/form-reply.php:93
 #: templates/default/bbpress/form-topic.php:164
@@ -4399,7 +4399,7 @@ msgstr ""
 #: templates/default/bbpress/form-reply.php:97
 #: templates/default/bbpress/form-topic.php:168
 msgid "Notify me of follow-up replies via email"
-msgstr ""
+msgstr "Sendu mér póst (email) ef svar berst"
 
 #: templates/default/bbpress/form-reply.php:114
 #: templates/default/bbpress/form-topic.php:184
@@ -4592,7 +4592,7 @@ msgstr ""
 
 #: templates/default/bbpress/form-topic.php:43
 msgid "Create New Topic in &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Búa til nýja umræðu í &ldquo;%s&rdquo;"
 
 #: templates/default/bbpress/form-topic.php:53
 msgid ""
@@ -4602,11 +4602,11 @@ msgstr ""
 
 #: templates/default/bbpress/form-topic.php:75
 msgid "Topic Title (Maximum Length: %d):"
-msgstr ""
+msgstr "Titill umræðu (Hámarks lengd: %d):"
 
 #: templates/default/bbpress/form-topic.php:101
 msgid "Topic Tags:"
-msgstr ""
+msgstr "Leitarorð"
 
 #: templates/default/bbpress/form-topic.php:133
 msgid "Topic Type:"
@@ -4614,7 +4614,7 @@ msgstr ""
 
 #: templates/default/bbpress/form-topic.php:145
 msgid "Topic Status:"
-msgstr ""
+msgstr "Staða umræðu"
 
 #: templates/default/bbpress/form-topic.php:234
 msgid "You cannot create new topics."
@@ -4626,19 +4626,19 @@ msgstr ""
 
 #: templates/default/bbpress/form-user-edit.php:24
 msgid "First Name"
-msgstr ""
+msgstr "Fornafn"
 
 #: templates/default/bbpress/form-user-edit.php:29
 msgid "Last Name"
-msgstr ""
+msgstr "Eftirnafn"
 
 #: templates/default/bbpress/form-user-edit.php:34
 msgid "Nickname"
-msgstr ""
+msgstr "Notendanafn"
 
 #: templates/default/bbpress/form-user-edit.php:39
 msgid "Display Name"
-msgstr ""
+msgstr "Sýna nafn"
 
 #: templates/default/bbpress/form-user-edit.php:49
 #: templates/default/bbpress/form-user-edit.php:52
@@ -4648,21 +4648,21 @@ msgstr ""
 #: templates/default/bbpress/form-user-edit.php:74
 #: templates/default/bbpress/form-user-edit.php:77
 msgid "About Yourself"
-msgstr ""
+msgstr "Um þig"
 
 #: templates/default/bbpress/form-user-edit.php:74
 #: templates/default/bbpress/form-user-edit.php:77
 msgid "About the user"
-msgstr ""
+msgstr "Um notendann"
 
 #: templates/default/bbpress/form-user-edit.php:82
 msgid "Biographical Info"
-msgstr ""
+msgstr "Æviágrip"
 
 #: templates/default/bbpress/form-user-edit.php:90
 #: templates/default/bbpress/form-user-edit.php:93
 msgid "Account"
-msgstr ""
+msgstr "Aðgangur"
 
 #: templates/default/bbpress/form-user-edit.php:115
 msgid ""
@@ -4672,28 +4672,30 @@ msgstr ""
 
 #: templates/default/bbpress/form-user-edit.php:124
 msgid "New Password"
-msgstr ""
+msgstr "Nýtt lykilorð"
 
 #: templates/default/bbpress/form-user-edit.php:127
 msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
-msgstr ""
+msgstr "Skildu þetta eftir autt, nema þú viljir breyta lykilorðinu þínu."
 
 #: templates/default/bbpress/form-user-edit.php:130
 msgid "Type your new password again."
-msgstr ""
+msgstr "Skirfaðu nýja lykilorðið þitt aftur."
 
 #: templates/default/bbpress/form-user-edit.php:133
 msgid ""
 "Your password should be at least ten characters long. Use upper and lower "
 "case letters, numbers, and symbols to make it even stronger."
 msgstr ""
+"Best er að nota að minsta kosti 10 stafi og númer til að búa til öruggt "
+"lykilorð. Hástafir, lágstafir og merki gera það svo bulletproof."
 
 #: templates/default/bbpress/form-user-edit.php:143
 #: templates/default/bbpress/form-user-edit.php:146
 msgid "User Role"
-msgstr ""
+msgstr "Hlutverk"
 
 #: templates/default/bbpress/form-user-edit.php:153
 msgid "Network Role"
@@ -4705,11 +4707,11 @@ msgstr ""
 
 #: templates/default/bbpress/form-user-edit.php:178
 msgid "Update Profile"
-msgstr ""
+msgstr "Uppfæra aðgang"
 
 #: templates/default/bbpress/form-user-edit.php:178
 msgid "Update User"
-msgstr ""
+msgstr "Uppfæra notenda"
 
 #: templates/default/bbpress/form-user-login.php:28
 msgid "Keep me signed in"
@@ -4739,7 +4741,7 @@ msgstr ""
 
 #: templates/default/bbpress/form-user-roles.php:13
 msgid "Blog Role"
-msgstr ""
+msgstr "Vefsíðuhlutverk"
 
 #: templates/default/bbpress/loop-search-forum.php:16
 msgid "Last updated %s"
@@ -4776,7 +4778,7 @@ msgstr ""
 
 #: templates/default/bbpress/loop-single-topic.php:60
 msgid "Started by: %1$s"
-msgstr ""
+msgstr "Byrjuð af: %1$s"
 
 #: templates/default/bbpress/loop-single-topic.php:68
 msgid "in: <a href=\"%1$s\">%2$s</a>"
@@ -4784,16 +4786,16 @@ msgstr ""
 
 #: templates/default/bbpress/user-details.php:29
 msgid "%s's Profile"
-msgstr ""
+msgstr "%s Aðgangur"
 
 #: templates/default/bbpress/user-details.php:29
 #: templates/default/bbpress/user-profile.php:15
 msgid "Profile"
-msgstr ""
+msgstr "Aðgangur"
 
 #: templates/default/bbpress/user-details.php:35
 msgid "%s's Topics Started"
-msgstr ""
+msgstr "%s Byrjaðar umræður"
 
 #: templates/default/bbpress/user-details.php:41
 msgid "%s's Replies Created"
@@ -4809,7 +4811,7 @@ msgstr ""
 
 #: templates/default/bbpress/user-favorites.php:15
 msgid "Favorite Forum Topics"
-msgstr ""
+msgstr "Uppáhalds umræður"
 
 #: templates/default/bbpress/user-favorites.php:28
 msgid "You currently have no favorite topics."
@@ -4817,51 +4819,51 @@ msgstr ""
 
 #: templates/default/bbpress/user-favorites.php:28
 msgid "This user has no favorite topics."
-msgstr ""
+msgstr "Notandi hefur engar uppáhalds."
 
 #: templates/default/bbpress/user-profile.php:24
 msgid "Forum Role: %s"
-msgstr ""
+msgstr "Umræðuhlutverk: %s"
 
 #: templates/default/bbpress/user-profile.php:25
 msgid "Topics Started: %s"
-msgstr ""
+msgstr "Umræðum byrjað: %s"
 
 #: templates/default/bbpress/user-profile.php:26
 msgid "Replies Created: %s"
-msgstr ""
+msgstr "Svör: %s"
 
 #: templates/default/bbpress/user-replies-created.php:15
 msgid "Forum Replies Created"
-msgstr ""
+msgstr "Svör sem þú hefur skrifað"
 
 #: templates/default/bbpress/user-replies-created.php:28
 msgid "You have not replied to any topics."
-msgstr ""
+msgstr "Þú hefur ekki svarað neinum umræðum."
 
 #: templates/default/bbpress/user-replies-created.php:28
 msgid "This user has not replied to any topics."
-msgstr ""
+msgstr "Notandi á engar umræður eða svör."
 
 #: templates/default/bbpress/user-subscriptions.php:19
 msgid "Subscribed Forums"
-msgstr ""
+msgstr "Þræðir í áskrift"
 
 #: templates/default/bbpress/user-subscriptions.php:28
 msgid "You are not currently subscribed to any forums."
-msgstr ""
+msgstr "Þú ert ekki áskrifandi að neinum umræðuþræði."
 
 #: templates/default/bbpress/user-subscriptions.php:28
 msgid "This user is not currently subscribed to any forums."
-msgstr ""
+msgstr "Notandi er ekki áskrifandi að neinum umræðuþræði."
 
 #: templates/default/bbpress/user-subscriptions.php:47
 msgid "You are not currently subscribed to any topics."
-msgstr ""
+msgstr "Þú ert ekki áskrifandi að neinni umræðu."
 
 #: templates/default/bbpress/user-subscriptions.php:47
 msgid "This user is not currently subscribed to any topics."
-msgstr ""
+msgstr "Notandi er ekki áskrifandi að neinni umræðu."
 
 #: templates/default/bbpress/user-topics-created.php:15
 msgid "Forum Topics Started"

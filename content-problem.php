@@ -44,7 +44,7 @@
 
 		<table class="problem-table" data-user-id="<?php echo get_current_user_id(); ?>">
 			<tr>
-				<td>Crag</td>
+				<td><?php _e( 'Crag', 'klifur5') ?></td>
 				<td>
 					<?php $the_crag = get_field('crag'); ?>
 					<a href="<?php echo $the_crag->guid; ?>"><?php echo $the_crag->post_title; ?></a>
@@ -54,7 +54,7 @@
 
 			<?php if( get_field('sector') ) : ?>
 				<tr>
-					<td>Sector</td>
+					<td><?php _e( 'Sector', 'klifur5') ?></td>
 					<td><?php the_field('sector'); ?></td>
 					<?php if( is_single() ) $sector = get_field('sector'); // used in single-problem.php ?>
 				</tr>
@@ -62,31 +62,34 @@
 
 			<?php if( get_field('stone') ) : ?>
 				<tr>
-					<td>Stone</td>
+					<td><?php _e( 'Stone', 'klifur5') ?></td>
 					<td><?php the_field('stone'); ?></td>
 					<?php if( is_single() ) $stone = get_field('stone'); // used in single-problem.php ?>
 				</tr>
 			<?php endif; ?>
 
 			<tr>
-				<td>Type</td>
+				<td><?php _e( 'Type', 'klifur5') ?></td>
 				<td><?php the_field('type'); ?></td>
 				<?php if( is_single() ) $type = get_field('type'); // used in single-problem.php ?>
 			</tr>
 
 			<?php if( is_single() && $site == 'klifur' ) : ?>
 				<tr>
-					<td>First Ascent</td>
+					<td><?php _e( 'First ascent', 'klifur5') ?></td>
 					<td>
 						<?php
-							$first = get_field('first_ascent'); 
+							$first = get_field('first_ascent');
 							echo $first[display_name];
 						?>
 					</td>
 				</tr>
+				<?php endif; ?>
+
+				<?php if( is_single() ) : ?>
 				<tr data-post-id="<?php the_ID(); ?>">
 					<!-- User lists -->
-					<td>My stuff</td>
+					<td><?php _e( 'Markings', 'klifur5') ?></td>
 					<td class="btn-icons">
 						<span class="fav"><a class="<?php if( $post->fav ) echo 'on ' ?>" data-list-no="1"></a></span>
 						<span class="fin"><a class="<?php if( $post->fin ) echo 'on ' ?>" data-list-no="2"></a></span>
@@ -94,13 +97,14 @@
 					</td>
 				</tr>
 			<?php endif; ?>
+
 		</table>
 	</div>
 
 	<?php // VIDEO ?>
 	<?php if( get_field('video') ) : ?>
 		<div class="post-section problem-video">
-			<h2>Video</h2>
+			<h2><?php _e( 'Video', 'klifur5') ?></h2>
 			<p><?php the_field('video'); ?></p>
 		</div>
 	<?php endif; ?>

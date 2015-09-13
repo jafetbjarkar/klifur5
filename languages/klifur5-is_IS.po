@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Thirteen\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/klifur5\n"
-"POT-Creation-Date: 2015-09-13 00:14+0000\n"
-"PO-Revision-Date: 2015-09-13 00:14+0000\n"
+"POT-Creation-Date: 2015-09-13 01:36+0000\n"
+"PO-Revision-Date: 2015-09-13 01:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: is_IS\n"
@@ -396,6 +396,18 @@ msgstr[1] "%s leiðir"
 
 msgid "In partnership with"
 msgstr "Í samstarfi með"
+
+msgid "Crag"
+msgstr "Klifursvæði"
+
+msgid "Type"
+msgstr "Tegund"
+
+msgid "First ascent"
+msgstr "Fyrst klifrað af"
+
+msgid "Markings"
+msgstr "Merkingar"
 
 #, fuzzy
 #~ msgid "route"
