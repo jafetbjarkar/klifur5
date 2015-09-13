@@ -1332,9 +1332,13 @@ body.my-account #bbpress-forums {
     line-height: 1;
   }
 
-  .bbp-template-notice.info,
-  .bbp-topic-started-by .bbp-author-avatar {
+  .bbp-template-notice.info {
     display: none;
+  }
+
+  .bbp-author-avatar {
+    position: relative;
+    top: -5px;
   }
 
   .bbp-topic-form {
