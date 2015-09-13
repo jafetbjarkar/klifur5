@@ -15,7 +15,7 @@
     // ACF climbing type categories
     $climbing_types = ['Boulder', 'Sport Climbing', 'Traditional climbing'];
     // The add route link markup
-    $add_route_link = '<p> Engin leið fannst. <a href="http://klifur.is/wp-admin/post-new.php">Veist þú um eina?"</a></p>';
+    $add_route_link = '<p><a href="http://klifur.is/wp-admin/post-new.php">Veist þú um eina?"</a></p>';
 
   } elseif($site == 'isalp') {
     $favicon = get_stylesheet_directory_uri() . "/images/favicon-isalp.png?v=2";
@@ -23,7 +23,7 @@
     $type_of_climbing = ['ice' => 'Ísklifur', 'mix' => 'Mix-klifur'];
     $map_embed = '<iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=zGE0gm__fSLs.kd4v-EC61tc4"></iframe>';
     $climbing_types = ['ice', 'mix', 'alpine'];
-    $add_route_link = '<p> Engin leið fannst. <a href="http://super.isalp.is/wp-admin/post-new.php">Veist þú um eina?"</a></p>';
+    $add_route_link = '<p><a href="http://super.isalp.is/wp-admin/post-new.php">Veist þú um eina?"</a></p>';
   }
 
 ?>

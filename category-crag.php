@@ -17,11 +17,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-		
+
 		<div class="banner-map">
-			<?php echo $map_embed; ?>	
+			<?php echo $map_embed; ?>
 		</div>
-		
+
 		<?php // Get all problems for problem count ?>
 		<?php // Notice: This will be heavy when the problems increase. Will maybe have to fix later ?>
 			<?php $args = array(
@@ -31,7 +31,7 @@ get_header(); ?>
 			);
 			$my_query2 = null;
 			$my_query2 = new WP_Query($args); ?>
-			
+
 			<?php if( $my_query2->have_posts() ) : ?>
 				<?php while ($my_query2->have_posts()) : $my_query2->the_post(); ?>
 					<?php $the_crag = get_field('crag'); ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				
+
 				<?php //link = admin_url( 'admin-ajax.php?action=my_user_vote&post_id=874' ); ?>
 				<?php //echo '<a class="user_vote" data-post_id="874" href="' . $link . '">vote for this article</a>';  ?>
 
@@ -61,13 +61,13 @@ get_header(); ?>
 				 	<table id="myTable" class="tablesorter">
 				 	<thead>
 				  		<tr>
-				  			<th>Klifursvæði</th>
-								<th>Leiðir</th>
+				  			<th><?php _e( 'Area', 'klifur5' ); ?></th>
+								<th><?php _e( 'Routes', 'klifur5'); ?></th>
 								<th><?php echo $climbing_types[0]; ?></th>
 								<th><?php echo $climbing_types[1]; ?></th>
 								<th><?php echo $climbing_types[2]; ?></th>
-								<th>Athugasemdir</th>
-								<th>Dagsetning</th>
+								<th><?php _e( 'Comments', 'klifur5'); ?></th>
+								<th><?php _e( 'Date', 'klifur5'); ?></th>
 				  		</tr>
 				  	</thead>
 				  	<tbody>
@@ -77,7 +77,7 @@ get_header(); ?>
 								<td><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></td>
 								<?php $type = get_field('type_of_climbing'); ?>
 								<td>
-									<?php 
+									<?php
 										$count = 0;
 										foreach($problem_count as $problem) {
 											if( $problem == get_the_title() ) {
@@ -87,10 +87,10 @@ get_header(); ?>
 										echo $count;
 									?>
 								</td>
-								<td class="check"> <?php if ( in_array($climbing_types[0], $type) ) echo 'C'; ?> </td>	
-								<td class="check"> <?php if ( in_array($climbing_types[1], $type) ) echo 'C'; ?> </td>	
-								<td class="check"> <?php if ( in_array($climbing_types[2], $type) ) echo 'C'; ?> </td>	
-								
+								<td class="check"> <?php if ( in_array($climbing_types[0], $type) ) echo 'C'; ?> </td>
+								<td class="check"> <?php if ( in_array($climbing_types[1], $type) ) echo 'C'; ?> </td>
+								<td class="check"> <?php if ( in_array($climbing_types[2], $type) ) echo 'C'; ?> </td>
+
 								<td><?php comments_number('0','1','%'); ?></td>
 								<td><?php echo get_the_date(); ?></td>
 					  	<?php endwhile; ?>

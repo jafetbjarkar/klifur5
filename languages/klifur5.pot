@@ -331,3 +331,40 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "the WordPress team"
 msgstr ""
+
+#: KLIFUR 5
+msgid "Area"
+msgstr ""
+msgid "Routes"
+msgstr ""
+msgid "Comments"
+msgstr ""
+msgid "Date"
+msgstr ""
+
+msgid "Route"
+msgstr ""
+msgid "Grade"
+msgstr ""
+msgid "Sector"
+msgstr ""
+msgid "Stone"
+msgstr ""
+
+msgid "Directions"
+msgstr ""
+msgid "Map"
+msgstr ""
+msgid "Video"
+msgstr ""
+
+msgid "No route has been added yet"
+msgstr ""
+
+msgid "%s route"
+msgid_plural "%s routes"
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "In partnership with"
+msgstr ""
