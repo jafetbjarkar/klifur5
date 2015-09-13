@@ -11,11 +11,11 @@
 //if($url_crag==NULL || $url_crag==false ) $url_crag = "";
 
 /* QUERY CRAGS FOR CRAG DR0P DOWN */
-$args = array(  
+$args = array(
 		'posts_per_page' => true,
 		'category_name' => 'crag',
 		'orderby' => 'title',
-		'order' => 'ASC',					
+		'order' => 'ASC',
 	);
 	$wp_query = null;
 	$wp_query = new WP_Query($args);
@@ -37,7 +37,7 @@ $args = array(
 			<?php endif; ?>
 		</select>
 		<?php wp_reset_query(); // End querying the crags  ?>
-		
+
 		<?php // Could not find a way to display ACF field select choices outside loop ?>
 		<?php include(locate_template('config/data.php')); ?>
 		<select name="type" id="type">
@@ -48,7 +48,7 @@ $args = array(
 				</option>
 			<?php endforeach; ?>
 		</select>
-		
+
 		<div class="sexy-buttons">
 			<?php if( is_user_logged_in() ) : ?>
 				<fieldset class="metabuttons user-buttons">
@@ -60,16 +60,16 @@ $args = array(
 						<input type="checkbox" name="fin" <?php if($url_fin=='on') echo 'checked'; ?>>
 						<label for="fin"></label>
 					</span>
-					<span class="tooltip" title="My favorites">
-						<input type="checkbox" name="fav" <?php if($url_fav=='on') echo 'checked'; ?>> 
+					<span class="tooltip" title="<?php _e( 'My favorites', 'klifur5' ); ?>">
+						<input type="checkbox" name="fav" <?php if($url_fav=='on') echo 'checked'; ?>>
 						<label for="fav"></label>
 					</span>
 				</fieldset>
 			<?php endif; ?>
-			
+
 			<fieldset class="metabuttons">
 				<span class="tooltip" title="Image"> <!-- Has image button -->
-					<input type="checkbox" name="img" <?php if($url_img=='on') echo 'checked'; ?>> 
+					<input type="checkbox" name="img" <?php if($url_img=='on') echo 'checked'; ?>>
 					<label for="img"></label>
 				</span>
 				<span class="tooltip" title="Video">
@@ -82,7 +82,7 @@ $args = array(
 				</span>
 			</fieldset>
 		</div>
-		
+
 
 	</form>
 </div> <!-- .problem-form -->
