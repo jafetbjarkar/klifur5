@@ -17,7 +17,10 @@ add_filter( 'body_class', 'category_id_class' );
 /**
  * Always show the admin bar
  */
-show_admin_bar(true);
+if ($site == 'klifur') {
+	show_admin_bar(true);
+}
+
 
 
 /**
@@ -54,7 +57,7 @@ function admin_bar_remove_search() {
     global $wp_admin_bar;
     /* Remove their stuff */
     $wp_admin_bar->remove_menu('search');
-    
+
 }
 add_action('wp_before_admin_bar_render', 'admin_bar_remove_search', 0);
 
@@ -172,7 +175,7 @@ function klifur5_paging_nav() {
 /* AJAX CALLS */
 /* Handle user lists */
 function user_lists() {
- 
+
     // The $_REQUEST contains all the data sent via ajax
     if ( isset($_REQUEST) ) {
         $user_ID = $_REQUEST['user_ID'];
@@ -180,11 +183,11 @@ function user_lists() {
         $list_no = $_REQUEST['list_no'];
 
         $result['post_ID'] = $post_ID;
-         
+
         // Get value from database if exists - if not =$value = 0
 		global $wpdb;
 		$value = $wpdb->get_results( '
-			SELECT * FROM wp_user_lists 
+			SELECT * FROM wp_user_lists
 			WHERE user_id = '.$user_ID.'
 			AND post_id = '.$post_ID,
 			OBJECT
@@ -202,21 +205,21 @@ function user_lists() {
 		if( !$value ) { // if the query returned NO results
 			// add row
 			$result['action'] = 'Add row';
-			$update = $wpdb->insert( 
-				'wp_user_lists', 
-				array( 
+			$update = $wpdb->insert(
+				'wp_user_lists',
+				array(
 					'user_id' => $user_ID,
 					'post_id' => $post_ID,
-					$list => 1 
-				), 
-				array( 
-					'%d', 
+					$list => 1
+				),
+				array(
+					'%d',
 					'%d',
 					'%d'
 				)
 			);
 			$result['new_value'] = 1;
-			
+
 		} else {
 			// set new value
 			if( $value[0]->$list ) {
@@ -229,11 +232,11 @@ function user_lists() {
 
 			// update table
 			$result['action'] = 'Edit row';
-			$update = $wpdb->update( 
-				'wp_user_lists', 
-				array( 
+			$update = $wpdb->update(
+				'wp_user_lists',
+				array(
 					$list => $new_value
-				), 
+				),
 				array( 'user_id' => $user_ID, 'post_id' => $post_ID )
 			);
 		}
@@ -249,7 +252,7 @@ function user_lists() {
 		} else {
 			$result['type'] = "success";
 		}
-		
+
 		$result = json_encode($result); // encode and return the results
 		echo $result;
     }
@@ -306,7 +309,7 @@ function my_login_logo() {
 	        background-size: 300px auto;
 	        width: 300px;
 	      }
-	  	</style>	
+	  	</style>
 		<?php
 	} elseif($site == 'isalp') {
 	  $login_logo = '/images/isalp-login-logo.png'; ?>
@@ -344,6 +347,3 @@ function ntwb_bbp_reply_cpt_search( $reply_search ) {
 	return $reply_search;
 }
 add_filter( 'bbp_register_reply_post_type', 'ntwb_bbp_reply_cpt_search' );
-
-
-
