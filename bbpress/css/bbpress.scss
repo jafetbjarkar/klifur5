@@ -1368,3 +1368,22 @@ article.topic {
 #subscription-toggle {
   float: right;
 }
+
+.widget_display_topics {
+	.bbp-forum-title {
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.topic-author {
+		+div {
+			display: inline-block;
+			&:before {
+				content: "|";
+				margin: 0 6px 0 3px;
+			}
+		}
+	}
+
+}

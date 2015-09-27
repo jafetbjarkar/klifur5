@@ -1183,3 +1183,14 @@ article.topic .entry-meta {
 
 #subscription-toggle {
   float: right; }
+
+.widget_display_topics .bbp-forum-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.widget_display_topics .topic-author + div {
+  display: inline-block; }
+  .widget_display_topics .topic-author + div:before {
+    content: "|";
+    margin: 0 6px 0 3px; }
