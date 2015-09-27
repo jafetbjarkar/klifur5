@@ -30,7 +30,7 @@
  * @since Klifur.is 1.0
  */
 wp_enqueue_script( 'my-ajax-request', get_bloginfo('template_url') . '/js/min/extra_enqueued-min.js', array( 'jquery' ) );
-wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );	
+wp_localize_script( 'my-ajax-request', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 
 /**
@@ -276,7 +276,7 @@ function klifur5_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => __( 'Ad3 Widget Area', 'klifur.is' ),
 		'id'            => 'widget-ad3',
@@ -361,7 +361,7 @@ if ( ! function_exists( 'klifur5_entry_meta' ) ) :
  */
 function klifur5_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() )
-		echo '<span class="featured-post">' . __( 'Sticky', 'klifur5' ) . '</span>';
+		echo '<span class="featured-post"></span>';
 
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list = get_the_category_list( __( ', ', 'klifur5' ) );
@@ -559,4 +559,3 @@ function klifur5_customize_preview_js() {
 	wp_enqueue_script( 'klifur5-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'klifur5_customize_preview_js' );
-

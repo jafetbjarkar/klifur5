@@ -51,14 +51,13 @@
 				box-shadow: 1px 1px 3px #666;
 				transition: box-shadow .1s, background-color .1s;
 			}
-		} 
+		}
 	}
 }
 
 .featured-post:before {
-	content: $icon-feather;
-	margin-right: 20px;
-	font-size: 30px;
+	content: "\f416";
+	margin-right: -10px;
 }
 
 .entry-meta .date a:before {
@@ -68,7 +67,7 @@
 .comments-link a:before {
 	position: relative;
 	top: -3px; left: -5px;
-	
+
 	@extend %icon;
 	content: $icon-feather;
 }
@@ -104,3 +103,21 @@
 	display: none;
 }
 
+// - CUSTOM CATEGORY ICONS - KLIFUR5
+.category-crag {
+	.categories-links a:first-child:before {
+		content: "\f417";
+	}
+}
+
+.category-problem {
+	.categories-links a:first-child:before {
+		content: "\f105";
+	}
+}
+
+// .category-news {
+// 	.categories-links a:first-child:before {
+// 		content: "\f101";
+// 	}
+// }
