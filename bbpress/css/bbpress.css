@@ -96,13 +96,13 @@ body.reply-edit .reply {
 
 #bbpress-forums li.bbp-header,
 #bbpress-forums li.bbp-footer {
-  background: #363D98;
+  background: #333;
   padding: 4px 8px;
   text-align: center;
   color: #fff; }
 
 #bbpress-forums li.bbp-header {
-  background: #363D98; }
+  background: #333; }
 
 #bbpress-forums li.bbp-header ul {
   overflow: hidden; }

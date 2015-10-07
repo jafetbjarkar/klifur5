@@ -19,9 +19,11 @@ get_header(); ?>
 	<!-- index.php -->
 
 	<!-- Index banner image -->
-	<div class="banner-image">
-		<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-	</div>
+	<?php if(get_header_image()) : ?>
+		<div class="banner-image">
+			<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+		</div>
+	<?php endif; ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content-masonry">
