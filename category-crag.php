@@ -16,7 +16,7 @@ get_header(); ?>
 <?php include(locate_template('config/data.php')); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content">
 
 		<div class="banner-map">
 			<?php echo $map_embed; ?>

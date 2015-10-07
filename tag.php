@@ -16,7 +16,7 @@ get_header(); ?>
 <!-- tag.php -->
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">

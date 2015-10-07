@@ -18,7 +18,7 @@ get_header(); ?>
 <!-- taxonomy-post_format.php -->
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
 			

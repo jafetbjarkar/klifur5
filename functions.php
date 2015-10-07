@@ -304,7 +304,7 @@ function klifur5_paging_nav() {
 	if ( $wp_query->max_num_pages < 2 )
 		return;
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
+	<nav class="navigation paging-navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'klifur5' ); ?></h1>
 		<div class="nav-links">
 
@@ -338,7 +338,7 @@ function klifur5_post_nav() {
 	if ( ! $next && ! $previous )
 		return;
 	?>
-	<nav class="navigation post-navigation" role="navigation">
+	<nav class="navigation post-navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'klifur5' ); ?></h1>
 		<div class="nav-links">
 

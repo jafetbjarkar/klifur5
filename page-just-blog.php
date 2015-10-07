@@ -14,7 +14,7 @@ get_header(); ?>
 <!-- page-just-blog.php -->
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content">
 				
 				<?php //link = admin_url( 'admin-ajax.php?action=my_user_vote&post_id=874' ); ?>
 				<?php //echo '<a class="user_vote" data-post_id="874" href="' . $link . '">vote for this article</a>';  ?>

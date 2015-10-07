@@ -24,7 +24,7 @@ get_header(); ?>
 	</div>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content-masonry" role="main">
+		<div id="content" class="site-content-masonry">
 			<div class="grid-sizer"></div>
 			<?php if ( have_posts() ) : ?>
 
@@ -63,7 +63,7 @@ get_header(); ?>
 							}
 						?>
 						<?php if ( is_active_sidebar( $sidebar_id  ) ) : ?>
-							<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry" role="complementary">
+							<div id="<?php echo $sidebar_id; ?>" class="<?php echo $sidebar_id; ?> hentry">
 								<?php dynamic_sidebar( $sidebar_id ); ?>
 							</div><!-- #primary-sidebar -->
 						<?php endif; ?>

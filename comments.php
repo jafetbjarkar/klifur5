@@ -41,7 +41,7 @@ if ( post_password_required() )
 				// Are there comments to navigate through?
 				if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 			?>
-			<nav class="navigation comment-navigation" role="navigation">
+			<nav class="navigation comment-navigation">
 				<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'klifur5' ); ?></h1>
 				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'klifur5' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'klifur5' ) ); ?></div>
@@ -53,9 +53,9 @@ if ( post_password_required() )
 			<?php endif; ?>
 
 		<?php endif; // have_comments() ?>
-	
-	
+
+
 		<?php comment_form(); ?>
 	</div> <!-- .comments-page -->
-	
+
 </div><!-- #comments -->

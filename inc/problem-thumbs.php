@@ -52,5 +52,6 @@ $wp_query = new WP_Query($args); ?>
             </div> <!-- .problem-thumb -->
 		<?php endwhile; ?>
 
-	</div> <!-- .problem-thumb-area -->
-<?php endif; ?>
+
+	<?php endif; ?>
+</div> <!-- .problem-thumb-area -->

@@ -14,7 +14,7 @@ get_header(); ?>
 	<!-- category.php -->
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content-masonry" role="main">
+		<div id="content" class="site-content-masonry">
 			<div class="grid-sizer"></div>
 
 			<?php if ( have_posts() ) : ?>

@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content">
 
 			<header class="page-header">
 				<h1 class="page-title"><?php _e( 'Not Found', 'klifur5' ); ?></h1>

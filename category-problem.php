@@ -14,9 +14,9 @@ get_header(); ?>
 <!-- category-problem.php -->
 
 <div id="primary" class="content-area">
-	<div id="content" class="site-content" role="main">
+	<div id="content" class="site-content">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			
+
 			<?php /* GET INFORMATION FROM URL */
 			$url_crag 		= $_GET["crag"];
 			$url_sector 	= $_GET["sector"];
@@ -33,7 +33,7 @@ get_header(); ?>
 
 			/* GET THE FORM */
 			include(locate_template('inc/problem-form.php')); ?>
-			
+
 			<?php
 			/* QUERY PROBLEMS */
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -43,7 +43,7 @@ get_header(); ?>
 				'category_name' => 'problem',
 				'posts_per_page' => 50,
 				'paged' => $paged,
-				
+
 				'meta_query' => array(
 					'relation' => 'AND',
 
@@ -59,7 +59,7 @@ get_header(); ?>
 				      'compare' => '!=',
 				      //'type' => 'char'
 				    ) : false),
-					
+
 				    ($url_img ? array(
 				      'key' => 'image',
 				      'value' => NULL,
@@ -75,7 +75,7 @@ get_header(); ?>
 				    ) : false),
 			  	)
 			); ?>
-			
+
 			<?php add_filter('posts_where','query_user_lists'); ?>
 
 			<?php
@@ -93,13 +93,13 @@ get_header(); ?>
 			}
 
 			?>
-			
+
 			<!-- <pre>
 				<?php //var_dump($wp_query); ?>
 			</pre> -->
 
 		</article>
-		
+
 		<?php remove_filter('posts_where','query_user_lists'); ?>
 
 		<?php klifur5_paging_nav(); ?>

@@ -129,7 +129,7 @@ function klifur5_paging_nav() {
 	}
 	?>
 
-	<nav class="navigation numeric-navigation" role="navigation">
+	<nav class="navigation numeric-navigation">
 	<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'klifur5' ); ?></h1>
 	<ul>
 

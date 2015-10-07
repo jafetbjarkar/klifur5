@@ -47,6 +47,8 @@ $wp_query = new WP_Query($args); ?>
 					<?php endif; ?>
 
 					<th><?php _e( 'Date', 'klifur5' ); ?></th>
+					<th></th>
+					<th></th>
 	  		</tr>
 	  	</thead>
 	  	<tbody>
