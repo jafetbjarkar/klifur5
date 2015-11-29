@@ -6,15 +6,6 @@
 	/* DOCUMENT READY */
 	$(function(){ // klifur.is
 
-		$('.site-content-masonry').masonry({
-	    columnWidth: '.grid-sizer',
-	    itemSelector: '.hentry',
-	    percentPosition: true,
-	    "gutter": 20
-
-	  });
-
-
 		/* IMAGE GALLERY */
 		// activity indicator
 		var activityIndicatorOn = function() {
@@ -43,9 +34,9 @@
 		});
 
 
-		/* ACTIVATE PLUGINS */ 
+		/* ACTIVATE PLUGINS */
 		/* Tablesorter */
-		$("#myTable").tablesorter(); 
+		$("#myTable").tablesorter();
 		/* Tooltipster */
 		$('.tooltip').tooltipster();
 
@@ -60,7 +51,7 @@
 			$('nav.navigation').css('top', 10 + (docHeight - footerTop) + 'px');
 		}
 
-		
+
 		/* PROBLEM FORM */
 		// hide submit button
 		//$('.problem-form input[type=submit]').hide();
@@ -77,4 +68,15 @@
 
 
 	}); // document.ready()
+
+	// wait for images to load
+	$(window).load(function() {
+		$('.site-content-masonry').masonry({
+			columnWidth: '.grid-sizer',
+			itemSelector: '.hentry',
+			percentPosition: true,
+			"gutter": 20
+		});
+	});
+
 } )( jQuery );
