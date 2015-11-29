@@ -1,7 +1,7 @@
 <?php
   // - SET ACTIVE SITE
-  $site = 'klifur';
-  // $site = 'isalp';
+  //$site = 'klifur';
+  $site = 'isalp';
 
   if($site == 'klifur') {
     // Change the favicon
