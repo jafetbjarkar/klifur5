@@ -1,11 +1,10 @@
-.codekit-cache
-/DISABLE
+
 *.scssc
-style.css
+/**/.sass-cache/*
+/style.css
 
-*.css
-
-*.codekit
+/*.codekit-cache
+/*.codekit
 
 /**/*-min.js
 *-min.js
