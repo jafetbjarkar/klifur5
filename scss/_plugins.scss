@@ -3,6 +3,13 @@
 */
 
 
+// - GOOGLE MAP
+// Fix squished control tools
+.gmnoprint img {
+    max-width: none !important;
+}
+
+
 // - qTRANSLATE
 .qtranxs-available-languages-message {
 	display: none;

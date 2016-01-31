@@ -26,7 +26,7 @@ $args = array(
 <!-- Generate the selection form -->
 <div class="problem-form">
 	<form action="" >
-		<select name="crag" id="crag">
+		<select name="crag" id="crag" class="form-control">
 			<option value="">All crags</option>
 			<?php if ( have_posts() ) : ?>
 				<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -40,7 +40,7 @@ $args = array(
 
 		<?php // Could not find a way to display ACF field select choices outside loop ?>
 		<?php include(locate_template('config/data.php')); ?>
-		<select name="type" id="type">
+		<select name="type" id="type" class="form-control">
 			<option value="">Type</option>
 			<?php foreach($type_of_climbing as $key => $value) : ?>
 				<option value="<?php echo $key ?>" <?php if( $url_type == $key ) echo 'selected' ?>>
