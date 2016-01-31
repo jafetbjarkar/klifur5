@@ -2,7 +2,10 @@
 /DISABLE
 *.scssc
 style.css
-*-min.js
+
 *.css
 
 *.codekit
+
+/**/*-min.js
+*-min.js
