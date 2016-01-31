@@ -1,25 +1,19 @@
 <?php
 /**
- * The template for displaying Category pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * The Just Blog page used on Klifur.is
  */
 
 get_header(); ?>
 
-<!-- page-just-blog.php -->
+<!-- [PATH] page-just-blog.php -->
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
-				
+
 				<?php //link = admin_url( 'admin-ajax.php?action=my_user_vote&post_id=874' ); ?>
 				<?php //echo '<a class="user_vote" data-post_id="874" href="' . $link . '">vote for this article</a>';  ?>
-					
-				<?php 
+
+				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 				$args = array(
@@ -45,11 +39,9 @@ get_header(); ?>
 				);
 				//$wp_query = null;
 
-				
 				$wp_query = new WP_Query($args);
 
 				//$wp_query = new WP_Query($args);
-
 
 				if( $wp_query->have_posts() ) :  ?>
 						<?php // the loop ?>
@@ -60,14 +52,10 @@ get_header(); ?>
 					  	<?php endwhile; ?>
 
 					  	<?php klifur5_paging_nav(); //virkar ekki?? ?>
-						
+
 
 						<?php wp_reset_query(); ?>
 				<?php endif; ?>
-		
-			
-
-
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

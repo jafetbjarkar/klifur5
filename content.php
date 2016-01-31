@@ -1,16 +1,12 @@
 <?php
 /**
- * The default template for displaying content
- *
+ * Template for all posts except crag and problem posts.
  * Used for both single and index/archive/search.
- *
- * @subpackage Klifur.is
- * @since Klifur.is 1.0
  */
 ?>
 
-<!-- content.php -->
 
+<!-- [PATH] content.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 
@@ -25,18 +21,18 @@
 		<div class="entry-meta">
 			<?php klifur5_entry_meta(); ?>
 			<?php edit_post_link( __( 'Edit', 'klifur5' ), '<span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		</div>
+	</header>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
 	<?php else : ?>
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'klifur5' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'klifur5' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
-	</div><!-- .entry-content -->
+	</div>
 	<?php endif; ?>
 
 	<footer class="entry-meta-comments">

@@ -1,12 +1,7 @@
 <?php
 /**
  * The Header template for our theme
- *
  * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package WordPress
- * @subpackage klifur5
- * @since klfiur5
  */
 
 include(locate_template('config/data.php'));
@@ -40,7 +35,7 @@ include(locate_template('config/data.php'));
 
 
 
-<!-- header.php -->
+<!-- [PATH] header.php -->
 
 	<div id="page" class="hfeed site">
 
@@ -62,9 +57,9 @@ include(locate_template('config/data.php'));
 					<button class="menu-toggle"><?php _e( '', 'klifur5' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 
-				</nav><!-- #site-navigation -->
+				</nav>
 
-			</div><!-- #navbar -->
-		</header><!-- #masthead -->
+			</div>
+		</header>
 
 		<div id="main" class="site-main">

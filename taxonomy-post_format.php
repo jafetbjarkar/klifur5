@@ -5,23 +5,17 @@
  * Used to display archive-type pages for posts with a post format.
  * If you'd like to further customize these Post Format views, you may create a
  * new template file for each specific one.
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
  */
 
 get_header(); ?>
 
-<!-- taxonomy-post_format.php -->
+<!-- [PATH] taxonomy-post_format.php -->
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
-			
+
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

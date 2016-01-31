@@ -1,14 +1,11 @@
 <?php
 /**
  * The template for displaying 404 pages (Not Found)
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
  */
 
 get_header(); ?>
 
+	<!-- [PATH] 404.php -->
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
 
@@ -22,10 +19,10 @@ get_header(); ?>
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'klifur5' ); ?></p>
 
 					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</div><!-- .page-wrapper -->
+				</div>
+			</div>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</div>
+	</div> <!-- #primary -->
 
 <?php get_footer(); ?>

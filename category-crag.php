@@ -1,17 +1,11 @@
 <?php
 /**
- * The template for displaying Category pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * The crag index page
  */
 
 get_header(); ?>
 
-<!-- category-crag.php -->
+<!-- [PATH] category-crag.php -->
 
 <?php include(locate_template('config/data.php')); ?>
 

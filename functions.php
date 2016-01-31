@@ -20,13 +20,8 @@
  */
 
 
-
-
-
-
 /**
  * Enable AJAX - http://premium.wpmudev.org/blog/how-to-use-ajax-with-php-on-your-wp-site-without-a-plugin/
- *
  * @since Klifur.is 1.0
  */
 wp_enqueue_script( 'my-ajax-request', get_bloginfo('template_url') . '/js/min/extra_enqueued-min.js', array( 'jquery' ) );
