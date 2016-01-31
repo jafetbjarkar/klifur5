@@ -38,7 +38,7 @@
 		/* Tablesorter */
 		$("#myTable").tablesorter();
 		/* Tooltipster */
-		$('.tooltip').tooltipster();
+		$('.sexy-buttons > fieldset > span').tooltipster();
 
 
 		/* STICKY FOOTER */

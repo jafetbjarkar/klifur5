@@ -52,15 +52,15 @@ $args = array(
 		<div class="sexy-buttons">
 			<?php if( is_user_logged_in() ) : ?>
 				<fieldset class="metabuttons user-buttons">
-					<span class="tooltip" title="My projects">
+					<span title="My projects">
 						<input type="checkbox" name="pro" <?php if($url_pro=='on') echo 'checked'; ?>>
 						<label for="pro"></label>
 					</span>
-					<span class="tooltip" title="Finished">
+					<span title="Finished">
 						<input type="checkbox" name="fin" <?php if($url_fin=='on') echo 'checked'; ?>>
 						<label for="fin"></label>
 					</span>
-					<span class="tooltip" title="<?php _e( 'My favorites', 'klifur5' ); ?>">
+					<span title="<?php _e( 'My favorites', 'klifur5' ); ?>">
 						<input type="checkbox" name="fav" <?php if($url_fav=='on') echo 'checked'; ?>>
 						<label for="fav"></label>
 					</span>
@@ -68,15 +68,15 @@ $args = array(
 			<?php endif; ?>
 
 			<fieldset class="metabuttons">
-				<span class="tooltip" title="Image"> <!-- Has image button -->
+				<span title="Image"> <!-- Has image button -->
 					<input type="checkbox" name="img" <?php if($url_img=='on') echo 'checked'; ?>>
 					<label for="img"></label>
 				</span>
-				<span class="tooltip" title="Video">
+				<span title="Video">
 					<input type="checkbox" name="vid" <?php if($url_vid=='on') echo 'checked'; ?>> <!-- Has video -->
 					<label for="vid"></label>
 				</span>
-				<span class="tooltip" title="Thumbnails">
+				<span title="Thumbnails">
 					<input type="checkbox" name="thumb" <?php if($url_thumb=='on') echo 'checked'; ?>> <!-- Thumbs -->
 					<label for="thumb"></label>
 				</span>
