@@ -67,7 +67,6 @@ get_header(); ?>
 								<th><?php echo $climbing_types[1]; ?></th>
 								<th><?php echo $climbing_types[2]; ?></th>
 								<th><?php _e( 'Comments', 'klifur5'); ?></th>
-								<th><?php _e( 'Date', 'klifur5'); ?></th>
 				  		</tr>
 				  	</thead>
 				  	<tbody>
@@ -92,7 +91,6 @@ get_header(); ?>
 								<td class="check"> <?php if ( in_array($climbing_types[2], $type) ) echo 'C'; ?> </td>
 
 								<td><?php comments_number('0','1','%'); ?></td>
-								<td><?php echo get_the_date(); ?></td>
 					  	<?php endwhile; ?>
 					</tbody>
 				  	</table>
