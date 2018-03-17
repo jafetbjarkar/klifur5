@@ -10,7 +10,7 @@
  */
 ?>
 
-<!-- single-crag.php -->
+<!-- [PATH] single-crag.php -->
 
 <?php
 // Get climbing type labels and add to $type

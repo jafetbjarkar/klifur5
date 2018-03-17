@@ -1,27 +1,22 @@
 <?php
 /**
- * The template for displaying the footer
- *
+ * Footer template
  * Contains footer content and the closing of the #main and #page div elements.
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
  */
-?>
-<?php
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-error_reporting(-1);
 
+// FOR DEBUGGING
+// ini_set('display_errors',1);
+// ini_set('display_startup_errors',1);
+// error_reporting(-1);
  ?>
-			<!-- footer.php -->
 
+
+		<!-- [PATH] footer.php -->
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer">
 			<?php get_sidebar( 'main' ); ?>
 			<?php include('config/partner-logo.php'); ?>
-		</footer><!-- #colophon -->
+		</footer>
 	</div><!-- #page -->
 
 	<!-- The notification popup window -->
@@ -39,19 +34,10 @@ error_reporting(-1);
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/imagelightbox-min.js"></script>
 	<!-- Tooltipster -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/jquery.tooltipster.min.js"></script>
-
+	<!-- Rearange layout on index -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/masonry-min.js"></script>
 	<!-- Extra scripts -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/extra-min.js"></script>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-11339300-2', 'auto');
-	  ga('send', 'pageview');
-	</script>
 </body>
 </html>

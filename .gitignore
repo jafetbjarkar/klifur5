@@ -1,9 +1,12 @@
-.codekit-cache
-/DISABLE
-*.scssc
-style.css
 
-*.css
+*.scssc
+/**/.sass-cache/*
+/style.css
+
+/*.codekit-cache
+/*.codekit
 
 *.codekit
 .DS_Store
+/**/*-min.js
+*-min.js

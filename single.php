@@ -5,12 +5,13 @@
 
 get_header(); ?>
 
+	<!-- [PATH] single.php -->
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
-			
+
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); // the loop ?>
-				
+
 				<?php // Single post for 'crags' and 'problem' categories ?>
 				<?php $category = get_the_category()[0]->slug; // Get category for current post ?>
 				<?php if( $category == 'crag' ) : ?>

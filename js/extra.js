@@ -1,21 +1,15 @@
 // KLIFUR.IS
 
 ( function( $ ) {
-// check if post has more than 6 images - if true: wrap them in content.gallery div
 
-	/* DOCUMENT READY */
+
+	// - DOCUMENT READY
 	$(function(){ // klifur.is
 
-		$('.site-content-masonry').masonry({
-	    columnWidth: '.grid-sizer',
-	    itemSelector: '.hentry',
-	    percentPosition: true,
-	    "gutter": 20
-
-	  });
-
-
-		/* IMAGE GALLERY */
+		// - IMAGE GALLERY
+		/*
+		 * check if post has more than 6 images - if true: wrap them in content.gallery div
+		 */
 		// activity indicator
 		var activityIndicatorOn = function() {
 				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
@@ -34,23 +28,23 @@
 				$( '#imagelightbox-caption' ).remove();
 		};
 
-
 		//	Activate caption and activity indication
 		$( 'article.post a:has(img)' ).imageLightbox ( {
 			onLoadStart: function() { captionOff(); activityIndicatorOn(); },
-			onLoadEnd:	 function() { captionOn(); activityIndicatorOff(); },
+			onLoadEnd:	 function() { captionOn();  activityIndicatorOff(); },
 			onEnd:		 function() { captionOff(); activityIndicatorOff(); }
 		});
 
 
-		/* ACTIVATE PLUGINS */ 
+		// - ACTIVATE PLUGINS
 		/* Tablesorter */
-		$("#myTable").tablesorter(); 
+		$("#myTable").tablesorter();
 		/* Tooltipster */
-		$('.tooltip').tooltipster();
+		$('.sexy-buttons > fieldset > span').tooltipster();
+		$('.meta-icons > span').tooltipster();
 
 
-		/* STICKY FOOTER */
+		// - STICKY FOOTER
 		var docHeight = $(window).height();
 		var footerHeight = $('.site-footer').height();
 		var footerTop = $('.site-footer').position().top + footerHeight;
@@ -60,12 +54,9 @@
 			$('nav.navigation').css('top', 10 + (docHeight - footerTop) + 'px');
 		}
 
-		
-		/* PROBLEM FORM */
-		// hide submit button
-		//$('.problem-form input[type=submit]').hide();
 
-		// submit form on change
+		// - PROBLEM FORM (klifur.is/problems)
+		/* submit form on change */
 		$('.problem-form form').change(function() {
 			this.submit();
 		});
@@ -74,7 +65,18 @@
 			this.submit();
 		});
 
-
-
 	}); // document.ready()
+
+
+	// - LAYOUT FUNCTIONS
+	/* wait for images to load */
+	$(window).load(function() {
+		$('.site-content-masonry').masonry({
+			columnWidth: '.grid-sizer',
+			itemSelector: '.hentry',
+			percentPosition: true,
+			"gutter": 20
+		});
+	});
+
 } )( jQuery );
