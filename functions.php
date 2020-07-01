@@ -554,3 +554,12 @@ function klifur5_customize_preview_js() {
 	wp_enqueue_script( 'klifur5-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'klifur5_customize_preview_js' );
+
+/*
+ * Advanced Custom Fields (ACF) Google Maps Api key
+*/
+function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyAedBV0TSRkUk886tCJcpAGh0fsQFenaac';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
