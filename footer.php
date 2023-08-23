@@ -38,6 +38,9 @@
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/masonry-min.js"></script>
 	<!-- Extra scripts -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/min/extra-min.js"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAedBV0TSRkUk886tCJcpAGh0fsQFenaac"></script>
+
 
 </body>
 </html>

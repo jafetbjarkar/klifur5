@@ -1,0 +1,4 @@
+[10-Nov-2015 13:37:23 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/klif5243/public_html/klifur.is/wp-content/themes/klifur5/index.php on line 17
+[01-Mar-2016 07:06:51 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/klif5243/public_html/klifur.is/wp-content/themes/klifur5/404.php on line 10
+[13-Mar-2016 16:34:11 America/Chicago] PHP Fatal error:  Call to undefined function wp_enqueue_script() in /home/klif5243/public_html/klifur.is/wp-content/themes/klifur5/functions.php on line 32
+[13-Mar-2016 16:34:13 America/Chicago] PHP Fatal error:  Call to undefined function get_sidebar() in /home/klif5243/public_html/klifur.is/wp-content/themes/klifur5/footer.php on line 22

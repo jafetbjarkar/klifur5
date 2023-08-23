@@ -8,7 +8,7 @@
 */
 ?>
 
-<!-- [PATH] inc/problem-thumbs.php -->
+<!-- inc/problem-thumbs.php -->
 
 <?php
 $wp_query = null;

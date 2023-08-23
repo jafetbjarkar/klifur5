@@ -1,9 +1,6 @@
 <?php
 
-// - NICENAMES - ADD EXTRA CLASSES
-/*
- * Add category nicenames in body and post class
- */
+// ADD CATEGORY NICENAMES in body and post class
 function category_id_class( $classes ) {
 	global $post;
 	foreach ( get_the_category( $post->ID ) as $category ) {
@@ -15,16 +12,23 @@ add_filter( 'post_class', 'category_id_class' );
 add_filter( 'body_class', 'category_id_class' );
 
 
-/* - ADMIN BAR CHANGES */
-/* Always show the admin bar */
+
+/* ADMIN BAR CHANGES */
+/**
+ * Always show the admin bar
+ */
 if ($site == 'klifur') {
 	show_admin_bar(true);
 }
 
+
+
 /**
  * Add log in and register buttons to admin panel when user is not logged in
  */
+
 $args = [];
+
 function admin_bar_add_login( $wp_admin_bar ){
 	if( !is_user_logged_in() ) {
 		$loginURL = wp_login_url();
@@ -74,7 +78,7 @@ add_filter('logout_url', 'get_current_logout');
  * Redirect users to home page. Admin goes to back panel
  */
 function my_login_redirect( $redirect_to, $request, $user ) {
-	// is there a user to check?
+	//is there a user to check?
 	global $user;
 	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
 		//check for admins
@@ -91,8 +95,7 @@ function my_login_redirect( $redirect_to, $request, $user ) {
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 
 
-
-// - NUMERIC PAGING
+/* NUMERIC PAGING */
 /*
  * Add navigation with page numbers. Overrides the default function in functions.php
  */
@@ -169,10 +172,8 @@ function klifur5_paging_nav() {
 }
 
 
-/* AJAX/DATABASE CALLS */
-/*
- * Handle user lists
- */
+/* AJAX CALLS */
+/* Handle user lists */
 function user_lists() {
 
     // The $_REQUEST contains all the data sent via ajax
@@ -261,6 +262,7 @@ function user_lists() {
 add_action( 'wp_ajax_user_lists', 'user_lists' );
 
 
+/* WP_USER_LISTS  */
 /*
  * add hooks to $wp_query to make contents of wp_user_lists available
  */
@@ -329,11 +331,8 @@ function my_login_logo() {
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 
-
 // - BBPRESS
-/*
- * Include bbPress 'topic' custom post type in WordPress' search results
- */
+// Include bbPress 'topic' custom post type in WordPress' search results
 function ntwb_bbp_topic_cpt_search( $topic_search ) {
 	$topic_search['exclude_from_search'] = false;
 	return $topic_search;

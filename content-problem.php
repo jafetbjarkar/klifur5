@@ -1,11 +1,17 @@
 <?php
 /**
- * Template for problem
+ * The default template for displaying content
+ *
  * Used for both single and index/archive/search.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
  */
 ?>
 
-<!-- [PATH] content-problem.php -->
+<!-- content-problem.php -->
+
 <?php include(locate_template('config/data.php')); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

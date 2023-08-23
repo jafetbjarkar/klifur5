@@ -48,24 +48,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 9.0 - Print
  * ----------------------------------------------------------------------------
  */
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Bold.otf);
-  font-weight: bold; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Light.otf);
-  font-weight: light;
-  font-style: italic; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Light_It.otf);
-  font-weight: light;
-  font-style: italic; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Reg.otf);
-  font-weight: regular; }
+
 /**
  * Generate colors
  * ----------------------------------------------------------------------------
@@ -131,7 +114,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "ProximaNova", Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif; }
 
 body {
   line-height: 1.6;

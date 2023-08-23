@@ -3,14 +3,17 @@
  * The sidebar containing the secondary widget area
  *
  * Displays on posts and pages.
+ *
  * If no active widgets are in this sidebar, hide it completely.
  *
- * If this file is not present the Main widget (footer) area fuckes up.
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
  */
 
 if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-  <!-- [PATH] sidebar.php -->
-	<div id="tertiary" class="sidebar-container" role="complementary">
+  <!-- sidebar.php -->
+	<div id="tertiary" class="sidebar-container">
 		<div class="sidebar-inner">
 			<div class="widget-area">
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>

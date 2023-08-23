@@ -1,11 +1,17 @@
 <?php
 /**
- * The problem index page
+ * The template for displaying Category pages
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
  */
 
 get_header(); ?>
 
-<!-- [PATH] category-problem.php -->
+<!-- category-problem.php -->
 
 <div id="primary" class="content-area">
 	<div id="content" class="site-content">
@@ -99,8 +105,8 @@ get_header(); ?>
 		<?php klifur5_paging_nav(); ?>
 		<?php wp_reset_query(); ?>
 
-	</div>
-</div> <!-- #primary -->
+	</div><!-- #content -->
+</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

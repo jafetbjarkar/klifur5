@@ -7,7 +7,7 @@
 */
 ?>
 
-<!-- [PATH] inc/problem-table.php -->
+<!-- inc/problem-table.php -->
 
 <?php
 $wp_query = null;
@@ -72,21 +72,21 @@ $wp_query = new WP_Query($args); ?>
 					<td class="meta-icons">
 						<!-- Type icon -->
 						<?php if( get_field('type') ) $type = get_field('type'); ?>
-						<span class="type" title="<?php echo $type ?>"><?php echo strtoupper( $type[0] ); ?></span>
+						<span class="type tooltip" title="<?php echo $type ?>"><?php echo strtoupper( $type[0] ); ?></span>
 
 						<!-- Image -->
 						<?php if( get_field('image') ) : ?>
-							<span class="image" title="Has image">p</span>
+							<span class="image tooltip" title="Has image">p</span>
 						<?php  endif; ?>
 
 						<!-- Video -->
 						<?php if( get_field('video') ) : ?>
-							<span class="video" title="Has video">v</span>
+							<span class="video tooltip" title="Has video">v</span>
 						<?php  endif; ?>
 
 						<!-- Comments icon -->
 						<?php if( get_comments_number() > 0 ) : ?>
-							<span class="comments" title="Has comment">f</span>
+							<span class="comments tooltip" title="Has comment">f</span>
 						<?php endif; ?>
 					</td>
 
@@ -96,8 +96,6 @@ $wp_query = new WP_Query($args); ?>
 						<span class="fin"><a class="<?php if( $post->fin ) echo 'on ' ?>" data-list-no="2"></a></span>
 						<span class="pro"><a class="<?php if( $post->pro ) echo 'on ' ?>" data-list-no="3"></a></span>
 					</td>
-
-
 
 		  	<?php endwhile; ?>
 		</tbody>

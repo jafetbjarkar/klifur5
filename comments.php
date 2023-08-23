@@ -1,6 +1,12 @@
 <?php
 /**
  * The template for displaying Comments
+ *
+ * The area of the page that contains comments and the comment form.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
  */
 
 /*
@@ -11,7 +17,8 @@ if ( post_password_required() )
 	return;
 ?>
 
-<!-- [PATH] comments.php -->
+<!-- comments.php -->
+
 <div id="comments" class="comments-area">
 	<div class="comments-page"> <!-- div to center content -->
 
@@ -28,7 +35,7 @@ if ( post_password_required() )
 						'avatar_size' => 74,
 					) );
 				?>
-			</ol>
+			</ol><!-- .comment-list -->
 
 			<?php
 				// Are there comments to navigate through?
@@ -38,7 +45,7 @@ if ( post_password_required() )
 				<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'klifur5' ); ?></h1>
 				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'klifur5' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'klifur5' ) ); ?></div>
-			</nav>
+			</nav><!-- .comment-navigation -->
 			<?php endif; // Check for comment navigation ?>
 
 			<?php if ( ! comments_open() && get_comments_number() ) : ?>
@@ -49,5 +56,6 @@ if ( post_password_required() )
 
 
 		<?php comment_form(); ?>
-	</div>
-</div> <!-- #comments -->
+	</div> <!-- .comments-page -->
+
+</div><!-- #comments -->

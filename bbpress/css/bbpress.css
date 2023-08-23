@@ -6,24 +6,7 @@
  */
 /* =bbPress Style
 -------------------------------------------------------------- */
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Bold.otf);
-  font-weight: bold; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Light.otf);
-  font-weight: light;
-  font-style: italic; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Light_It.otf);
-  font-weight: light;
-  font-style: italic; }
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(fonts/Proxima_Nova_Reg.otf);
-  font-weight: regular; }
+
 #bbpress-forums hr {
   margin: 0 0 24px 0; }
 

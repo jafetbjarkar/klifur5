@@ -1,11 +1,17 @@
 <?php
 /**
- * Mainly query arguments used for inc/problem-thumbs
+ * The default template for displaying content
+ *
+ * Used for both single and index/archive/search.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
  */
 ?>
 
 <!-- single-problem.php -->
-
+	
 <?php // use inlude instead of get_template_part() because I need to pass variables from the inluded file ?>
 <?php include(locate_template('content-problem.php')); ?>
 
@@ -45,3 +51,4 @@
 <?php include(locate_template('inc/problem-thumbs.php')); ?>
 
 <?php wp_reset_query(); ?>
+
