@@ -18,7 +18,27 @@
 
 	<?php // HEADER ?>
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?> <?php the_field('grade'); ?></a></h1>
+
+		<?php if( get_field('type') === 'sport' ) : ?>
+			<h1 class="entry-title">
+				<a href="<?php the_permalink(); ?>" rel="bookmark">
+					<?php the_title(); ?> 
+					<?php the_field('grade_sport'); ?>
+					<span class="old-grade"><?php the_field('grade'); ?></span>
+				</a>
+			</h1>
+		<?php endif; ?>
+
+
+		<?php if( get_field('type') === 'trad' || get_field('type') === 'boulder' ) : ?>
+			<h1 class="entry-title">
+				<a href="<?php the_permalink(); ?>" rel="bookmark">
+					<?php the_title(); ?> 
+					<?php the_field('grade'); ?>
+				</a>
+			</h1>
+		<?php endif; ?>
+
 		<div class="entry-meta">
 			<?php klifur5_entry_meta(); ?>
 			<?php edit_post_link( __( 'Edit', 'klifur5' ), '<span class="edit-link">', '</span>' ); ?>

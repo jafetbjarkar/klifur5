@@ -55,7 +55,15 @@ $wp_query = new WP_Query($args); ?>
 		  	<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 				<tr data-post-id="<?php the_ID(); ?>">
 					<td><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></td>
-					<td><?php if( get_field('grade')  ) { the_field('grade'); } ?></td>
+					<td>
+						<?php if( get_field('type') === 'sport' ) : ?>
+							<?php if( get_field('grade_sport')  ) { the_field('grade_sport'); } ?>
+						<?php endif; ?>
+						
+						<?php if( get_field('type') === 'trad' || get_field('type') === 'boulder' ) : ?>
+							<?php if( get_field('grade')  ) { the_field('grade'); } ?>
+						<?php endif; ?>
+					</td>
 					<td>
 						<?php $the_crag = get_field('crag'); ?>
 						<a href="<?php echo $the_crag->guid; ?>"><?php echo $the_crag->post_title; ?></a>

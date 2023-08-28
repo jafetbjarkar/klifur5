@@ -22,7 +22,27 @@ $wp_query = new WP_Query($args); ?>
 		<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<div class="problem-thumb" data-post-id="<?php the_ID(); ?>">
 				<header class="entry-header">
-					<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?> <?php the_field('grade'); ?></a></h3>
+
+				<?php if( get_field('type') === 'sport' ) : ?>
+					<h3 class="entry-title">
+						<a href="<?php the_permalink(); ?>" rel="bookmark">
+							<?php the_title(); ?> 
+							<?php the_field('grade_sport'); ?>
+							<span class="old-grade"><?php the_field('grade'); ?></span>
+						</a>
+					</h3>
+				<?php endif; ?>
+
+
+				<?php if( get_field('type') === 'trad' || get_field('type') === 'boulder' ) : ?>
+					<h3 class="entry-title">
+						<a href="<?php the_permalink(); ?>" rel="bookmark">
+							<?php the_title(); ?> 
+							<?php the_field('grade'); ?>
+						</a>
+					</h3>
+				<?php endif; ?>
+
 				</header><!-- .entry-header -->
 
 				<?php // IMAGE ?>
