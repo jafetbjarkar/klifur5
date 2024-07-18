@@ -99,8 +99,15 @@
 					<td><?php _e( 'First ascent', 'klifur5') ?></td>
 					<td>
 						<?php
-							$first = get_field('first_ascent');
-							echo $first[display_name];
+							// $first = get_field('first_ascent');
+							// echo $first[display_name];
+
+              if( have_rows('first_ascent') ):
+                while ( have_rows('first_ascent') ) : the_row();
+                    $sub_value = get_sub_field('display_name');
+                    echo  $sub_value;
+                endwhile;
+              endif;
 						?>
 					</td>
 				</tr>

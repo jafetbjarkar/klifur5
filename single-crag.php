@@ -15,14 +15,14 @@
 <?php
 // Get climbing type labels and add to $type
 $fields = get_field('type_of_climbing');
-$field_labels = get_field_object('type_of_climbing')[choices];
+// $field_labels = get_field_object('type_of_climbing')[choices];
 $types = [];
 $types = "";
-foreach($fields as $key) {
-	if(array_key_exists($key, $field_labels)) {
-		$types[$key] = $field_labels[$key];
-	}
-}
+// foreach($fields as $key) {
+// 	if(array_key_exists($key, $field_labels)) {
+// 		$types[$key] = $field_labels[$key];
+// 	}
+// }
 foreach($types as $value){
 	$type = $type . $value . ', ';
 }
